@@ -20,6 +20,7 @@ import { HeaderAddon } from '../components/HeaderAddon';
 import { BlockOne } from '../components/BlockOne';
 import { BlockTwo } from '../components/BlockTwo';
 import { BlockThree } from '../components/BlockThree';
+import { BlockFour } from '../components/BlockFour';
 
 const Index = () => (
 	<Container minHeight="100vh" height={'fit-content'}>
@@ -35,6 +36,8 @@ const Index = () => (
 			<Box m={[2, 3]} />
 
 			<BlockThree />
+			<Box m={[2, 3]} />
+			<BlockFour />
 		</Main>
 	</Container>
 );

@@ -54,7 +54,7 @@ export const BlockThree = ({ title }: { title: string }) => (
 			height={'fit-content'}
 		>
 			{/*TODO: Fix scaling on small sc */}
-			<Flex overflow={'hidden'} justifyContent={'right'} scale={{ sm: '0.8' }}>
+			<Flex overflow={'hidden'} justifyContent={'right'}>
 				<svg
 					width="634"
 					height="742"
