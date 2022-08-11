@@ -5,7 +5,7 @@ export const Container = (props: FlexProps) => (
 		direction="column"
 		alignItems="center"
 		justifyContent="flex-start"
-		bg="#EFEFEF"
+		bg="brand.800"
 		color="black"
 		_dark={{
 			bg: 'brand.200',
