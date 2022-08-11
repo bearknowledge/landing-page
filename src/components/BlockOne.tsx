@@ -14,9 +14,10 @@ import {
 export const BlockOne = ({ title }: { title: string }) => (
 	<Grid templateColumns="repeat(5, 1fr)" width={'100%'}>
 		<GridItem
-			colSpan={{ sm: 12, md: 2 }}
+			colSpan={{ xs: 12, md: 2 }}
 			h="10"
 			height={'fit-content'}
+			alignSelf={'center'}
 			paddingY={6}
 		>
 			<Stack>
@@ -55,8 +56,14 @@ export const BlockOne = ({ title }: { title: string }) => (
 			</Stack>
 		</GridItem>
 
-		<GridItem colStart={3} colEnd={6} h="10" height={'fit-content'}>
-			<Box overflow={'hidden'}>
+		<GridItem
+			colStart={{ xs: 1, md: 3 }}
+			colEnd={{ xs: 6, md: 6 }}
+			h="10"
+			height={'fit-content'}
+		>
+			{/*TODO: Fix scaling on small sc */}
+			<Box overflow={'hidden'} justifyContent={'center'} scale={{ sm: '0.5' }}>
 				<svg
 					width="809"
 					height="625"

@@ -7,7 +7,6 @@ export const Main = (props: StackProps) => (
 		maxWidth="100%"
 		pt="1rem"
 		px="1rem"
-		height={'100rem'}
 		minHeight="fit-content"
 		{...props}
 	/>
