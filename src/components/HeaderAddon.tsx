@@ -12,6 +12,7 @@ import {
 import Link from 'next/link';
 import { DarkModeSwitch } from './DarkModeSwitch';
 import { HeaderDrawer } from './HeaderDrawer';
+import { FiGlobe } from 'react-icons/fi';
 
 export const HeaderAddon = ({ title }: { title: string }) => (
 	<Flex
@@ -58,9 +59,11 @@ export const HeaderAddon = ({ title }: { title: string }) => (
 					whiteSpace={'nowrap'}
 					justifyContent={'center'}
 					alignItems="center"
+					display={'Flex'}
 				>
 					{/* <ArrowBackIcon /> */}
-					<Text>Change Language</Text>
+					<FiGlobe />
+					<Text ml={1}>Change Language</Text>
 				</Box>
 			</Link>
 		</HStack>

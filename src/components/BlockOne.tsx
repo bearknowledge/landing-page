@@ -12,7 +12,7 @@ import {
 } from '@chakra-ui/react';
 
 export const BlockOne = ({ title }: { title: string }) => (
-	<Grid templateColumns="repeat(5, 1fr)" width={'100%'}>
+	<Grid templateColumns="repeat(5, 1fr)" width={'100%'} px="2rem">
 		<GridItem
 			colSpan={{ xs: 12, md: 2 }}
 			h="10"
