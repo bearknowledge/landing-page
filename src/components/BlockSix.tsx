@@ -20,7 +20,7 @@ export const BlockSix = ({ title }: { title: string }) => (
 		px="2rem"
 	>
 		<GridItem
-			colSpan={{ xs: 12, md: 2 }}
+			colSpan={{ xs: 5, md: 3 }}
 			h="10"
 			height={'fit-content'}
 			alignSelf={'center'}
@@ -35,7 +35,7 @@ export const BlockSix = ({ title }: { title: string }) => (
 				</Text>
 				<Stack
 					spacing={4}
-					direction={[null, 'column', 'row']}
+					direction={['column', 'row']}
 					//TODO: fix overflow on buttons
 				>
 					<Button
