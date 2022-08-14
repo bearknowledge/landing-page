@@ -1,6 +1,7 @@
 import {
 	background,
 	Box,
+	Button,
 	Divider,
 	Flex,
 	Heading,
@@ -31,7 +32,7 @@ export const HeaderAddon = ({ title }: { title: string }) => (
 				whiteSpace={'nowrap'}
 				justifyContent={'center'}
 				alignItems="center"
-				overflow={'hidden'}
+				overflow={'ellipsis'}
 				width={'70%'}
 				textOverflow={'ellipsis'}
 			>
@@ -49,6 +50,10 @@ export const HeaderAddon = ({ title }: { title: string }) => (
 					whiteSpace={'nowrap'}
 					justifyContent={'center'}
 					alignItems="center"
+					//variant={'link'} TODO: turn this into button
+					fontSize={'sm'}
+					color={'white'}
+					fontWeight={400}
 				>
 					<Text>Beta</Text>
 				</Box>
