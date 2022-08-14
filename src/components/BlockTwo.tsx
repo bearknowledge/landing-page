@@ -27,7 +27,7 @@ export const BlockTwo = ({ title }: { title: string }) => (
 					Where's culture headed?
 					<br /> Predict what's up next
 				</Text>
-
+				{/* 
 				<Box>
 					<Button
 						paddingX={6}
@@ -39,7 +39,7 @@ export const BlockTwo = ({ title }: { title: string }) => (
 					>
 						Request early access
 					</Button>
-				</Box>
+				</Box> */}
 				<SimpleGrid columns={{ sm: 1, md: 3 }} spacing={5}>
 					<Box height="fit-content" marginTop={12}>
 						<Box minHeight={'158px'}>

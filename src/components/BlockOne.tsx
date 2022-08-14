@@ -1,3 +1,4 @@
+import { ArrowUpIcon } from '@chakra-ui/icons';
 import {
 	Box,
 	Button,
@@ -6,10 +7,14 @@ import {
 	GridItem,
 	Heading,
 	HStack,
+	Input,
+	InputGroup,
+	InputRightAddon,
 	Spacer,
 	Stack,
 	Text,
 } from '@chakra-ui/react';
+import { FiArrowUpRight } from 'react-icons/fi';
 
 export const BlockOne = ({ title }: { title: string }) => (
 	<Grid templateColumns="repeat(5, 1fr)" width={'100%'} px="2rem">
@@ -31,7 +36,7 @@ export const BlockOne = ({ title }: { title: string }) => (
 					Xsauce is a dynamic, decentralized ecosystem which allows you to
 					translate your knowledge of culture into money in your pocket.
 				</Text>
-				<HStack spacing={4}>
+				{/* <HStack spacing={4}>
 					<Button
 						paddingX={6}
 						fontSize={'sm'}
@@ -39,20 +44,32 @@ export const BlockOne = ({ title }: { title: string }) => (
 						variant="solid"
 						bg={'brand.100'}
 					>
-						<Text> Get Whitelisted</Text>
+						<Text> Sign Up for Newsletter</Text>
 					</Button>
-
-					<Button
-						paddingX={6}
-						fontSize={'sm'}
-						size={'lg'}
-						variant="outline"
-						color={'brand.200'}
-						borderColor={'brand.200'}
+				</HStack> */}
+				<InputGroup alignSelf="center" border="0px">
+					<Input
+						type="email"
+						placeholder="Email@xyz.com"
+						fontSize="xs"
+						width={'50%'}
+						bg="colors.white"
+						color="brand.200"
+						border="0px"
+					/>
+					<InputRightAddon
+						width={'50%'}
+						minWidth={'fit-content'}
+						bg="brand.100"
+						color="brand.200"
+						border="0px"
+						fontSize="xs"
+						as={Button}
 					>
-						Whitepaper
-					</Button>
-				</HStack>
+						Sign Up to the Newsletter
+						<FiArrowUpRight />
+					</InputRightAddon>
+				</InputGroup>
 			</Stack>
 		</GridItem>
 

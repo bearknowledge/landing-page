@@ -48,7 +48,7 @@ export const BlockSix = ({ title }: { title: string }) => (
 					>
 						Read Our Docs
 					</Button>
-					<Button
+					{/* <Button
 						paddingX={6}
 						fontSize={'sm'}
 						size={'lg'}
@@ -66,7 +66,7 @@ export const BlockSix = ({ title }: { title: string }) => (
 						bg={'brand.100'}
 					>
 						<Text> Get whitelisted</Text>
-					</Button>
+					</Button> */}
 				</Stack>
 			</Stack>
 		</GridItem>

@@ -31,13 +31,13 @@ const Index = () => (
 			<Box m={[2, 3]} />
 
 			<BlockOne />
-			<Box m={[2, 3]} />
+			<Box m={[2, 6]} />
 
 			<BlockTwo />
-			<Box m={[2, 3]} />
+			<Box m={[2, 6]} />
 
 			<BlockThree />
-			<Box m={[2, 3]} />
+			<Box m={[2, 6]} background={'brand.100'} />
 			<BlockFour />
 			<Box m={[2, 3]} />
 			<BlockSix />

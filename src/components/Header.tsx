@@ -1,5 +1,6 @@
 import {
 	Box,
+	Button,
 	Divider,
 	Flex,
 	Heading,
@@ -31,31 +32,41 @@ export const Header = ({ title }: { title: string }) => (
 		</Show>
 		<Show above="md">
 			<HStack spacing={5}>
-				<Link href="/">
-					<Box
+				<a
+					href="https://docs.xsauce.io/getting-started/introduction"
+					target={'_blank'}
+					rel={'noreferrer'}
+				>
+					<Button
 						whiteSpace={'nowrap'}
-						justifyContent={'center'}
-						alignItems="center"
+						variant="link"
+						fontWeight={400}
+						color={'black'}
 					>
 						<Text>About</Text>
-					</Box>
-				</Link>
-				<Divider borderColor="gray.200" />
-				<Link href="/">
-					<Box
+					</Button>
+				</a>
+				<a
+					href="https://docs.xsauce.io/applications/prediction-markets-v.0-beta"
+					target={'_blank'}
+					rel={'noreferrer'}
+				>
+					<Button
 						whiteSpace={'nowrap'}
-						justifyContent={'center'}
-						alignItems="center"
+						variant="link"
+						fontWeight={400}
+						color={'black'}
 					>
 						<Text>How it works</Text>
-					</Box>
-				</Link>
-				<Divider borderColor="gray.200" />
+					</Button>
+				</a>
 				<Link href="/">
-					<Flex
+					<Button
 						whiteSpace={'nowrap'}
-						justifyContent={'center'}
-						alignItems="center"
+						variant="link"
+						fontWeight={400}
+						color={'black'}
+						display={'flex'}
 						flexDirection={'row'}
 					>
 						<Text paddingX={1}>The Xchange </Text>
@@ -78,18 +89,18 @@ export const Header = ({ title }: { title: string }) => (
 								fill="#ACFF00"
 							/>
 						</svg>
-					</Flex>
+					</Button>
 				</Link>
-				<Divider borderColor="gray.200" />
 				<Link href="/">
-					<Box
+					<Button
 						whiteSpace={'nowrap'}
-						justifyContent={'center'}
-						alignItems="center"
+						variant="link"
+						fontWeight={400}
+						color={'black'}
 					>
 						{/* <ArrowBackIcon /> */}
 						<Text>Contact us</Text>
-					</Box>
+					</Button>
 				</Link>
 			</HStack>
 		</Show>

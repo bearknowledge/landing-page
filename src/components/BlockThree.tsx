@@ -10,6 +10,7 @@ import {
 	Stack,
 	Text,
 } from '@chakra-ui/react';
+import Link from 'next/link';
 
 export const BlockThree = ({ title }: { title: string }) => (
 	<Grid templateColumns="repeat(5, 1fr)" width={'100%'} px="2rem">
@@ -33,16 +34,22 @@ export const BlockThree = ({ title }: { title: string }) => (
 					or drop will go up or down in price. Predict right and earn hard cash.
 				</Text>
 				<HStack spacing={4}>
-					<Button
-						paddingX={6}
-						fontSize={'sm'}
-						size={'lg'}
-						variant="outline"
-						color={'brand.200'}
-						borderColor={'brand.200'}
+					<a
+						href="https://docs.xsauce.io/getting-started/introduction"
+						target={'_blank'}
+						rel={'noreferrer'}
 					>
-						<Text> Read our Docs</Text>
-					</Button>
+						<Button
+							paddingX={6}
+							fontSize={'sm'}
+							size={'lg'}
+							variant="outline"
+							color={'brand.200'}
+							borderColor={'brand.200'}
+						>
+							<Text> Read our Docs</Text>
+						</Button>
+					</a>
 				</HStack>
 			</Stack>
 		</GridItem>

@@ -44,32 +44,53 @@ export const HeaderDrawer = () => {
 							color="colors.gray.500"
 							fontSize={'xl'}
 						>
-							<Link href="/">
-								<Box
+							<a
+								href="https://docs.xsauce.io/getting-started/introduction"
+								target={'_blank'}
+								rel={'noreferrer'}
+							>
+								<Button
 									display="flex"
 									justifyContent={'center'}
 									alignItems="center"
+									variant={'link'}
+									fontWeight={400}
+									fontSize={'xl'}
+									color={'colors.black'}
 								>
 									<Text>About</Text>
-								</Box>
-							</Link>
+								</Button>
+							</a>
 							<Divider borderColor="gray.200" />
-							<Link href="/">
-								<Box
+							<a
+								href="https://docs.xsauce.io/applications/prediction-markets-v.0-beta"
+								target={'_blank'}
+								rel={'noreferrer'}
+							>
+								<Button
 									display="flex"
 									justifyContent={'center'}
 									alignItems="center"
+									variant={'link'}
+									fontWeight={400}
+									fontSize={'xl'}
+									color={'colors.black'}
 								>
 									<Text>How it works</Text>
-								</Box>
-							</Link>
+								</Button>
+							</a>
 							<Divider borderColor="gray.200" />
 							<Link href="/">
-								<Flex
+								<Button
 									whiteSpace={'nowrap'}
 									justifyContent={'center'}
 									alignItems="center"
+									display={'flex'}
 									flexDirection={'row'}
+									variant={'link'}
+									fontWeight={400}
+									fontSize={'xl'}
+									color={'colors.black'}
 								>
 									<Text paddingX={1}>The Xchange </Text>
 									<svg
@@ -91,18 +112,22 @@ export const HeaderDrawer = () => {
 											fill="#ACFF00"
 										/>
 									</svg>
-								</Flex>
+								</Button>
 							</Link>
 							<Divider borderColor="gray.200" />
 							<Link href="/">
-								<Box
+								<Button
 									display="flex"
 									justifyContent={'center'}
 									alignItems="center"
+									variant={'link'}
+									fontWeight={400}
+									fontSize={'xl'}
+									color={'colors.black'}
 								>
 									{/* <ArrowBackIcon /> */}
 									<Text>Contact us</Text>
-								</Box>
+								</Button>
 							</Link>
 						</VStack>
 					</DrawerBody>

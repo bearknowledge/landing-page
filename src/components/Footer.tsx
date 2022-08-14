@@ -64,18 +64,43 @@ export const Footer = (props: FlexProps) => (
 					justifyContent={{ sx: 'center', md: 'left' }}
 					alignItems={{ sx: 'center', md: 'left' }}
 				>
-					<Link href="/">
-						<Box whiteSpace={'nowrap'}>
+					<a
+						href="https://docs.xsauce.io/getting-started/introduction"
+						target={'_blank'}
+						rel={'noreferrer'}
+					>
+						<Button
+							whiteSpace={'nowrap'}
+							variant="link"
+							fontWeight={400}
+							color={'black'}
+						>
 							<Text>About</Text>
-						</Box>
-					</Link>
-					<Link href="/">
-						<Box whiteSpace={'nowrap'}>
+						</Button>
+					</a>
+					<a
+						href="https://docs.xsauce.io/applications/prediction-markets-v.0-beta"
+						target={'_blank'}
+						rel={'noreferrer'}
+					>
+						<Button
+							whiteSpace={'nowrap'}
+							variant="link"
+							fontWeight={400}
+							color={'black'}
+						>
 							<Text>How it works</Text>
-						</Box>
-					</Link>
+						</Button>
+					</a>
 					<Link href="/">
-						<Flex whiteSpace={'nowrap'}>
+						<Button
+							whiteSpace={'nowrap'}
+							variant="link"
+							fontWeight={400}
+							color={'black'}
+							display={'flex'}
+							flexDirection={'row'}
+						>
 							<Text paddingX={1}>The Xchange </Text>
 							<svg
 								width="43"
@@ -96,13 +121,18 @@ export const Footer = (props: FlexProps) => (
 									fill="#ACFF00"
 								/>
 							</svg>
-						</Flex>
+						</Button>
 					</Link>
 					<Link href="/">
-						<Box whiteSpace={'nowrap'}>
+						<Button
+							whiteSpace={'nowrap'}
+							variant="link"
+							fontWeight={400}
+							color={'black'}
+						>
 							{/* <ArrowBackIcon /> */}
 							<Text>Contact us</Text>
-						</Box>
+						</Button>
 					</Link>
 				</Stack>
 			</GridItem>
@@ -113,7 +143,9 @@ export const Footer = (props: FlexProps) => (
 			paddingY={5}
 			px={'2rem'}
 		>
-			<Text alignSelf={'center'}>© 2022 Xsauce. All rights reserved.</Text>
+			<Text alignSelf={'center'} fontSize={'xs'}>
+				© 2022 Xsauce. All rights reserved.
+			</Text>
 			<Spacer />
 			<HStack spacing={0}>
 				<IconButton
