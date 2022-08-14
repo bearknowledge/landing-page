@@ -59,14 +59,14 @@ export const BlockOne = ({ title }: { title: string }) => (
 					/>
 					<InputRightAddon
 						width={'50%'}
-						minWidth={'fit-content'}
 						bg="brand.100"
 						color="brand.200"
 						border="0px"
 						fontSize="xs"
 						as={Button}
+						whiteSpace={'break-spaces'}
 					>
-						Sign Up to the Newsletter
+						<Text whiteSpace={'break-spaces'}>Sign Up to the Newsletter</Text>
 						<FiArrowUpRight />
 					</InputRightAddon>
 				</InputGroup>

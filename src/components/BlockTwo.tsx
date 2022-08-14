@@ -13,7 +13,7 @@ import {
 } from '@chakra-ui/react';
 
 export const BlockTwo = ({ title }: { title: string }) => (
-	<Box px="2rem">
+	<Grid px="2rem" width={'100%'}>
 		<Box
 			width={'100%'}
 			border={'1px solid'}
@@ -481,7 +481,7 @@ export const BlockTwo = ({ title }: { title: string }) => (
 							</svg>
 						</Box>
 						<Text paddingY={2} fontSize={24}>
-							Predict for cash
+							Fair Priced
 						</Text>
 						<Text>
 							Ecosystem of three tools that merge fashion, collectibles & other
@@ -579,7 +579,7 @@ export const BlockTwo = ({ title }: { title: string }) => (
 				</SimpleGrid>
 			</Stack>
 		</Box>
-	</Box>
+	</Grid>
 );
 
 BlockTwo.defaultProps = {

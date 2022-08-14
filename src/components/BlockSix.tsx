@@ -38,16 +38,22 @@ export const BlockSix = ({ title }: { title: string }) => (
 					direction={['column', 'row']}
 					//TODO: fix overflow on buttons
 				>
-					<Button
-						paddingX={6}
-						fontSize={'sm'}
-						size={'lg'}
-						variant="outline"
-						color={'brand.200'}
-						borderColor={'brand.200'}
+					<a
+						href="https://docs.xsauce.io/getting-started/introduction"
+						target={'_blank'}
+						rel={'noreferrer'}
 					>
-						Read Our Docs
-					</Button>
+						<Button
+							paddingX={6}
+							fontSize={'sm'}
+							size={'lg'}
+							variant="outline"
+							color={'brand.200'}
+							borderColor={'brand.200'}
+						>
+							<Text> Read our Docs</Text>
+						</Button>
+					</a>
 					{/* <Button
 						paddingX={6}
 						fontSize={'sm'}

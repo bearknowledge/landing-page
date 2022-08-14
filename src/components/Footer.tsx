@@ -19,7 +19,7 @@ import Link from 'next/link';
 import { FaRegHandPeace, FaTwitter, FaGithub } from 'react-icons/fa';
 
 export const Footer = (props: FlexProps) => (
-	<Flex as="footer" mb={0} flexDirection={'column'}>
+	<Flex as="footer" mb={0} flexDirection={'column'} width={'100%'}>
 		<Grid
 			templateColumns="repeat(5, 1fr)"
 			width={'100%'}
