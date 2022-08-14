@@ -32,11 +32,10 @@ export const HeaderAddon = ({ title }: { title: string }) => (
 				whiteSpace={'nowrap'}
 				justifyContent={'center'}
 				alignItems="center"
-				overflow={'ellipsis'}
+				overflow={'hidden'}
 				width={'70%'}
-				textOverflow={'ellipsis'}
 			>
-				<Text textOverflow={'ellipsis'}>
+				<Text>
 					Our product is currently in Beta. It’s functional but we advise you to
 					be careful while using it.
 				</Text>
