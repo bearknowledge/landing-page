@@ -183,7 +183,7 @@ export const Footer = (props: FlexProps) => (
 			borderTop={'1px solid'}
 			borderColor={'brand.200'}
 			paddingY={5}
-			px={'10rem'}
+			px={'2rem'}
 		>
 			<Text alignSelf={'center'} fontSize={'xs'}>
 				© 2022 Xsauce. All rights reserved.
