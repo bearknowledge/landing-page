@@ -71,7 +71,7 @@ export const Header = ({ title }: { title: string }) => (
 							flexDirection={'row'}
 							disabled
 						>
-							<Text paddingX={1}>The Xchange </Text>
+							<Text paddingX={1}>The Xchange</Text>
 							<svg
 								width="43"
 								height="22"

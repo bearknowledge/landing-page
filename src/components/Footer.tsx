@@ -16,6 +16,7 @@ import {
 	VStack,
 } from '@chakra-ui/react';
 import Link from 'next/link';
+import React from 'react';
 import { FaRegHandPeace, FaTwitter, FaGithub } from 'react-icons/fa';
 
 export const Footer = (props: FlexProps) => (
@@ -59,43 +60,32 @@ export const Footer = (props: FlexProps) => (
 			</GridItem>
 			<GridItem colSpan={5}>
 				<Stack
+					paddingY={10}
 					spacing={5}
 					direction={[null, 'column', 'row']}
 					justifyContent={{ sx: 'center', md: 'left' }}
-					alignItems={{ sx: 'center', md: 'left' }}
+					fontWeight={800}
 				>
-					<Box alignSelf={'center'}>
-						<a
-							href="https://docs.xsauce.io/getting-started/introduction"
-							target={'_blank'}
-							rel={'noreferrer'}
-						>
-							<Button
-								whiteSpace={'nowrap'}
-								variant="link"
-								fontWeight={400}
-								color={'black'}
-							>
-								<Text>About</Text>
-							</Button>
-						</a>
-					</Box>
-					<Box alignSelf={'center'}>
-						<a
-							href="https://docs.xsauce.io/applications/prediction-markets-v.0-beta"
-							target={'_blank'}
-							rel={'noreferrer'}
-						>
-							<Button
-								whiteSpace={'nowrap'}
-								variant="link"
-								fontWeight={400}
-								color={'black'}
-							>
-								<Text>How it works</Text>
-							</Button>
-						</a>
-					</Box>
+					<a
+						href="https://docs.xsauce.io/getting-started/introduction"
+						target={'_blank'}
+						rel={'noreferrer'}
+					>
+						<Button whiteSpace={'nowrap'} variant="link" color={'black'}>
+							<Text>About</Text>
+						</Button>
+					</a>
+
+					<a
+						href="https://docs.xsauce.io/applications/prediction-markets-v.0-beta"
+						target={'_blank'}
+						rel={'noreferrer'}
+					>
+						<Button whiteSpace={'nowrap'} variant="link" color={'black'}>
+							<Text>How it works</Text>
+						</Button>
+					</a>
+
 					<Flex flexDirection={'column'}>
 						<Link href="/">
 							<Button
@@ -106,8 +96,10 @@ export const Footer = (props: FlexProps) => (
 								display={'flex'}
 								flexDirection={'row'}
 								disabled
+								justifyContent={'left'}
+								alignItems={'left'}
 							>
-								<Text paddingX={1}>The Xchange </Text>
+								<Text paddingX={1}>The Xchange</Text>
 								<svg
 									width="43"
 									height="22"
@@ -129,28 +121,28 @@ export const Footer = (props: FlexProps) => (
 								</svg>
 							</Button>
 						</Link>
-						<Text fontSize={'10px'} alignSelf={'center'}>
+						<Text fontSize={'10px'} fontWeight={400} alignSelf={'left'}>
 							- Coming Soon -
 						</Text>
 					</Flex>
-					<Box alignSelf={'center'}>
-						<a
-							href="https://docs.xsauce.io/connect/socials"
-							target={'_blank'}
-							rel={'noreferrer'}
-						>
-							<Button
-								whiteSpace={'nowrap'}
-								variant="link"
-								fontWeight={400}
-								color={'black'}
-							>
-								{/* <ArrowBackIcon /> */}
-								<Text>Contact us</Text>
-							</Button>
-						</a>
-					</Box>
+
+					<a
+						href="https://docs.xsauce.io/connect/socials"
+						target={'_blank'}
+						rel={'noreferrer'}
+					>
+						<Button whiteSpace={'nowrap'} variant="link" color={'black'}>
+							{/* <ArrowBackIcon /> */}
+							<Text>Contact us</Text>
+						</Button>
+					</a>
 				</Stack>
+				<Text fontSize={'12px'} fontWeight={400}>
+					The prediction market known as "The Xchange" is for informational and
+					educational purposes only. "The Xchange" is a decentralized protocol
+					operated by autonomous smart contracts and does not have any vested
+					interest in the outcomes of any market.
+				</Text>
 			</GridItem>
 		</Grid>
 		<Flex
