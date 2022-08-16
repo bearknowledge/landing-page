@@ -41,7 +41,7 @@ export const BlockOne = ({ title }: { title: string }) => (
 					<Input
 						type="email"
 						placeholder="Email@xyz.com"
-						fontSize="sm"
+						fontSize={{ xs: 'xs', md: 'sm' }}
 						width={'50%'}
 						bg="colors.white"
 						color="brand.200"
@@ -52,7 +52,7 @@ export const BlockOne = ({ title }: { title: string }) => (
 						bg="brand.100"
 						color="brand.200"
 						border="0px"
-						fontSize="sm"
+						fontSize={{ xs: 'xs', md: 'sm' }}
 						as={Button}
 						whiteSpace={'break-spaces'}
 					>
@@ -70,10 +70,10 @@ export const BlockOne = ({ title }: { title: string }) => (
 			height={'fit-content'}
 		>
 			{/*TODO: Fix scaling on small sc */}
-			<Box overflow={'hidden'} justifyContent={'center'} scale={{ sm: '0.5' }}>
+			<Box overflow={'hidden'} justifyContent={'center'}>
 				<svg
-					width="809"
-					height="625"
+					width="100%"
+					height="100%"
 					viewBox="0 0 809 625"
 					fill="none"
 					xmlns="http://www.w3.org/2000/svg"

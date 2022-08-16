@@ -64,7 +64,7 @@ export const BlockThree = ({ title }: { title: string }) => (
 			<Flex overflow={'hidden'} justifyContent={'right'}>
 				<svg
 					width="634"
-					height="742"
+					height="100%"
 					// width="100%"
 					// height="100%"
 					viewBox="0 0 634 742"
