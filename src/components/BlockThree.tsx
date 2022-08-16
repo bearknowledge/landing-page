@@ -30,7 +30,7 @@ export const BlockThree = ({ title }: { title: string }) => (
 				</Text>
 				<Text fontSize="xl" paddingY={3}>
 					Xsauce allows you to predict the price of the next drop. Put your
-					knowledge of culture to the test and decite whether a sneaker, collab
+					knowledge of culture to the test and decide whether a sneaker, collab
 					or drop will go up or down in price. Predict right and earn hard cash.
 				</Text>
 				<HStack spacing={4}>
@@ -61,14 +61,12 @@ export const BlockThree = ({ title }: { title: string }) => (
 			height={'fit-content'}
 		>
 			{/*TODO: Fix scaling on small sc */}
-			<Flex
-				overflow={'hidden'}
-				justifyContent={'right'}
-				scale={{ sm: 0.5, md: 1 }}
-			>
+			<Flex overflow={'hidden'} justifyContent={'right'}>
 				<svg
 					width="634"
 					height="742"
+					// width="100%"
+					// height="100%"
 					viewBox="0 0 634 742"
 					fill="none"
 					xmlns="http://www.w3.org/2000/svg"

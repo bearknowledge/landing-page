@@ -29,7 +29,7 @@ export const BlockFive = ({ title }: { title: string }) => (
 		>
 			<Stack>
 				<Text fontSize="4xl" paddingY={3}>
-					Futurise digital assets on blockchain
+					Futurize digital assets on blockchain
 				</Text>
 				<Text fontSize="xl" paddingY={3}>
 					Predict and earn cash for your knowledge
