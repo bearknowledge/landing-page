@@ -55,25 +55,6 @@ export const BlockFive = ({ title }: { title: string }) => (
 							<Text> Read our Docs</Text>
 						</Button>
 					</a>
-					{/* <Button
-						paddingX={6}
-						fontSize={'sm'}
-						size={'lg'}
-						variant="outline"
-						color={'brand.200'}
-						borderColor={'brand.200'}
-					>
-						Download Whitepaper
-					</Button>
-					<Button
-						paddingX={6}
-						fontSize={'sm'}
-						size={'lg'}
-						variant="solid"
-						bg={'brand.100'}
-					>
-						<Text> Get whitelisted</Text>
-					</Button> */}
 				</Stack>
 			</Stack>
 		</GridItem>
