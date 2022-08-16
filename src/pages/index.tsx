@@ -36,9 +36,9 @@ const Index = () => (
 			<Box m={[2, 6]} />
 
 			<BlockThree />
-			<Box m={[2, 6]} h={['1rem', '4rem']} />
+			<Box m={[2, 6]} h={['1em', '4em']} />
 			<BlockFour />
-			<Box m={[2, 6]} h={['1rem', '4rem']} />
+			<Box m={[2, 6]} h={['1em', '4em']} />
 			<BlockFive />
 		</Main>
 		<Footer />
