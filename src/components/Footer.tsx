@@ -133,21 +133,23 @@ export const Footer = (props: FlexProps) => (
 							- Coming Soon -
 						</Text>
 					</Flex>
-					<a
-						href="https://docs.xsauce.io/connect/socials"
-						target={'_blank'}
-						rel={'noreferrer'}
-					>
-						<Button
-							whiteSpace={'nowrap'}
-							variant="link"
-							fontWeight={400}
-							color={'black'}
+					<Box alignSelf={'center'}>
+						<a
+							href="https://docs.xsauce.io/connect/socials"
+							target={'_blank'}
+							rel={'noreferrer'}
 						>
-							{/* <ArrowBackIcon /> */}
-							<Text>Contact us</Text>
-						</Button>
-					</a>
+							<Button
+								whiteSpace={'nowrap'}
+								variant="link"
+								fontWeight={400}
+								color={'black'}
+							>
+								{/* <ArrowBackIcon /> */}
+								<Text>Contact us</Text>
+							</Button>
+						</a>
+					</Box>
 				</Stack>
 			</GridItem>
 		</Grid>

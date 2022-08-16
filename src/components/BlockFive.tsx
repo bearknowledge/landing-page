@@ -18,7 +18,7 @@ export const BlockFive = ({ title }: { title: string }) => (
 		borderY={'1px solid'}
 		borderColor={'brand.200'}
 		px="2rem"
-		py="1.5em"
+		py="3em"
 	>
 		<GridItem
 			colSpan={{ xs: 5, md: 3 }}

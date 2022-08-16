@@ -44,7 +44,7 @@ const Index = () => (
 			<Box my={[5, 9]} backgroundColor={'brand.100'} />
 			<Box my={[5, 9]} backgroundColor={'brand.100'} /> */}
 			<BlockFour />
-			<Box m={[2, 3]} />
+			<Box m={[2, 6]} h={['1rem', '4rem']} />
 			<BlockFive />
 		</Main>
 		<Footer />
