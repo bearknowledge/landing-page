@@ -63,7 +63,7 @@ export const HeaderDrawer = () => {
 							flex={1}
 							color="colors.gray.500"
 							fontSize={'xl'}
-							fontWeight={800}
+							fontWeight={500}
 						>
 							<a
 								href="https://docs.xsauce.io/getting-started/introduction"
@@ -75,6 +75,7 @@ export const HeaderDrawer = () => {
 									variant={'link'}
 									fontSize={'xl'}
 									color={'colors.black'}
+									fontWeight={500}
 								>
 									<Text>About</Text>
 								</Button>
@@ -89,6 +90,7 @@ export const HeaderDrawer = () => {
 									variant={'link'}
 									fontSize={'xl'}
 									color={'colors.black'}
+									fontWeight={500}
 								>
 									<Text>How it works</Text>
 								</Button>
@@ -104,6 +106,7 @@ export const HeaderDrawer = () => {
 										justifyContent={'left'}
 										alignItems="left"
 										disabled
+										fontWeight={500}
 									>
 										<Text paddingX={1}>The Xchange </Text>
 										<svg
@@ -127,7 +130,9 @@ export const HeaderDrawer = () => {
 										</svg>
 									</Button>
 								</Link>
-								<Text fontSize={'10px'}>- Coming Soon -</Text>
+								<Text fontSize={'10px'} fontWeight={400}>
+									- Coming Soon -
+								</Text>
 							</Flex>
 							<a
 								href="https://docs.xsauce.io/connect/socials"
@@ -139,6 +144,7 @@ export const HeaderDrawer = () => {
 									variant={'link'}
 									fontSize={'xl'}
 									color={'colors.black'}
+									fontWeight={500}
 								>
 									{/* <ArrowBackIcon /> */}
 									<Text>Contact us</Text>

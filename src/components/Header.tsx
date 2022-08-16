@@ -31,7 +31,7 @@ export const Header = ({ title }: { title: string }) => (
 			</Box>
 		</Show>
 		<Show above="md">
-			<HStack spacing={5}>
+			<HStack spacing={6} fontWeight={500}>
 				<a
 					href="https://docs.xsauce.io/getting-started/introduction"
 					target={'_blank'}
@@ -40,8 +40,8 @@ export const Header = ({ title }: { title: string }) => (
 					<Button
 						whiteSpace={'nowrap'}
 						variant="link"
-						fontWeight={400}
 						color={'black'}
+						fontWeight={500}
 					>
 						<Text>About</Text>
 					</Button>
@@ -54,8 +54,8 @@ export const Header = ({ title }: { title: string }) => (
 					<Button
 						whiteSpace={'nowrap'}
 						variant="link"
-						fontWeight={400}
 						color={'black'}
+						fontWeight={500}
 					>
 						<Text>How it works</Text>
 					</Button>
@@ -65,11 +65,11 @@ export const Header = ({ title }: { title: string }) => (
 						<Button
 							whiteSpace={'nowrap'}
 							variant="link"
-							fontWeight={400}
 							color={'black'}
 							display={'flex'}
 							flexDirection={'row'}
 							disabled
+							fontWeight={500}
 						>
 							<Text paddingX={1}>The Xchange</Text>
 							<svg
@@ -93,7 +93,7 @@ export const Header = ({ title }: { title: string }) => (
 							</svg>
 						</Button>
 					</Link>
-					<Text fontSize={'10px'} alignSelf={'center'}>
+					<Text fontSize={'10px'} alignSelf={'center'} fontWeight={400}>
 						- Coming Soon -
 					</Text>
 				</Flex>
@@ -105,8 +105,8 @@ export const Header = ({ title }: { title: string }) => (
 					<Button
 						whiteSpace={'nowrap'}
 						variant="link"
-						fontWeight={400}
 						color={'black'}
+						fontWeight={500}
 					>
 						{/* <ArrowBackIcon /> */}
 						<Text>Contact us</Text>

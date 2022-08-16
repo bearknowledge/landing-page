@@ -64,14 +64,19 @@ export const Footer = (props: FlexProps) => (
 					spacing={5}
 					direction={[null, 'column', 'row']}
 					justifyContent={{ sx: 'center', md: 'left' }}
-					fontWeight={800}
+					fontWeight={500}
 				>
 					<a
 						href="https://docs.xsauce.io/getting-started/introduction"
 						target={'_blank'}
 						rel={'noreferrer'}
 					>
-						<Button whiteSpace={'nowrap'} variant="link" color={'black'}>
+						<Button
+							whiteSpace={'nowrap'}
+							variant="link"
+							color={'black'}
+							fontWeight={500}
+						>
 							<Text>About</Text>
 						</Button>
 					</a>
@@ -81,7 +86,12 @@ export const Footer = (props: FlexProps) => (
 						target={'_blank'}
 						rel={'noreferrer'}
 					>
-						<Button whiteSpace={'nowrap'} variant="link" color={'black'}>
+						<Button
+							whiteSpace={'nowrap'}
+							variant="link"
+							color={'black'}
+							fontWeight={500}
+						>
 							<Text>How it works</Text>
 						</Button>
 					</a>
@@ -131,7 +141,12 @@ export const Footer = (props: FlexProps) => (
 						target={'_blank'}
 						rel={'noreferrer'}
 					>
-						<Button whiteSpace={'nowrap'} variant="link" color={'black'}>
+						<Button
+							whiteSpace={'nowrap'}
+							variant="link"
+							color={'black'}
+							fontWeight={500}
+						>
 							{/* <ArrowBackIcon /> */}
 							<Text>Contact us</Text>
 						</Button>
