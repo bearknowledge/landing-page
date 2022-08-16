@@ -36,22 +36,12 @@ export const BlockOne = ({ title }: { title: string }) => (
 					Xsauce is a dynamic, decentralized ecosystem which allows you to
 					translate your knowledge of culture into money in your pocket.
 				</Text>
-				{/* <HStack spacing={4}>
-					<Button
-						paddingX={6}
-						fontSize={'sm'}
-						size={'lg'}
-						variant="solid"
-						bg={'brand.100'}
-					>
-						<Text> Sign Up for Newsletter</Text>
-					</Button>
-				</HStack> */}
+
 				<InputGroup alignSelf="center" border="0px">
 					<Input
 						type="email"
 						placeholder="Email@xyz.com"
-						fontSize="xs"
+						fontSize="sm"
 						width={'50%'}
 						bg="colors.white"
 						color="brand.200"
@@ -62,7 +52,7 @@ export const BlockOne = ({ title }: { title: string }) => (
 						bg="brand.100"
 						color="brand.200"
 						border="0px"
-						fontSize="xs"
+						fontSize="sm"
 						as={Button}
 						whiteSpace={'break-spaces'}
 					>

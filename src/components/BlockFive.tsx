@@ -18,13 +18,14 @@ export const BlockFive = ({ title }: { title: string }) => (
 		borderY={'1px solid'}
 		borderColor={'brand.200'}
 		px="2rem"
+		py="1.5em"
 	>
 		<GridItem
 			colSpan={{ xs: 5, md: 3 }}
 			h="10"
 			height={'fit-content'}
 			alignSelf={'center'}
-			paddingY={6}
+			paddingBottom={6}
 		>
 			<Stack>
 				<Text fontSize="4xl" paddingY={3}>

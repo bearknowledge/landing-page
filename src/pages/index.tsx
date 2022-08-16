@@ -13,7 +13,6 @@ import { Hero } from '../components/Hero';
 import { Container } from '../components/Container';
 import { Main } from '../components/Main';
 import { DarkModeSwitch } from '../components/DarkModeSwitch';
-import { CTA } from '../components/CTA';
 import { Footer } from '../components/Footer';
 import { Header } from '../components/Header';
 import { HeaderAddon } from '../components/HeaderAddon';
@@ -37,7 +36,13 @@ const Index = () => (
 			<Box m={[2, 6]} />
 
 			<BlockThree />
-			<Box m={[2, 6]} background={'brand.100'} />
+			<Box m={[2, 6]} h={['1rem', '6rem']} />
+
+			{/* <Box my={[5, 9]} backgroundColor={'brand.100'} />
+			<Box my={[5, 9]} backgroundColor={'brand.100'} />
+			<Box my={[5, 9]} backgroundColor={'brand.100'} />
+			<Box my={[5, 9]} backgroundColor={'brand.100'} />
+			<Box my={[5, 9]} backgroundColor={'brand.100'} /> */}
 			<BlockFour />
 			<Box m={[2, 3]} />
 			<BlockFive />

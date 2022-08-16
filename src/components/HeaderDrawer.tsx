@@ -118,7 +118,11 @@ export const HeaderDrawer = () => {
 								</Text>
 							</Flex>
 							<Divider borderColor="gray.200" />
-							<Link href="/">
+							<a
+								href="https://docs.xsauce.io/connect/socials"
+								target={'_blank'}
+								rel={'noreferrer'}
+							>
 								<Button
 									display="flex"
 									justifyContent={'center'}
@@ -131,7 +135,7 @@ export const HeaderDrawer = () => {
 									{/* <ArrowBackIcon /> */}
 									<Text>Contact us</Text>
 								</Button>
-							</Link>
+							</a>
 						</VStack>
 					</DrawerBody>
 				</DrawerContent>
