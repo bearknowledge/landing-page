@@ -64,7 +64,8 @@ export const Footer = (props: FlexProps) => (
 					spacing={5}
 					direction={[null, 'column', 'row']}
 					justifyContent={{ sx: 'center', md: 'left' }}
-					fontWeight={500}
+					fontWeight={'semibold'}
+					fontSize={'sm'}
 				>
 					<a
 						href="https://docs.xsauce.io/getting-started/introduction"
@@ -75,7 +76,8 @@ export const Footer = (props: FlexProps) => (
 							whiteSpace={'nowrap'}
 							variant="link"
 							color={'black'}
-							fontWeight={500}
+							fontWeight={'semibold'}
+							fontSize={'sm'}
 						>
 							<Text>About</Text>
 						</Button>
@@ -90,7 +92,8 @@ export const Footer = (props: FlexProps) => (
 							whiteSpace={'nowrap'}
 							variant="link"
 							color={'black'}
-							fontWeight={500}
+							fontWeight={'semibold'}
+							fontSize={'sm'}
 						>
 							<Text>How it works</Text>
 						</Button>
@@ -101,7 +104,8 @@ export const Footer = (props: FlexProps) => (
 							<Button
 								whiteSpace={'nowrap'}
 								variant="link"
-								fontWeight={400}
+								fontWeight={'semibold'}
+								fontSize={'sm'}
 								color={'black'}
 								display={'flex'}
 								flexDirection={'row'}
@@ -131,7 +135,7 @@ export const Footer = (props: FlexProps) => (
 								</svg>
 							</Button>
 						</Link>
-						<Text fontSize={'10px'} fontWeight={400} alignSelf={'left'}>
+						<Text fontSize={'10px'} fontWeight={'medium'} alignSelf={'left'}>
 							- Coming Soon -
 						</Text>
 					</Flex>
@@ -145,7 +149,8 @@ export const Footer = (props: FlexProps) => (
 							whiteSpace={'nowrap'}
 							variant="link"
 							color={'black'}
-							fontWeight={500}
+							fontWeight={'semibold'}
+							fontSize={'sm'}
 						>
 							{/* <ArrowBackIcon /> */}
 							<Text>Contact us</Text>
@@ -153,7 +158,7 @@ export const Footer = (props: FlexProps) => (
 					</a>
 				</Stack>
 			</GridItem>
-			<GridItem colSpan={2}>
+			<GridItem colSpan={{ xs: 5, md: 2 }}>
 				<Text fontSize={'12px'} fontWeight={400}>
 					The prediction market known as "The Xchange" is for informational and
 					educational purposes only. "The Xchange" is a decentralized protocol
