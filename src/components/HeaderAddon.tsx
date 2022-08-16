@@ -19,7 +19,7 @@ import { ArrowForwardIcon } from '@chakra-ui/icons';
 
 export const HeaderAddon = ({ title }: { title: string }) => (
 	<Flex
-		justifyContent="left"
+		justifyContent="center"
 		alignItems="center"
 		height="24px"
 		color={'brand.400'}

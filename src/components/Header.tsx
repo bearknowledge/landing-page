@@ -4,6 +4,7 @@ import {
 	Divider,
 	Flex,
 	Heading,
+	Hide,
 	HStack,
 	Show,
 	Text,
@@ -25,11 +26,11 @@ export const Header = ({ title }: { title: string }) => (
 		width={'100%'}
 		paddingRight={{ sm: 4, md: 10 }}
 	>
-		<Show below="md">
+		<Hide above="md">
 			<Box>
 				<HeaderDrawer />
 			</Box>
-		</Show>
+		</Hide>
 		<Show above="md">
 			<HStack spacing={6} fontWeight={500}>
 				<a
