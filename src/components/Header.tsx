@@ -32,7 +32,7 @@ export const Header = ({ title }: { title: string }) => (
 			</Box>
 		</Hide>
 		<Show above="md">
-			<HStack spacing={6} fontWeight={500}>
+			<HStack spacing={6} fontWeight={'semibold'} fontSize={'sm'}>
 				<a
 					href="https://docs.xsauce.io/getting-started/introduction"
 					target={'_blank'}
@@ -42,7 +42,8 @@ export const Header = ({ title }: { title: string }) => (
 						whiteSpace={'nowrap'}
 						variant="link"
 						color={'black'}
-						fontWeight={500}
+						fontWeight={'semibold'}
+						fontSize={'sm'}
 					>
 						<Text>About</Text>
 					</Button>
@@ -56,7 +57,8 @@ export const Header = ({ title }: { title: string }) => (
 						whiteSpace={'nowrap'}
 						variant="link"
 						color={'black'}
-						fontWeight={500}
+						fontWeight={'semibold'}
+						fontSize={'sm'}
 					>
 						<Text>How it works</Text>
 					</Button>
@@ -70,7 +72,8 @@ export const Header = ({ title }: { title: string }) => (
 							display={'flex'}
 							flexDirection={'row'}
 							disabled
-							fontWeight={500}
+							fontWeight={'semibold'}
+							fontSize={'sm'}
 						>
 							<Text paddingX={1}>The Xchange</Text>
 							<svg
@@ -94,7 +97,7 @@ export const Header = ({ title }: { title: string }) => (
 							</svg>
 						</Button>
 					</Link>
-					<Text fontSize={'10px'} alignSelf={'center'} fontWeight={400}>
+					<Text fontSize={'10px'} alignSelf={'center'} fontWeight={'semibold'}>
 						- Coming Soon -
 					</Text>
 				</Flex>
@@ -107,7 +110,8 @@ export const Header = ({ title }: { title: string }) => (
 						whiteSpace={'nowrap'}
 						variant="link"
 						color={'black'}
-						fontWeight={500}
+						fontWeight={'semibold'}
+						fontSize={'sm'}
 					>
 						{/* <ArrowBackIcon /> */}
 						<Text>Contact us</Text>

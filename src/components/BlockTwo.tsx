@@ -23,10 +23,15 @@ export const BlockTwo = ({ title }: { title: string }) => (
 			bg={'brand.700'}
 		>
 			<Stack>
-				<Text fontSize="4xl" paddingY={3}>
+				<Heading
+					fontWeight={'semibold'}
+					fontSize="4xl"
+					lineHeight={'base'}
+					paddingY={3}
+				>
 					Where's culture headed?
 					<br /> Predict what's up next
-				</Text>
+				</Heading>
 				{/* 
 				<Box>
 					<Button
@@ -429,9 +434,9 @@ export const BlockTwo = ({ title }: { title: string }) => (
 								</defs>
 							</svg>
 						</Box>
-						<Text paddingY={2} fontSize={24}>
+						<Heading fontWeight={'semibold'} paddingY={2} fontSize={24}>
 							Predict for cash
-						</Text>
+						</Heading>
 						<Text>
 							Ecosystem of three tools that merge fashion, collectibles & other
 							cultural assets with blockchain
@@ -480,9 +485,9 @@ export const BlockTwo = ({ title }: { title: string }) => (
 								/>
 							</svg>
 						</Box>
-						<Text paddingY={2} fontSize={24}>
+						<Heading fontWeight={'semibold'} paddingY={2} fontSize={24}>
 							Fair Priced
-						</Text>
+						</Heading>
 						<Text>
 							Ecosystem of three tools that merge fashion, collectibles & other
 							cultural assets with blockchain
@@ -568,9 +573,9 @@ export const BlockTwo = ({ title }: { title: string }) => (
 								</defs>
 							</svg>
 						</Box>
-						<Text paddingY={2} fontSize={24}>
+						<Heading fontWeight={'semibold'} paddingY={2} fontSize={24}>
 							Earn $SAUX
-						</Text>
+						</Heading>
 						<Text>
 							Ecosystem of three tools that merge fashion, collectibles & other
 							cultural assets with blockchain

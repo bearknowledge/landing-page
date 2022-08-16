@@ -22,7 +22,7 @@ export const HeaderAddon = ({ title }: { title: string }) => (
 		justifyContent="center"
 		alignItems="center"
 		height="24px"
-		color={'brand.400'}
+		color={'brand.1000'}
 		flexDirection={'row'}
 		width={'100%'}
 		backgroundColor={'brand.200'}
@@ -42,7 +42,6 @@ export const HeaderAddon = ({ title }: { title: string }) => (
 					<Button
 						variant={'link'}
 						fontWeight={400}
-						color={'white'}
 						display={'inline'}
 						fontSize={'sm'}
 						sx={{ textDecoration: 'underline' }}
@@ -76,7 +75,6 @@ export const HeaderAddon = ({ title }: { title: string }) => (
 						alignItems="center"
 						//variant={'link'} TODO: turn this into button
 						fontSize={'sm'}
-						color={'white'}
 						fontWeight={400}
 					>
 						<Text>Beta</Text>

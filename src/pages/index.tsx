@@ -9,14 +9,13 @@ import {
 } from '@chakra-ui/react';
 import { CheckCircleIcon, LinkIcon } from '@chakra-ui/icons';
 
-import { Hero } from '../components/Hero';
 import { Container } from '../components/Container';
 import { Main } from '../components/Main';
 import { DarkModeSwitch } from '../components/DarkModeSwitch';
 import { Footer } from '../components/Footer';
 import { Header } from '../components/Header';
 import { HeaderAddon } from '../components/HeaderAddon';
-import { BlockOne } from '../components/BlockOne';
+import { Hero } from '../components/Hero';
 import { BlockTwo } from '../components/BlockTwo';
 import { BlockThree } from '../components/BlockThree';
 import { BlockFour } from '../components/BlockFour';
@@ -29,7 +28,7 @@ const Index = () => (
 		<Main alignItems={'center'} justifyContent={'start'}>
 			<Box m={[2, 3]} />
 
-			<BlockOne />
+			<Hero />
 			<Box m={[2, 6]} />
 
 			<BlockTwo />
@@ -39,7 +38,7 @@ const Index = () => (
 			<Box m={[2, 6]} h={['1em', '4em']} />
 			<BlockFour />
 			<Box m={[2, 6]} h={['1em', '4em']} />
-			<BlockFive />
+			{/* <BlockFive /> */}
 		</Main>
 		<Footer />
 	</Container>

@@ -25,9 +25,14 @@ export const BlockThree = ({ title }: { title: string }) => (
 				<Text fontSize="sm" paddingY={3}>
 					PUT YOUR KNOWLEDGE TO WORK
 				</Text>
-				<Text fontSize="4xl" paddingY={3}>
+				<Heading
+					fontWeight={'semibold'}
+					fontSize="4xl"
+					lineHeight={'base'}
+					paddingY={3}
+				>
 					How do you profit from Xsauce?
-				</Text>
+				</Heading>
 				<Text fontSize="xl" paddingY={3}>
 					Xsauce allows you to predict the price of the next drop. Put your
 					knowledge of culture to the test and decide whether a sneaker, collab
