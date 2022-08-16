@@ -133,7 +133,11 @@ export const Footer = (props: FlexProps) => (
 							- Coming Soon -
 						</Text>
 					</Flex>
-					<Link href="/">
+					<a
+						href="https://docs.xsauce.io/connect/socials"
+						target={'_blank'}
+						rel={'noreferrer'}
+					>
 						<Button
 							whiteSpace={'nowrap'}
 							variant="link"
@@ -143,7 +147,7 @@ export const Footer = (props: FlexProps) => (
 							{/* <ArrowBackIcon /> */}
 							<Text>Contact us</Text>
 						</Button>
-					</Link>
+					</a>
 				</Stack>
 			</GridItem>
 		</Grid>
@@ -158,24 +162,42 @@ export const Footer = (props: FlexProps) => (
 			</Text>
 			<Spacer />
 			<HStack spacing={0}>
-				<IconButton
-					color={'brand.100'}
-					bg={'none'}
-					aria-label="Twitter icon"
-					icon={<FaTwitter />}
-				/>
-				<IconButton
-					color={'brand.100'}
-					bg={'none'}
-					aria-label="Twitter Icon"
-					icon={<FaGithub />}
-				/>
-				<IconButton
-					color={'brand.100'}
-					bg={'none'}
-					aria-label="Hand Peace"
-					icon={<FaRegHandPeace />}
-				/>
+				<a
+					href="https://twitter.com/xsauce_io"
+					target={'_blank'}
+					rel={'noreferrer'}
+				>
+					<IconButton
+						color={'brand.100'}
+						bg={'none'}
+						aria-label="Twitter icon"
+						icon={<FaTwitter />}
+					/>
+				</a>
+				<a
+					href="https://github.com/xsauce-io"
+					target={'_blank'}
+					rel={'noreferrer'}
+				>
+					<IconButton
+						color={'brand.100'}
+						bg={'none'}
+						aria-label="Twitter Icon"
+						icon={<FaGithub />}
+					/>
+				</a>
+				<a
+					href="https://angel.co/company/xsauced-1"
+					target={'_blank'}
+					rel={'noreferrer'}
+				>
+					<IconButton
+						color={'brand.100'}
+						bg={'none'}
+						aria-label="Hand Peace"
+						icon={<FaRegHandPeace />}
+					/>
+				</a>
 			</HStack>
 		</Flex>
 	</Flex>

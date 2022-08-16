@@ -11,20 +11,21 @@ import {
 	Text,
 } from '@chakra-ui/react';
 
-export const BlockSix = ({ title }: { title: string }) => (
+export const BlockFive = ({ title }: { title: string }) => (
 	<Grid
 		templateColumns="repeat(5, 1fr)"
 		width={'100%'}
 		borderY={'1px solid'}
 		borderColor={'brand.200'}
 		px="2rem"
+		py="1.5em"
 	>
 		<GridItem
 			colSpan={{ xs: 5, md: 3 }}
 			h="10"
 			height={'fit-content'}
 			alignSelf={'center'}
-			paddingY={6}
+			paddingBottom={6}
 		>
 			<Stack>
 				<Text fontSize="4xl" paddingY={3}>
@@ -79,6 +80,6 @@ export const BlockSix = ({ title }: { title: string }) => (
 	</Grid>
 );
 
-BlockSix.defaultProps = {
+BlockFive.defaultProps = {
 	title: 'with-chakra-ui-typescript',
 };

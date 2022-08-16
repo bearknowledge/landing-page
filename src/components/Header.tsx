@@ -97,7 +97,11 @@ export const Header = ({ title }: { title: string }) => (
 						- Coming Soon -
 					</Text>
 				</Flex>
-				<Link href="/">
+				<a
+					href="https://docs.xsauce.io/connect/socials"
+					target={'_blank'}
+					rel={'noreferrer'}
+				>
 					<Button
 						whiteSpace={'nowrap'}
 						variant="link"
@@ -107,7 +111,7 @@ export const Header = ({ title }: { title: string }) => (
 						{/* <ArrowBackIcon /> */}
 						<Text>Contact us</Text>
 					</Button>
-				</Link>
+				</a>
 			</HStack>
 		</Show>
 		<XSauceIconButton />

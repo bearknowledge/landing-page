@@ -47,7 +47,7 @@ export const BlockThree = ({ title }: { title: string }) => (
 							color={'brand.200'}
 							borderColor={'brand.200'}
 						>
-							<Text> Read our Docs</Text>
+							<Text>Read our Docs</Text>
 						</Button>
 					</a>
 				</HStack>
@@ -61,7 +61,11 @@ export const BlockThree = ({ title }: { title: string }) => (
 			height={'fit-content'}
 		>
 			{/*TODO: Fix scaling on small sc */}
-			<Flex overflow={'hidden'} justifyContent={'right'}>
+			<Flex
+				overflow={'hidden'}
+				justifyContent={'right'}
+				scale={{ sm: 0.5, md: 1 }}
+			>
 				<svg
 					width="634"
 					height="742"
