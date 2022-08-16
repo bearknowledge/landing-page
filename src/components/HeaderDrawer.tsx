@@ -26,12 +26,12 @@ export const HeaderDrawer = () => {
 
 	return (
 		<>
-			<Button color="text" onClick={onOpen}>
+			<Button color="text" onClick={onOpen} backgroundColor={'inherit'}>
 				<HamburgerIcon boxSize={5} />
 			</Button>
 			<Drawer isOpen={isOpen} placement="right" onClose={onClose}>
 				<DrawerOverlay />
-				<DrawerContent>
+				<DrawerContent backgroundColor={'brand.900'}>
 					<DrawerCloseButton size={'lg'} />
 					<DrawerHeader borderBottom={'1px solid'} borderColor={'brand.200'}>
 						<svg

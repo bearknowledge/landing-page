@@ -28,9 +28,9 @@ export const BlockFive = ({ title }: { title: string }) => (
 			paddingBottom={6}
 		>
 			<Stack>
-				<Text fontSize="4xl" paddingY={3}>
+				<Heading fontWeight={'semibold'} fontSize="4xl" paddingY={3}>
 					Futurize digital assets on blockchain
-				</Text>
+				</Heading>
 				<Text fontSize="xl" paddingY={3}>
 					Predict and earn cash for your knowledge
 				</Text>

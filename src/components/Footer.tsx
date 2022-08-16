@@ -152,6 +152,8 @@ export const Footer = (props: FlexProps) => (
 						</Button>
 					</a>
 				</Stack>
+			</GridItem>
+			<GridItem colSpan={2}>
 				<Text fontSize={'12px'} fontWeight={400}>
 					The prediction market known as "The Xchange" is for informational and
 					educational purposes only. "The Xchange" is a decentralized protocol

@@ -1,7 +1,13 @@
 import { extendTheme } from '@chakra-ui/react';
 import { createBreakpoints } from '@chakra-ui/theme-tools';
+import '@fontsource/inter';
+import '@fontsource/space-grotesk';
 
-const fonts = { mono: `'Menlo', monospace` };
+const fonts = {
+	//mono: `'Menlo', monospace`,
+	heading: `'Space Grotesk', sans-serif`,
+	body: `'inter', monospace`,
+};
 
 const breakpoints = createBreakpoints({
 	xs: '0em', // too small
@@ -43,6 +49,8 @@ const theme = extendTheme({
 			600: '#778282',
 			700: '#A1A7A7',
 			800: '#F9FFE8',
+			900: '#8D9090',
+			1000: '#748282',
 		},
 	},
 
