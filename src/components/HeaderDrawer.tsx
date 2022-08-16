@@ -32,8 +32,7 @@ export const HeaderDrawer = () => {
 			<Drawer isOpen={isOpen} placement="right" onClose={onClose}>
 				<DrawerOverlay />
 				<DrawerContent>
-					<DrawerCloseButton />
-
+					<DrawerCloseButton size={'lg'} />
 					<DrawerHeader borderBottom={'1px solid'} borderColor={'brand.200'}>
 						<svg
 							width="33"
