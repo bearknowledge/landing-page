@@ -18,14 +18,26 @@ import {
 import Link from 'next/link';
 import React from 'react';
 import { FaRegHandPeace, FaTwitter, FaGithub } from 'react-icons/fa';
+import { BlockFive } from './BlockFive';
 
 export const Footer = (props: FlexProps) => (
-	<Flex as="footer" mb={0} flexDirection={'column'} width={'100%'}>
+	<Flex
+		as="footer"
+		mb={0}
+		flexDirection={'column'}
+		width={'100%'}
+		borderTop={'1px solid'}
+		borderColor={'brand.200'}
+		//px={{ md: '8rem' }}
+	>
+		<BlockFive px="10rem" />
 		<Grid
 			templateColumns="repeat(5, 1fr)"
 			width={'100%'}
 			paddingY={20}
-			px={'2rem'}
+			px="10rem"
+			borderTop={'1px solid'}
+			borderColor={'brand.200'}
 		>
 			<GridItem
 				colSpan={{ xs: 5, md: 2 }}
@@ -171,7 +183,7 @@ export const Footer = (props: FlexProps) => (
 			borderTop={'1px solid'}
 			borderColor={'brand.200'}
 			paddingY={5}
-			px={'2rem'}
+			px={'10rem'}
 		>
 			<Text alignSelf={'center'} fontSize={'xs'}>
 				© 2022 Xsauce. All rights reserved.

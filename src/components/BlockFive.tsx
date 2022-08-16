@@ -11,14 +11,15 @@ import {
 	Text,
 } from '@chakra-ui/react';
 
-export const BlockFive = ({ title }: { title: string }) => (
+export const BlockFive = ({ ...props }) => (
 	<Grid
 		templateColumns="repeat(5, 1fr)"
 		width={'100%'}
-		borderY={'1px solid'}
-		borderColor={'brand.200'}
+		// borderTop={'1px solid'}
+		// borderColor={'brand.200'}
 		px="2rem"
 		py="3em"
+		{...props}
 	>
 		<GridItem
 			colSpan={{ xs: 5, md: 3 }}
