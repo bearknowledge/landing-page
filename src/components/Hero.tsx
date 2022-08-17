@@ -81,7 +81,7 @@ export const Hero = ({ title }: { title: string }) => (
 			<Box overflow={'hidden'} justifyContent={'center'}>
 				<svg
 					width="100%"
-					height="581"
+					height="100%"
 					viewBox="0 0 802 581"
 					fill="none"
 					xmlns="http://www.w3.org/2000/svg"

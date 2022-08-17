@@ -30,12 +30,12 @@ export const Footer = (props: FlexProps) => (
 		borderColor={'brand.200'}
 		//px={{ md: '8rem' }}
 	>
-		<BlockFive px="10rem" />
+		<BlockFive px={{ base: '2rem', md: '4rem', lg: '10rem' }} />
 		<Grid
 			templateColumns="repeat(5, 1fr)"
 			width={'100%'}
 			paddingY={20}
-			px="10rem"
+			px={{ base: '2rem', md: '4rem', lg: '10rem' }}
 			borderTop={'1px solid'}
 			borderColor={'brand.200'}
 		>
