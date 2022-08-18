@@ -6,6 +6,7 @@
     "start": "next start"
   },
   "dependencies": {
+    "-": "^0.0.1",
     "@chakra-ui/icons": "^2.0.2",
     "@chakra-ui/react": "^2.2.1",
     "@chakra-ui/theme-tools": "^2.0.2",
@@ -13,12 +14,15 @@
     "@emotion/styled": "^11.9.0",
     "@fontsource/inter": "^4.5.12",
     "@fontsource/space-grotesk": "^4.5.9",
+    "aos": "^2.3.4",
     "framer-motion": "^6.3.0",
     "next": "latest",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.4.0",
-    "react-router-dom": "^6.3.0"
+    "react-in-viewport": "^1.0.0-alpha.28",
+    "react-router-dom": "^6.3.0",
+    "save": "^2.5.0"
   },
   "devDependencies": {
     "@types/node": "^18.0.0",

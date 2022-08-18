@@ -14,14 +14,14 @@ import {
 } from '@chakra-ui/react';
 
 export const BlockTwo = ({ title }: { title: string }) => (
-	<Grid px="2rem" width={'100%'}>
-		<Box
-			width={'100%'}
+	<Grid px="2rem" width={'100%'} templateColumns="repeat(1, 1fr)">
+		<GridItem
 			border={'1px solid'}
 			borderColor={'brand.200'}
 			borderRadius={12}
 			padding={12}
 			bg={'brand.700'}
+			colSpan={1}
 		>
 			<Stack>
 				<Heading
@@ -580,7 +580,7 @@ export const BlockTwo = ({ title }: { title: string }) => (
 					</Box>
 				</SimpleGrid>
 			</Stack>
-		</Box>
+		</GridItem>
 	</Grid>
 );
 
