@@ -10,6 +10,7 @@ import {
 	Stack,
 	Text,
 } from '@chakra-ui/react';
+import { ScrollAnimation } from './ScrollAnimation';
 
 export const BlockFive = ({ ...props }) => (
 	<Grid
@@ -29,15 +30,19 @@ export const BlockFive = ({ ...props }) => (
 			paddingBottom={6}
 		>
 			<Stack>
-				<Heading fontWeight={'semibold'} fontSize="4xl" paddingY={3}>
-					<Box display="inline-block" color={'brand.100'}>
-						Culture
-					</Box>{' '}
-					is up next
-				</Heading>
-				<Text fontSize="xl" paddingY={3}>
-					Interested in learning more?
-				</Text>
+				<ScrollAnimation animation="fade-up">
+					<Heading fontWeight={'semibold'} fontSize="4xl" paddingY={3}>
+						<Box display="inline-block" color={'brand.100'}>
+							Culture
+						</Box>
+						&nbsp;is up next
+					</Heading>
+				</ScrollAnimation>
+				<ScrollAnimation animation="fade-up">
+					<Text fontSize="xl" paddingY={3}>
+						Interested in learning more?
+					</Text>
+				</ScrollAnimation>
 				<Stack
 					spacing={4}
 					direction={['column', 'row']}
@@ -48,16 +53,18 @@ export const BlockFive = ({ ...props }) => (
 						target={'_blank'}
 						rel={'noreferrer'}
 					>
-						<Button
-							paddingX={6}
-							fontSize={'sm'}
-							size={'lg'}
-							variant="outline"
-							color={'brand.200'}
-							borderColor={'brand.200'}
-						>
-							<Text> Read our Docs</Text>
-						</Button>
+						<ScrollAnimation animation={'fade-in'}>
+							<Button
+								paddingX={6}
+								fontSize={'sm'}
+								size={'lg'}
+								variant="outline"
+								color={'brand.200'}
+								borderColor={'brand.200'}
+							>
+								<Text> Read our Docs</Text>
+							</Button>
+						</ScrollAnimation>
 					</a>
 				</Stack>
 			</Stack>

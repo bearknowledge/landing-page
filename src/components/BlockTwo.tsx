@@ -12,6 +12,7 @@ import {
 	Stack,
 	Text,
 } from '@chakra-ui/react';
+import { ScrollAnimation } from './ScrollAnimation';
 
 export const BlockTwo = ({ title }: { title: string }) => (
 	<Grid px="2rem" width={'100%'} templateColumns="repeat(1, 1fr)">
@@ -24,17 +25,19 @@ export const BlockTwo = ({ title }: { title: string }) => (
 			colSpan={1}
 		>
 			<Stack>
-				<Heading
-					fontWeight={'semibold'}
-					fontSize="4xl"
-					lineHeight={'base'}
-					paddingY={3}
-				>
-					Where's culture headed?
-					<Show above="sm">
-						<br /> Predict what's up next
-					</Show>
-				</Heading>
+				<ScrollAnimation animation="fade-up">
+					<Heading
+						fontWeight={'semibold'}
+						fontSize="4xl"
+						lineHeight={'base'}
+						paddingY={3}
+					>
+						Where's culture headed?
+						<Show above="sm">
+							<br /> Predict what's up next
+						</Show>
+					</Heading>
+				</ScrollAnimation>
 				{/* 
 				<Box>
 					<Button
@@ -50,7 +53,11 @@ export const BlockTwo = ({ title }: { title: string }) => (
 				</Box> */}
 				<SimpleGrid columns={{ sm: 1, md: 3 }} spacing={5}>
 					<Box height="fit-content" marginTop={12}>
-						<Box minHeight={'158px'} display={'flex'} alignItems={'center'}>
+						<Flex
+							as={ScrollAnimation}
+							minHeight={'158px'}
+							alignItems={'center'}
+						>
 							<svg
 								width="82"
 								height="152"
@@ -436,18 +443,24 @@ export const BlockTwo = ({ title }: { title: string }) => (
 									</filter>
 								</defs>
 							</svg>
-						</Box>
-						<Heading fontWeight={'semibold'} paddingY={2} fontSize={24}>
-							Make wagers for cash
-						</Heading>
-						<Text>Put your money where your mouth is and pick what's hot.</Text>
+						</Flex>
+						<ScrollAnimation animation="fade-up">
+							<Heading fontWeight={'semibold'} paddingY={2} fontSize={24}>
+								Make wagers for cash
+							</Heading>
+						</ScrollAnimation>
+						<ScrollAnimation animation="fade-up">
+							<Text>
+								Put your money where your mouth is and pick what's hot.
+							</Text>
+						</ScrollAnimation>
 					</Box>
 					<Box height="fit-content" marginTop={12}>
-						<Box
+						<Flex
 							minHeight={'158px'}
 							alignItems={'center'}
 							//justifyContent={'center'}
-							display={'flex'}
+							as={ScrollAnimation}
 						>
 							<svg
 								width="83"
@@ -484,18 +497,22 @@ export const BlockTwo = ({ title }: { title: string }) => (
 									stroke-width="0.5"
 								/>
 							</svg>
-						</Box>
-						<Heading fontWeight={'semibold'} paddingY={2} fontSize={24}>
-							Support Fair Prices
-						</Heading>
-						<Text>Decide as a community what a sneaker is worth.</Text>
+						</Flex>
+						<ScrollAnimation animation="fade-up">
+							<Heading fontWeight={'semibold'} paddingY={2} fontSize={24}>
+								Support Fair Prices
+							</Heading>
+						</ScrollAnimation>
+						<ScrollAnimation animation="fade-up">
+							<Text>Decide as a community what a sneaker is worth.</Text>
+						</ScrollAnimation>
 					</Box>
 					<Box height="fit-content" marginTop={12}>
-						<Box
+						<Flex
 							minHeight={'158px'}
 							alignItems={'center'}
 							//justifyContent={'center'}
-							display={'flex'}
+							as={ScrollAnimation}
 						>
 							<svg
 								width="82"
@@ -569,14 +586,18 @@ export const BlockTwo = ({ title }: { title: string }) => (
 									</clipPath>
 								</defs>
 							</svg>
-						</Box>
-						<Heading fontWeight={'semibold'} paddingY={2} fontSize={24}>
-							Earn Your Respect.
-						</Heading>
-						<Text>
-							Claim your spot on the leaderboard. Be known for having an eye for
-							culture.
-						</Text>
+						</Flex>
+						<ScrollAnimation animation="fade-up">
+							<Heading fontWeight={'semibold'} paddingY={2} fontSize={24}>
+								Earn Your Respect.
+							</Heading>
+						</ScrollAnimation>
+						<ScrollAnimation animation="fade-up">
+							<Text>
+								Claim your spot on the leaderboard. Be known for having an eye
+								for culture.
+							</Text>
+						</ScrollAnimation>
 					</Box>
 				</SimpleGrid>
 			</Stack>

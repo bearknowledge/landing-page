@@ -15,6 +15,7 @@ import {
 	Text,
 } from '@chakra-ui/react';
 import { FiArrowUpRight } from 'react-icons/fi';
+import { ScrollAnimation } from './ScrollAnimation';
 
 export const Hero = ({ title }: { title: string }) => (
 	<Grid templateColumns="repeat(5, 1fr)" width={'100%'} px="2rem">
@@ -26,53 +27,60 @@ export const Hero = ({ title }: { title: string }) => (
 			paddingY={6}
 		>
 			<Stack>
-				<Text fontSize="sm" paddingY={3}>
-					DRIVING CULTURE FORWARD
-				</Text>
-				<Heading
-					fontWeight={'semibold'}
-					fontSize="4xl"
-					lineHeight={'base'}
-					paddingY={3}
-				>
-					<Box>
-						The Future of{' '}
-						<Box display={'inline-block'} color={'brand.100'}>
-							{' '}
-							Culture
-						</Box>
-					</Box>
-				</Heading>
-				<Text fontSize="xl" paddingY={3}>
-					Xsauce is a dynamic, decentralized ecosystem which allows you to
-					translate your knowledge of culture into money in your pocket.
-				</Text>
-
-				<InputGroup alignSelf="center" border="0px">
-					<Input
-						type="email"
-						placeholder="Email@xyz.com"
-						fontSize={{ xs: 'xs', md: 'sm' }}
-						width={'50%'}
-						bg="colors.white"
-						color="brand.200"
-						border="0px"
-					/>
-					<InputRightAddon
-						width={'50%'}
-						bg="brand.100"
-						color="brand.200"
-						border="0px"
-						fontSize={{ xs: 'xs', md: 'sm' }}
-						as={Button}
-						whiteSpace={'break-spaces'}
+				<ScrollAnimation animation="fade-up">
+					<Text fontSize="sm" paddingY={3}>
+						DRIVING CULTURE FORWARD
+					</Text>
+				</ScrollAnimation>
+				<ScrollAnimation animation="fade-up">
+					<Heading
+						fontWeight={'semibold'}
+						fontSize="4xl"
+						lineHeight={'base'}
+						paddingY={3}
 					>
-						<Text whiteSpace={'break-spaces'} paddingX={2}>
-							Join Waitlist
-						</Text>
-						<FiArrowUpRight />
-					</InputRightAddon>
-				</InputGroup>
+						<Box>
+							The Future of{' '}
+							<Box display={'inline-block'} color={'brand.100'}>
+								{' '}
+								Culture
+							</Box>
+						</Box>
+					</Heading>
+				</ScrollAnimation>
+				<ScrollAnimation animation="fade-up">
+					<Text fontSize="xl" paddingY={3}>
+						Xsauce is a dynamic, decentralized ecosystem which allows you to
+						translate your knowledge of culture into money in your pocket.
+					</Text>
+				</ScrollAnimation>
+				<ScrollAnimation animation="fade-up">
+					<InputGroup alignSelf="center" border="0px">
+						<Input
+							type="email"
+							placeholder="Email@xyz.com"
+							fontSize={{ xs: 'xs', md: 'sm' }}
+							width={'50%'}
+							bg="colors.white"
+							color="brand.200"
+							border="0px"
+						/>
+						<InputRightAddon
+							width={'50%'}
+							bg="brand.100"
+							color="brand.200"
+							border="0px"
+							fontSize={{ xs: 'xs', md: 'sm' }}
+							as={Button}
+							whiteSpace={'break-spaces'}
+						>
+							<Text whiteSpace={'break-spaces'} paddingX={2}>
+								Join Waitlist
+							</Text>
+							<FiArrowUpRight />
+						</InputRightAddon>
+					</InputGroup>
+				</ScrollAnimation>
 			</Stack>
 		</GridItem>
 
@@ -83,7 +91,7 @@ export const Hero = ({ title }: { title: string }) => (
 			height={'fit-content'}
 		>
 			{/*TODO: Fix scaling on small sc */}
-			<Box overflow={'hidden'} justifyContent={'center'}>
+			<Box overflow={'hidden'} justifyContent={'center'} as={ScrollAnimation}>
 				<svg
 					width="100%"
 					height="100%"
