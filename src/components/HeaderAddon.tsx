@@ -26,7 +26,7 @@ export const HeaderAddon = ({ title }: { title: string }) => (
 		flexDirection={'row'}
 		width={'100%'}
 		backgroundColor={'brand.200'}
-		paddingX={{ sm: 4, md: 10 }}
+		paddingX={{ xs: 2, sm: 4, md: 10 }}
 		fontSize={'sm'}
 	>
 		<Hide above="md">
@@ -35,7 +35,9 @@ export const HeaderAddon = ({ title }: { title: string }) => (
 				justifyContent={'center'}
 				alignItems="center"
 				overflow={'hidden'}
+				textAlign={'center'}
 				width={'100%'}
+				fontSize={{ xs: 'xs', sm: 'sm' }}
 			>
 				<Text>
 					Our product is currently in Beta.&nbsp;
@@ -43,10 +45,10 @@ export const HeaderAddon = ({ title }: { title: string }) => (
 						variant={'link'}
 						fontWeight={400}
 						display={'inline'}
-						fontSize={'sm'}
+						fontSize={{ xs: 'xs', sm: 'sm' }}
 						sx={{ textDecoration: 'underline' }}
 					>
-						Be careful while using it. &nbsp;
+						Be careful while using it.
 						<ArrowForwardIcon />
 					</Button>
 				</Text>
