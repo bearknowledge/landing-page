@@ -47,7 +47,7 @@ export const BlockTwo = ({ title }: { title: string }) => (
 				</Box> */}
 				<SimpleGrid columns={{ sm: 1, md: 3 }} spacing={5}>
 					<Box height="fit-content" marginTop={12}>
-						<Box minHeight={'158px'}>
+						<Box minHeight={'158px'} display={'flex'} alignItems={'center'}>
 							<svg
 								width="82"
 								height="152"
