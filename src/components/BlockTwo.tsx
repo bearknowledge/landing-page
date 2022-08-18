@@ -435,12 +435,9 @@ export const BlockTwo = ({ title }: { title: string }) => (
 							</svg>
 						</Box>
 						<Heading fontWeight={'semibold'} paddingY={2} fontSize={24}>
-							Predict for cash
+							Make wagers for cash
 						</Heading>
-						<Text>
-							Ecosystem of three tools that merge fashion, collectibles & other
-							cultural assets with blockchain
-						</Text>
+						<Text>Put your money where your mouth is and pick what's hot.</Text>
 					</Box>
 					<Box height="fit-content" marginTop={12}>
 						<Box
@@ -486,12 +483,9 @@ export const BlockTwo = ({ title }: { title: string }) => (
 							</svg>
 						</Box>
 						<Heading fontWeight={'semibold'} paddingY={2} fontSize={24}>
-							Fair Priced
+							Support Fair Prices
 						</Heading>
-						<Text>
-							Ecosystem of three tools that merge fashion, collectibles & other
-							cultural assets with blockchain
-						</Text>
+						<Text>Decide as a community what a sneaker is worth.</Text>
 					</Box>
 					<Box height="fit-content" marginTop={12}>
 						<Box
@@ -574,11 +568,11 @@ export const BlockTwo = ({ title }: { title: string }) => (
 							</svg>
 						</Box>
 						<Heading fontWeight={'semibold'} paddingY={2} fontSize={24}>
-							Earn $SAUX
+							Earn Your Respect.
 						</Heading>
 						<Text>
-							Ecosystem of three tools that merge fashion, collectibles & other
-							cultural assets with blockchain
+							Claim your spot on the leaderboard. Be known for having an eye for
+							culture.
 						</Text>
 					</Box>
 				</SimpleGrid>

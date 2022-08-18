@@ -35,8 +35,13 @@ export const Hero = ({ title }: { title: string }) => (
 					lineHeight={'base'}
 					paddingY={3}
 				>
-					<Box>The future of </Box>
-					<Box>cultural assets</Box>
+					<Box>
+						The Future of{' '}
+						<Box display={'inline-block'} color={'brand.100'}>
+							{' '}
+							Culture
+						</Box>
+					</Box>
 				</Heading>
 				<Text fontSize="xl" paddingY={3}>
 					Xsauce is a dynamic, decentralized ecosystem which allows you to

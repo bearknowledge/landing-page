@@ -26,7 +26,7 @@ const Index = () => (
 		<HeaderAddon />
 		<Header />
 		<Main alignItems={'center'} justifyContent={'start'}>
-			<Box m={[2, 3]} />
+			<Box m={[2, 6]} />
 
 			<Hero />
 			<Box m={[2, 6]} />

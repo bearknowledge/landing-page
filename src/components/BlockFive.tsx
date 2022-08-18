@@ -30,10 +30,13 @@ export const BlockFive = ({ ...props }) => (
 		>
 			<Stack>
 				<Heading fontWeight={'semibold'} fontSize="4xl" paddingY={3}>
-					Futurize digital assets on blockchain
+					<Box display="inline-block" color={'brand.100'}>
+						Culture
+					</Box>{' '}
+					is up next
 				</Heading>
 				<Text fontSize="xl" paddingY={3}>
-					Predict and earn cash for your knowledge
+					Interested in learning more?
 				</Text>
 				<Stack
 					spacing={4}

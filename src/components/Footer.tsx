@@ -172,10 +172,10 @@ export const Footer = (props: FlexProps) => (
 			</GridItem>
 			<GridItem colSpan={{ xs: 5, md: 2 }}>
 				<Text fontSize={'12px'} fontWeight={400}>
-					The prediction market known as "The Xchange" is for informational and
-					educational purposes only. "The Xchange" is a decentralized protocol
-					operated by autonomous smart contracts and does not have any vested
-					interest in the outcomes of any market.
+					Legal Disclaimer: The prediction market known as "The Xchange" is for
+					informational and educational purposes only. "The Xchange" is a
+					decentralized protocol operated by autonomous smart contracts and does
+					not have a vested interest in the outcomes of any market.
 				</Text>
 			</GridItem>
 		</Grid>
