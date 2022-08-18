@@ -6,6 +6,7 @@ import {
 	GridItem,
 	Heading,
 	HStack,
+	Show,
 	SimpleGrid,
 	Spacer,
 	Stack,
@@ -30,7 +31,9 @@ export const BlockTwo = ({ title }: { title: string }) => (
 					paddingY={3}
 				>
 					Where's culture headed?
-					<br /> Predict what's up next
+					<Show above="sm">
+						<br /> Predict what's up next
+					</Show>
 				</Heading>
 				{/* 
 				<Box>
