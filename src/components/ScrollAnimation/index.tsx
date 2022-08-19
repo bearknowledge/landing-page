@@ -13,11 +13,15 @@ export const ScrollAnimation = ({
 	...props
 }: animationProps) => {
 	useEffect(() => {
-		Aos.init({ duration: 900 });
+		Aos.init({ duration: 800, easing: 'linear' });
 	});
 
 	return (
-		<div data-aos={animation} data-aos-anchor-placement="top-bottom" {...props}>
+		<div
+			data-aos={animation}
+			data-aos-anchor-placement="center-bottom"
+			{...props}
+		>
 			{children}
 		</div>
 	);
