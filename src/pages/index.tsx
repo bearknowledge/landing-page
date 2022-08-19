@@ -37,24 +37,18 @@ const Index = () => {
 			<HeaderAddon />
 			<Header />
 			<Main alignItems={'center'} justifyContent={'start'}>
-				<ScrollAnimation animation="fade-up">
-					<Box m={[2, 3]} />
-					<Hero />
-				</ScrollAnimation>
-				<ScrollAnimation animation="fade-up">
-					<Box m={[2, 6]} />
-					<BlockTwo />
-				</ScrollAnimation>
+				<Box m={[2, 3]} />
+				<Hero />
 
-				<ScrollAnimation animation="fade-up">
-					<Box m={[2, 6]} />
-					<BlockThree />
-				</ScrollAnimation>
+				<Box m={[2, 6]} />
+				<BlockTwo />
 
-				<ScrollAnimation animation="fade-up">
-					<Box m={[2, 6]} h={['1em', '4em']} />
-					<BlockFour />
-				</ScrollAnimation>
+				<Box m={[2, 6]} />
+				<BlockThree />
+
+				<Box m={[2, 6]} h={['1em', '4em']} />
+				<BlockFour />
+
 				<Box m={[2, 6]} h={['1em', '4em']} />
 				{/* <BlockFive /> */}
 			</Main>
