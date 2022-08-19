@@ -11,6 +11,7 @@ import {
 	Text,
 } from '@chakra-ui/react';
 import Link from 'next/link';
+import { ScrollAnimation } from './ScrollAnimation';
 
 export const BlockThree = ({ title }: { title: string }) => (
 	<Grid templateColumns="repeat(5, 1fr)" width={'100%'} px="2rem">
@@ -22,39 +23,48 @@ export const BlockThree = ({ title }: { title: string }) => (
 			paddingY={6}
 		>
 			<Stack>
-				<Text fontSize="sm" paddingY={3}>
-					PUT YOUR KNOWLEDGE TO WORK
-				</Text>
-				<Heading
-					fontWeight={'semibold'}
-					fontSize="4xl"
-					lineHeight={'base'}
-					paddingY={3}
-				>
-					How do you profit from Xsauce?
-				</Heading>
-				<Text fontSize="xl" paddingY={3}>
-					Xsauce allows you to predict the price of the next drop. Put your
-					knowledge of culture to the test and decide whether a sneaker, collab
-					or drop will go up or down in price. Predict right and earn hard cash.
-				</Text>
-				<HStack spacing={4}>
-					<a
-						href="https://docs.xsauce.io/getting-started/introduction"
-						target={'_blank'}
-						rel={'noreferrer'}
+				<ScrollAnimation animation="fade-up">
+					<Text fontSize="sm" paddingY={3}>
+						PUT YOUR KNOWLEDGE TO WORK
+					</Text>
+				</ScrollAnimation>
+				<ScrollAnimation animation="fade-up">
+					<Heading
+						fontWeight={'semibold'}
+						fontSize="4xl"
+						lineHeight={'base'}
+						paddingY={3}
 					>
-						<Button
-							paddingX={6}
-							fontSize={'sm'}
-							size={'lg'}
-							variant="outline"
-							color={'brand.200'}
-							borderColor={'brand.200'}
+						How do you profit from Xsauce?
+					</Heading>
+				</ScrollAnimation>
+				<ScrollAnimation animation="fade-up">
+					<Text fontSize="xl" paddingY={3}>
+						Xsauce allows you to predict the price of the next drop. Put your
+						knowledge of culture to the test and decide whether a sneaker,
+						collab or drop will go up or down in price. Predict right and earn
+						hard cash.
+					</Text>
+				</ScrollAnimation>
+				<HStack spacing={4}>
+					<ScrollAnimation animation="fade-up">
+						<a
+							href="https://docs.xsauce.io/getting-started/introduction"
+							target={'_blank'}
+							rel={'noreferrer'}
 						>
-							<Text>Read our Docs</Text>
-						</Button>
-					</a>
+							<Button
+								paddingX={6}
+								fontSize={'sm'}
+								size={'lg'}
+								variant="outline"
+								color={'brand.200'}
+								borderColor={'brand.200'}
+							>
+								<Text>Read our Docs</Text>
+							</Button>
+						</a>
+					</ScrollAnimation>
 				</HStack>
 			</Stack>
 		</GridItem>
@@ -66,7 +76,13 @@ export const BlockThree = ({ title }: { title: string }) => (
 			height={'fit-content'}
 		>
 			{/*TODO: Fix scaling on small sc */}
-			<Flex overflow={'hidden'} justifyContent={'right'}>
+			<Flex
+				as={ScrollAnimation}
+				anchorPlacement={'center-bottom'}
+				offset={'1'}
+				overflow={'hidden'}
+				justifyContent={'right'}
+			>
 				<svg
 					width="634"
 					height="100%"

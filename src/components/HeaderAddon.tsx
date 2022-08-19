@@ -35,7 +35,7 @@ export const HeaderAddon = ({ title }: { title: string }) => (
 				justifyContent={'center'}
 				alignItems="center"
 				overflow={'hidden'}
-				textAlign={'center'}
+				textAlign={'left'}
 				width={'100%'}
 				fontSize={{ xs: 'xs', sm: 'sm' }}
 			>
