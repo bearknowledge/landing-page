@@ -43,7 +43,7 @@ export const Hero = ({ title }: { title: string }) => (
 							<Box>
 								The Future of
 								<Box display={'inline-block'} color={'brand.100'}>
-									Culture
+									&nbsp;Culture
 								</Box>
 							</Box>
 						</Heading>
