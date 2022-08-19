@@ -15,12 +15,7 @@ import {
 import { ScrollAnimation } from './ScrollAnimation';
 
 export const BlockTwo = ({ title }: { title: string }) => (
-	<Grid
-		px="2rem"
-		width={'100%'}
-		templateColumns="repeat(1, 1fr)"
-		as={ScrollAnimation}
-	>
+	<Grid px="2rem" width={'100%'} templateColumns="repeat(1, 1fr)">
 		<GridItem
 			border={'1px solid'}
 			borderColor={'brand.200'}

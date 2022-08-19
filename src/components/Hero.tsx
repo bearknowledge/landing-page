@@ -93,7 +93,7 @@ export const Hero = ({ title }: { title: string }) => (
 			height={'fit-content'}
 		>
 			{/*TODO: Fix scaling on small sc */}
-			<Box overflow={'hidden'} justifyContent={'center'} as={ScrollAnimation}>
+			<Flex overflow={'hidden'} justifyContent={'center'} as={ScrollAnimation}>
 				<svg
 					width="100%"
 					height="100%"
@@ -2056,7 +2056,7 @@ export const Hero = ({ title }: { title: string }) => (
 						<image id="image0_1333_1831" width="840" height="624" />
 					</defs>
 				</svg>
-			</Box>
+			</Flex>
 		</GridItem>
 	</Grid>
 );

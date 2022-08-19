@@ -4,12 +4,16 @@ import { useEffect } from 'react';
 
 interface animationProps {
 	animation?: string;
+	duration?: string;
+	anchorPlacement?: string;
+
 	children?: JSX.Element | JSX.Element[];
 }
 
 export const ScrollAnimation = ({
 	animation,
 	children,
+	anchorPlacement,
 	...props
 }: animationProps) => {
 	useEffect(() => {
@@ -19,7 +23,7 @@ export const ScrollAnimation = ({
 	return (
 		<div
 			data-aos={animation}
-			data-aos-anchor-placement="center-bottom"
+			data-aos-anchor-placement={anchorPlacement}
 			{...props}
 		>
 			{children}
@@ -29,4 +33,5 @@ export const ScrollAnimation = ({
 
 ScrollAnimation.defaultProps = {
 	animation: 'fade-up',
+	anchorPlacement: 'top-bottom',
 };
