@@ -94,9 +94,11 @@ export const Hero = ({ title }: { title: string }) => (
 			{/*TODO: Fix scaling on small sc */}
 			<Flex
 				overflow={'hidden'}
-				justifyContent={'center'}
+				justifyContent={'flex-end'}
+				alignItems={'center'}
 				as={ScrollAnimation}
 				anchorPlacement={'top-bottom'}
+				offset={'120'}
 			>
 				<svg
 					width="100%"

@@ -31,9 +31,8 @@ export const Footer = (props: FlexProps) => (
 		borderColor={'brand.200'}
 		//px={{ md: '8rem' }}
 	>
-		<ScrollAnimation animation="fade-up">
-			<BlockFive px={{ base: '2rem', md: '4rem', lg: '10rem' }} />
-		</ScrollAnimation>
+		<BlockFive px={{ base: '2rem', md: '4rem', lg: '10rem' }} />
+
 		<Grid
 			templateColumns="repeat(5, 1fr)"
 			width={'100%'}

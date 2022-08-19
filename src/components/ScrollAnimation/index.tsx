@@ -6,6 +6,7 @@ interface animationProps {
 	animation?: string;
 	duration?: string;
 	anchorPlacement?: string;
+	offset?: string;
 
 	children?: JSX.Element | JSX.Element[];
 }
@@ -14,18 +15,18 @@ export const ScrollAnimation = ({
 	animation,
 	children,
 	anchorPlacement,
+	offset,
 	...props
 }: animationProps) => {
 	useEffect(() => {
-		Aos.init({ duration: 800, easing: 'linear' });
+		Aos.init({ duration: 800, easing: 'ease' });
 	});
 
 	return (
 		<div
 			data-aos={animation}
 			data-aos-anchor-placement={anchorPlacement}
-			//data-aos-offset="-100"
-
+			data-aos-offset={offset}
 			{...props}
 		>
 			{children}
@@ -36,4 +37,5 @@ export const ScrollAnimation = ({
 ScrollAnimation.defaultProps = {
 	animation: 'fade-up',
 	anchorPlacement: 'bottom-bottom',
+	offset: '-50',
 };

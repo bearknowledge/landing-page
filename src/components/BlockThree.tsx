@@ -78,7 +78,8 @@ export const BlockThree = ({ title }: { title: string }) => (
 			{/*TODO: Fix scaling on small sc */}
 			<Flex
 				as={ScrollAnimation}
-				anchorPlacement={'top-bottom'}
+				anchorPlacement={'center-bottom'}
+				offset={'1'}
 				overflow={'hidden'}
 				justifyContent={'right'}
 			>
