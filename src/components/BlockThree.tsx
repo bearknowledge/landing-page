@@ -76,7 +76,12 @@ export const BlockThree = ({ title }: { title: string }) => (
 			height={'fit-content'}
 		>
 			{/*TODO: Fix scaling on small sc */}
-			<Flex as={ScrollAnimation} overflow={'hidden'} justifyContent={'right'}>
+			<Flex
+				as={ScrollAnimation}
+				anchorPlacement={'top-bottom'}
+				overflow={'hidden'}
+				justifyContent={'right'}
+			>
 				<svg
 					width="634"
 					height="100%"

@@ -24,6 +24,8 @@ export const ScrollAnimation = ({
 		<div
 			data-aos={animation}
 			data-aos-anchor-placement={anchorPlacement}
+			//data-aos-offset="-100"
+
 			{...props}
 		>
 			{children}
@@ -33,5 +35,5 @@ export const ScrollAnimation = ({
 
 ScrollAnimation.defaultProps = {
 	animation: 'fade-up',
-	anchorPlacement: 'top-bottom',
+	anchorPlacement: 'bottom-bottom',
 };

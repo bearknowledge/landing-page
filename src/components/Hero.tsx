@@ -41,9 +41,8 @@ export const Hero = ({ title }: { title: string }) => (
 							paddingY={3}
 						>
 							<Box>
-								The Future of{' '}
+								The Future of
 								<Box display={'inline-block'} color={'brand.100'}>
-									{' '}
 									Culture
 								</Box>
 							</Box>
@@ -93,7 +92,12 @@ export const Hero = ({ title }: { title: string }) => (
 			height={'fit-content'}
 		>
 			{/*TODO: Fix scaling on small sc */}
-			<Flex overflow={'hidden'} justifyContent={'center'} as={ScrollAnimation}>
+			<Flex
+				overflow={'hidden'}
+				justifyContent={'center'}
+				as={ScrollAnimation}
+				anchorPlacement={'top-bottom'}
+			>
 				<svg
 					width="100%"
 					height="100%"
