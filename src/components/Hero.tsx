@@ -1,8 +1,11 @@
 import { ArrowUpIcon } from '@chakra-ui/icons';
+import { Formik, Field } from 'formik';
+
 import {
 	Box,
 	Button,
 	Flex,
+	FormControl,
 	Grid,
 	GridItem,
 	Heading,
@@ -55,31 +58,50 @@ export const Hero = ({ title }: { title: string }) => (
 						</Text>
 					</ScrollAnimation>
 					<ScrollAnimation animation="fade-up">
-						<InputGroup alignSelf="center" border="0px">
-							<Input
-								type="email"
-								placeholder="Email@xyz.com"
-								fontSize={{ xs: 'xs', md: 'sm' }}
-								width={'50%'}
-								bg="colors.white"
-								color="brand.200"
-								border="0px"
-							/>
-							<InputRightAddon
-								width={'50%'}
-								bg="brand.100"
-								color="brand.200"
-								border="0px"
-								fontSize={{ xs: 'xs', md: 'sm' }}
-								as={Button}
-								whiteSpace={'break-spaces'}
-							>
-								<Text whiteSpace={'break-spaces'} paddingX={2}>
-									Join Waitlist
-								</Text>
-								<FiArrowUpRight />
-							</InputRightAddon>
-						</InputGroup>
+						<Formik
+							initialValues={{
+								email: '',
+							}}
+							onSubmit={(values) => {
+								alert(JSON.stringify(values, null, 2));
+							}}
+						>
+							{({ handleSubmit, errors, touched }) => (
+								<form onSubmit={handleSubmit}>
+									<FormControl>
+										<InputGroup alignSelf="center" border="0px">
+											<Input
+												id="email"
+												name="email"
+												type="email"
+												placeholder="Email@xyz.com"
+												fontSize={{ xs: 'xs', md: 'sm' }}
+												width={'50%'}
+												bg="colors.white"
+												color="brand.200"
+												border="0px"
+											/>
+
+											<InputRightAddon
+												width={'50%'}
+												bg="brand.100"
+												color="brand.200"
+												border="0px"
+												fontSize={{ xs: 'xs', md: 'sm' }}
+												as={Button}
+												whiteSpace={'break-spaces'}
+												type="submit"
+											>
+												<Text whiteSpace={'break-spaces'} paddingX={2}>
+													Join Waitlist
+												</Text>
+												<FiArrowUpRight />
+											</InputRightAddon>
+										</InputGroup>
+									</FormControl>
+								</form>
+							)}
+						</Formik>
 					</ScrollAnimation>
 				</Stack>
 			</ScrollAnimation>
