@@ -28,11 +28,9 @@ import Aos from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';
 import { ScrollAnimation } from '../components/ScrollAnimation';
+import Image from 'next/image';
 
 const Index = () => {
-	// useEffect(() => {
-	// 	Aos.init({ duration: 1000 });
-	// }, []);
 	return (
 		<Container minHeight="100vh" height={'fit-content'}>
 			<HeaderAddon />
@@ -40,7 +38,6 @@ const Index = () => {
 			<Main alignItems={'center'} justifyContent={'start'}>
 				<Box m={[2, 3]} />
 				<Hero />
-
 				<Box m={[2, 6]} />
 				<BlockTwo />
 

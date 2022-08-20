@@ -22,6 +22,7 @@ import { FiArrowUpRight } from 'react-icons/fi';
 import { ScrollAnimation } from './ScrollAnimation';
 import { useRouter } from 'next/router';
 import { useState } from 'react';
+import HeroImage from '../public/images/HeroImage.svg';
 
 export const Hero = ({ title }: { title: string }) => {
 	const toast = useToast();
@@ -65,13 +66,19 @@ export const Hero = ({ title }: { title: string }) => {
 	};
 
 	return (
-		<Grid templateColumns="repeat(5, 1fr)" width={'100%'} px="2rem">
+		<Grid
+			templateColumns="repeat(5, 1fr)"
+			width={'100%'}
+			px="2rem"
+			placeItems={'center'}
+		>
 			<GridItem
 				colSpan={{ xs: 12, md: 2 }}
 				h="10"
 				height={'fit-content'}
 				alignSelf={'center'}
 				paddingY={6}
+				placeSelf={'start'}
 			>
 				<ScrollAnimation animation="fade-up">
 					<Stack>
@@ -88,9 +95,9 @@ export const Hero = ({ title }: { title: string }) => {
 								paddingY={3}
 							>
 								<Box>
-									The Future of
+									The Future of&nbsp;
 									<Box display={'inline-block'} color={'brand.100'}>
-										&nbsp;Culture
+										Culture
 									</Box>
 								</Box>
 							</Heading>
@@ -150,19 +157,20 @@ export const Hero = ({ title }: { title: string }) => {
 			<GridItem
 				colStart={{ xs: 1, md: 3 }}
 				colEnd={{ xs: 6, md: 6 }}
-				h="10"
 				height={'fit-content'}
+				width={'100%'}
 			>
 				{/*TODO: Fix scaling on small sc */}
 				<Flex
 					overflow={'hidden'}
-					justifyContent={'flex-end'}
+					justifyContent={'center'}
 					alignItems={'center'}
 					as={ScrollAnimation}
 					anchorPlacement={'top-bottom'}
 					offset={'120'}
 				>
-					<svg
+					<HeroImage />
+					{/* <svg
 						width="100%"
 						height="100%"
 						viewBox="0 0 802 581"
@@ -2123,7 +2131,7 @@ export const Hero = ({ title }: { title: string }) => {
 							</linearGradient>
 							<image id="image0_1333_1831" width="840" height="624" />
 						</defs>
-					</svg>
+					</svg> */}
 				</Flex>
 			</GridItem>
 		</Grid>
