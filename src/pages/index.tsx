@@ -9,8 +9,9 @@ import {
 	keyframes,
 	ScaleFade,
 	SlideFade,
+	Flex,
 } from '@chakra-ui/react';
-import { CheckCircleIcon, LinkIcon } from '@chakra-ui/icons';
+import { CheckCircleIcon, CheckIcon, LinkIcon } from '@chakra-ui/icons';
 
 import { Container } from '../components/Container';
 import { Main } from '../components/Main';

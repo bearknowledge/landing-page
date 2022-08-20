@@ -1,4 +1,4 @@
-import { ArrowUpIcon } from '@chakra-ui/icons';
+import { ArrowUpIcon, CheckIcon } from '@chakra-ui/icons';
 import { useFormik } from 'formik';
 
 import {
@@ -44,9 +44,20 @@ export const Hero = ({ title }: { title: string }) => {
 			toast({
 				position: 'bottom-right',
 				render: () => (
-					<Box color="brand.200" p={3} bg="brand.100">
-						You have successfully the waitlist!
-					</Box>
+					<Flex
+						flexDirection={{ xs: 'column', md: 'row' }}
+						color="brand.200"
+						p={3}
+						bg="brand.100"
+						maxWidth={'100%'}
+						alignItems={'center'}
+						borderRadius={6}
+					>
+						<CheckIcon margin={2} />
+						<Text overflowWrap={'break-word'} textAlign={'center'}>
+							You have successfully joined the waitlist!
+						</Text>
+					</Flex>
 				),
 			});
 			setEmail('');
