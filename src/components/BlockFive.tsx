@@ -53,7 +53,7 @@ export const BlockFive = ({ ...props }) => (
 						target={'_blank'}
 						rel={'noreferrer'}
 					>
-						<ScrollAnimation animation={'fade-in'}>
+						<ScrollAnimation animation={'fade-up'}>
 							<Button
 								paddingX={6}
 								fontSize={'sm'}
