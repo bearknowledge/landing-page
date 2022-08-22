@@ -1,4 +1,4 @@
-import { extendTheme } from '@chakra-ui/react';
+import { extendTheme, type ThemeConfig } from '@chakra-ui/react';
 import { createBreakpoints } from '@chakra-ui/theme-tools';
 import '@fontsource/inter';
 import '@fontsource/space-grotesk';
@@ -9,6 +9,10 @@ const fonts = {
 	body: `'inter', monospace`,
 };
 
+const config: ThemeConfig = {
+	initialColorMode: 'light',
+	useSystemColorMode: false,
+};
 const breakpoints = createBreakpoints({
 	xs: '0em', // too small
 	sm: '30em', //mobile
@@ -56,6 +60,7 @@ const theme = extendTheme({
 
 	fonts,
 	breakpoints,
+	config,
 });
 
 export default theme;

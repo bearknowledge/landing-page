@@ -1,5 +1,4 @@
 import { ArrowUpIcon, CheckIcon } from '@chakra-ui/icons';
-import { useFormik } from 'formik';
 
 import {
 	Box,
