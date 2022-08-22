@@ -14,6 +14,7 @@ import {
 	FlexProps,
 	Input,
 	Text,
+	useColorModeValue,
 	useDisclosure,
 	VStack,
 } from '@chakra-ui/react';
@@ -23,6 +24,8 @@ import { XSauceIconButton } from './XSauceIconButton';
 
 export const HeaderDrawer = () => {
 	const { isOpen, onOpen, onClose } = useDisclosure();
+	const navColor = useColorModeValue('black', 'white');
+	const drawerBg = useColorModeValue('brand.900', 'brand.200');
 
 	return (
 		<>
@@ -31,7 +34,7 @@ export const HeaderDrawer = () => {
 			</Button>
 			<Drawer isOpen={isOpen} placement="right" onClose={onClose}>
 				<DrawerOverlay />
-				<DrawerContent backgroundColor={'brand.900'}>
+				<DrawerContent backgroundColor={drawerBg}>
 					<DrawerCloseButton size={'lg'} />
 					<DrawerHeader borderBottom={'1px solid'} borderColor={'brand.200'}>
 						<svg
@@ -74,7 +77,7 @@ export const HeaderDrawer = () => {
 									display="flex"
 									variant={'link'}
 									fontSize={'xl'}
-									color={'colors.black'}
+									color={navColor}
 									fontWeight={'semibold'}
 								>
 									<Text>About</Text>
@@ -89,7 +92,7 @@ export const HeaderDrawer = () => {
 									display="flex"
 									variant={'link'}
 									fontSize={'xl'}
-									color={'colors.black'}
+									color={navColor}
 									fontWeight={'semibold'}
 								>
 									<Text>How it works</Text>
@@ -100,7 +103,7 @@ export const HeaderDrawer = () => {
 									<Button
 										whiteSpace={'nowrap'}
 										variant="link"
-										color={'black'}
+										color={navColor}
 										display={'flex'}
 										flexDirection={'row'}
 										justifyContent={'left'}
@@ -143,7 +146,7 @@ export const HeaderDrawer = () => {
 									display="flex"
 									variant={'link'}
 									fontSize={'xl'}
-									color={'colors.black'}
+									color={navColor}
 									fontWeight={'semibold'}
 								>
 									{/* <ArrowBackIcon /> */}

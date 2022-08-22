@@ -29,6 +29,7 @@ import 'aos/dist/aos.css';
 import { useEffect } from 'react';
 import { ScrollAnimation } from '../components/ScrollAnimation';
 import Image from 'next/image';
+import test from '../public/test.png';
 
 const Index = () => {
 	return (
@@ -36,6 +37,8 @@ const Index = () => {
 			<HeaderAddon />
 			<Header />
 			<Main alignItems={'center'} justifyContent={'start'}>
+				{/* <Image src={test} /> */}
+				<DarkModeSwitch></DarkModeSwitch>
 				<Box m={[2, 3]} />
 				<Hero />
 				<Box m={[2, 6]} />
