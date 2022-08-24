@@ -28,7 +28,6 @@ import Aos from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';
 import { ScrollAnimation } from '../components/ScrollAnimation';
-import Image from 'next/image';
 
 const Index = () => {
 	return (
