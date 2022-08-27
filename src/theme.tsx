@@ -10,7 +10,7 @@ const fonts = {
 };
 
 const config: ThemeConfig = {
-	initialColorMode: 'light',
+	initialColorMode: 'system',
 	useSystemColorMode: false,
 };
 const breakpoints = createBreakpoints({

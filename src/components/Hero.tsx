@@ -1,5 +1,4 @@
 import { ArrowUpIcon, CheckIcon } from '@chakra-ui/icons';
-
 import {
 	Box,
 	Button,
@@ -23,7 +22,9 @@ import { ScrollAnimation } from './ScrollAnimation';
 import { useRouter } from 'next/router';
 import { useState } from 'react';
 import HeroImage from '../public/HeroImage.svg';
-import MarketImage from '../public/MarketImage.svg';
+import HeroImageTest from '../public/HeroImageTest.svg';
+
+import HeroImagePng from '../public/png/HeroImage.png'
 import Image from 'next/image';
 
 export const Hero = ({ title }: { title: string }) => {
@@ -72,7 +73,7 @@ export const Hero = ({ title }: { title: string }) => {
 			templateColumns="repeat(5, 1fr)"
 			width={'100%'}
 			px="2rem"
-			placeItems={'center'}
+			
 		>
 			<GridItem
 				colSpan={{ xs: 12, md: 2 }}
@@ -161,9 +162,10 @@ export const Hero = ({ title }: { title: string }) => {
 				colEnd={{ xs: 6, md: 6 }}
 				height={'fit-content'}
 				width={'100%'}
+				placeSelf={'center'}
+		
 			>
 				{/*TODO: Fix scaling on small sc */}
-
 				<Flex
 					overflow={'hidden'}
 					justifyContent={'center'}
@@ -171,8 +173,16 @@ export const Hero = ({ title }: { title: string }) => {
 					as={ScrollAnimation}
 					anchorPlacement={'top-bottom'}
 					offset={'120'}
+					padding={{sm: 2, md: 2, lg: 5 }}
+					
 				>
-					<HeroImage />
+					{/*HeroImage */}
+					<HeroImage/>
+					{/* <HeroImageTest/> */}
+					
+					{/* <Image src={HeroImagePng} /> */}
+
+					
 				</Flex>
 			</GridItem>
 		</Grid>
