@@ -46,8 +46,8 @@ export const BlockFour = ({ title }: { title: string }) => {
 					<Flex
 						as={ScrollAnimation}
 						overflow={'hidden'}
-						justifyContent={'center'}
-						alignItems={'center'}
+						// justifyContent={'center'}
+						// alignItems={'center'}
 						anchorPlacement={'center-bottom'}
 						offset={'-200'}
 						paddingY={5}
@@ -107,13 +107,13 @@ export const BlockFour = ({ title }: { title: string }) => {
 				</SimpleGrid>
 			</Hide>
 			<Show above="lg">
-				<Grid
+				<Grid 
 					width={'100%'}
 					height={{ md: '800px', lg: '700px' }} //TODO: remove height
 					templateRows={{ md: 'repeat(4, 2fr)' }}
 					templateColumns={{ md: 'repeat(4, 1fr)' }}
 					px="2rem"
-				>
+				> 
 					<GridItem rowSpan={{ md: 2 }} colSpan={{ md: 2 }}>
 						<Flex flexDirection={'column'}>
 							<Text fontSize="sm" paddingY={3}>
@@ -143,7 +143,7 @@ export const BlockFour = ({ title }: { title: string }) => {
 							alignItems={'center'}
 							as={ScrollAnimation}
 							anchorPlacement={'center-bottom'}
-							offset={'-200'}
+							offset={'-100'}
 						>
 							{/* TODO: export svg to public folder*/}
 							<MarketImage />

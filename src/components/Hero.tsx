@@ -173,14 +173,12 @@ export const Hero = ({ title }: { title: string }) => {
 					as={ScrollAnimation}
 					anchorPlacement={'top-bottom'}
 					offset={'120'}
-					padding={{sm: 2, md: 2, lg: 5 }}
+					paddingX={{sm: 2, md: 2, lg: 5 }}
 					
 				>
 					{/*HeroImage */}
 					<HeroImage/>
-					{/* <HeroImageTest/> */}
-					
-					{/* <Image src={HeroImagePng} /> */}
+				
 
 					
 				</Flex>
