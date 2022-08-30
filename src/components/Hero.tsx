@@ -21,10 +21,10 @@ import { FiArrowUpRight } from 'react-icons/fi';
 import { ScrollAnimation } from './ScrollAnimation';
 import { useRouter } from 'next/router';
 import { useState } from 'react';
-import HeroImage from '../public/HeroImage.svg';
-import HeroImageTest from '../public/HeroImageTest.svg';
+import HeroImage from '../images/HeroImage.svg';
+import HeroImageTest from '../images/HeroImageTest.svg';
 
-import HeroImagePng from '../public/png/HeroImage.png'
+import HeroSvg from '../images/HeroSvg.svg';
 import Image from 'next/image';
 
 export const Hero = ({ title }: { title: string }) => {
@@ -69,12 +69,7 @@ export const Hero = ({ title }: { title: string }) => {
 	};
 
 	return (
-		<Grid
-			templateColumns="repeat(5, 1fr)"
-			width={'100%'}
-			px="2rem"
-			
-		>
+		<Grid templateColumns="repeat(5, 1fr)" width={'100%'} px="2rem">
 			<GridItem
 				colSpan={{ xs: 12, md: 2 }}
 				h="10"
@@ -163,7 +158,6 @@ export const Hero = ({ title }: { title: string }) => {
 				height={'fit-content'}
 				width={'100%'}
 				placeSelf={'center'}
-		
 			>
 				{/*TODO: Fix scaling on small sc */}
 				<Flex
@@ -173,14 +167,11 @@ export const Hero = ({ title }: { title: string }) => {
 					as={ScrollAnimation}
 					anchorPlacement={'top-bottom'}
 					offset={'120'}
-					paddingX={{sm: 2, md: 2, lg: 5 }}
-					
+					paddingLeft={'2em'}
 				>
 					{/*HeroImage */}
-					<HeroImage/>
-				
-
-					
+					{/* <HeroImage/> */}
+					<HeroSvg />
 				</Flex>
 			</GridItem>
 		</Grid>

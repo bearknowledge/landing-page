@@ -14,13 +14,13 @@ import {
 } from '@chakra-ui/react';
 import React from 'react';
 import { ScrollAnimation } from './ScrollAnimation';
-import MarketImage from '../public/MarketImage.svg';
+import MarketImage from '../images/MarketImage.svg';
+import MarketSvg from '../images/MarketSvg.svg';
 import { XSauceIconButton } from './XSauceIconButton';
 import { DarkModeSwitch } from './DarkModeSwitch';
 
 export const BlockFour = ({ title }: { title: string }) => {
 	return (
-
 		<React.Fragment>
 			<Hide above="lg">
 				<SimpleGrid column={1} width={'100%'} px="2rem">
@@ -51,10 +51,8 @@ export const BlockFour = ({ title }: { title: string }) => {
 						anchorPlacement={'center-bottom'}
 						offset={'-200'}
 						paddingY={5}
-						
 					>
-						
-						<MarketImage />
+						<MarketSvg />
 					</Flex>
 
 					<Stack spacing={3} textAlign={'center'}>
@@ -107,13 +105,13 @@ export const BlockFour = ({ title }: { title: string }) => {
 				</SimpleGrid>
 			</Hide>
 			<Show above="lg">
-				<Grid 
+				<Grid
 					width={'100%'}
 					height={{ md: '800px', lg: '700px' }} //TODO: remove height
 					templateRows={{ md: 'repeat(4, 2fr)' }}
 					templateColumns={{ md: 'repeat(4, 1fr)' }}
 					px="2rem"
-				> 
+				>
 					<GridItem rowSpan={{ md: 2 }} colSpan={{ md: 2 }}>
 						<Flex flexDirection={'column'}>
 							<Text fontSize="sm" paddingY={3}>
@@ -135,9 +133,11 @@ export const BlockFour = ({ title }: { title: string }) => {
 						</Flex>
 					</GridItem>
 
-					<GridItem rowSpan={{ md: 4 }} colSpan={{ md: 2 }}
-					alignSelf={'center'}>
-						
+					<GridItem
+						rowSpan={{ md: 4 }}
+						colSpan={{ md: 2 }}
+						alignSelf={'center'}
+					>
 						<Flex
 							justifyContent={'center'}
 							alignItems={'center'}
@@ -145,9 +145,9 @@ export const BlockFour = ({ title }: { title: string }) => {
 							anchorPlacement={'center-bottom'}
 							offset={'-100'}
 						>
-							{/* TODO: export svg to public folder*/}
-							<MarketImage />
-							
+							{/* TODO: export svg to images folder*/}
+							{/* <MarketImage /> */}
+							<MarketSvg />
 						</Flex>
 					</GridItem>
 
