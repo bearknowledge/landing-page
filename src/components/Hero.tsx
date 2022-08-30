@@ -119,12 +119,13 @@ export const Hero = ({ title }: { title: string }) => {
 											id="Email"
 											name="Email"
 											type="email"
-											placeholder="Email@xyz.com"
+											placeholder="email@xyz.com"
 											fontSize={{ xs: 'xs', md: 'sm' }}
 											width={'100%'}
 											bg="colors.white"
-											color="brand.200"
-											border="0px"
+											color="black"
+											border="1px"
+											borderColor={'black'}
 											borderRightRadius={'0px'}
 											onChange={(e) => setEmail(e.target.value)}
 											value={email}
@@ -132,13 +133,15 @@ export const Hero = ({ title }: { title: string }) => {
 									</FormControl>
 									<InputRightAddon
 										width={'50%'}
-										bg="brand.100"
-										color="brand.200"
-										border="0px"
+										bg="brand.300"
+										color="white"
 										fontSize={{ xs: 'xs', md: 'sm' }}
 										as={Button}
 										whiteSpace={'break-spaces'}
 										type="submit"
+										border="0px"
+										borderColor={'black'}
+										borderLeftRadius={'0px'}
 									>
 										<Text whiteSpace={'break-spaces'} paddingX={2}>
 											Join Waitlist
