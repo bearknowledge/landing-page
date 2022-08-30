@@ -25,7 +25,7 @@ export const HeaderAddon = ({ title }: { title: string }) => (
 		color={'brand.1000'}
 		flexDirection={'row'}
 		width={'100%'}
-		backgroundColor={'brand.200'}
+		backgroundColor={'brand.500'}
 		paddingX={{ xs: 2, sm: 4, md: 10 }}
 		fontSize={'sm'}
 	>
