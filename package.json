@@ -24,7 +24,8 @@
     "react-icons": "^4.4.0",
     "react-in-viewport": "^1.0.0-alpha.28",
     "react-router-dom": "^6.3.0",
-    "save": "^2.5.0"
+    "save": "^2.5.0",
+    "svg-url-loader": "^7.1.1"
   },
   "devDependencies": {
     "@types/node": "^18.0.0",

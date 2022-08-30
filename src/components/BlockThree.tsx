@@ -12,7 +12,8 @@ import {
 } from '@chakra-ui/react';
 import Link from 'next/link';
 import { ScrollAnimation } from './ScrollAnimation';
-import GuideImage from '../public/GuideImage.svg';
+import GuideImage from '../images/GuideImage.svg';
+import GuideSvg from '../images/GuideSvg.svg';
 export const BlockThree = ({ title }: { title: string }) => (
 	<Grid templateColumns="repeat(5, 1fr)" width={'100%'} px="2rem">
 		<GridItem
@@ -86,7 +87,7 @@ export const BlockThree = ({ title }: { title: string }) => (
 				justifyContent={'center'}
 				alignItems={'center'}
 			>
-				<GuideImage />
+				<GuideSvg />
 				{/* <svg
 					width="743"
 					height="675"
