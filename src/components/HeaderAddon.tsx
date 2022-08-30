@@ -44,6 +44,7 @@ export const HeaderAddon = ({ title }: { title: string }) => (
 					<Button
 						variant={'link'}
 						fontWeight={400}
+						color={'brand.1000'}
 						display={'inline'}
 						fontSize={{ xs: 'xs', sm: 'sm' }}
 						sx={{ textDecoration: 'underline' }}
