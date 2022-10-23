@@ -22,10 +22,10 @@ export const HeaderAddon = ({ title }: { title: string }) => (
 		justifyContent="center"
 		alignItems="center"
 		height="24px"
-		color={'brand.1000'}
+		color={'brand.700'}
 		flexDirection={'row'}
 		width={'100%'}
-		backgroundColor={'brand.500'}
+		backgroundColor={'brand.200'}
 		paddingX={{ xs: 2, sm: 4, md: 10 }}
 		fontSize={'sm'}
 	>
