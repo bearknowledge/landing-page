@@ -35,7 +35,6 @@ const Index = () => {
 			<HeaderAddon />
 			<Header />
 			<Main alignItems={'center'} justifyContent={'start'}>
-				<Box m={[2, 3]} />
 				<Hero />
 				<Box m={[2, 6]} />
 				<BlockTwo />
@@ -43,10 +42,10 @@ const Index = () => {
 				<Box m={[2, 6]} />
 				<BlockThree />
 
-				<Box m={[2, 6]} h={['1em', '4em']} />
+				<Box m={[2, 6]} h={['1em', '1em']} />
 				<BlockFour />
 
-				<Box m={[2, 6]} h={['1em', '4em']} />
+				<Box m={[2, 6]} h={['1em', '1em']} />
 				{/* <BlockFive /> */}
 			</Main>
 
