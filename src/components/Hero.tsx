@@ -21,11 +21,8 @@ import { FiArrowUpRight } from 'react-icons/fi';
 import { ScrollAnimation } from './ScrollAnimation';
 import { useRouter } from 'next/router';
 import { useState } from 'react';
-import HeroImage from '../images/HeroImage.svg';
-import HeroImageTest from '../images/HeroImageTest.svg';
-
-import HeroSvg from '../images/HeroSvg.svg';
 import Image from 'next/image';
+import FreePlayComputerViewImage from '../public/FreePlayComputerViewImage.png'
 
 export const Hero = ({ title }: { title: string }) => {
 	const toast = useToast();
@@ -124,7 +121,7 @@ export const Hero = ({ title }: { title: string }) => {
 											width={'100%'}
 											bg="colors.white"
 											color="black"
-											border="1px"
+											border="0.5px"
 											borderColor={'black'}
 											borderRightRadius={'0px'}
 											onChange={(e) => setEmail(e.target.value)}
@@ -133,8 +130,8 @@ export const Hero = ({ title }: { title: string }) => {
 									</FormControl>
 									<InputRightAddon
 										width={'50%'}
-										bg="brand.300"
-										color="white"
+										bg="brand.100"
+										color="black"
 										fontSize={{ xs: 'xs', md: 'sm' }}
 										as={Button}
 										whiteSpace={'break-spaces'}
@@ -172,9 +169,9 @@ export const Hero = ({ title }: { title: string }) => {
 					offset={'120'}
 					paddingLeft={'2em'}
 				>
-					{/*HeroImage */}
-					{/* <HeroImage/> */}
-					<HeroSvg />
+
+					<Image src={FreePlayComputerViewImage}
+					/>
 				</Flex>
 			</GridItem>
 		</Grid>

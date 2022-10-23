@@ -14,17 +14,15 @@ import {
 } from '@chakra-ui/react';
 import React from 'react';
 import { ScrollAnimation } from './ScrollAnimation';
-import MarketImage from '../images/MarketImage.svg';
-import MarketSvg from '../images/MarketSvg.svg';
-import { XSauceIconButton } from './XSauceIconButton';
-import { DarkModeSwitch } from './DarkModeSwitch';
+import CultureIndexFocusImage from '../public/CultureIndexFocusImage.png'
+import Image from 'next/image';
 
 export const BlockFour = ({ title }: { title: string }) => {
 	return (
 		<React.Fragment>
 			<Hide above="lg">
 				<SimpleGrid column={1} width={'100%'} px="2rem">
-					<Flex flexDirection={'column'}>
+					<Flex flexDirection={'column'} justify={'center'}>
 						<ScrollAnimation animation="fade-up">
 							<Text fontSize="sm" paddingY={3}>
 								WELCOME TO THE NEXT STAGE
@@ -51,8 +49,9 @@ export const BlockFour = ({ title }: { title: string }) => {
 						anchorPlacement={'center-bottom'}
 						offset={'-200'}
 						paddingY={5}
+						justify={'center'}
 					>
-						<MarketSvg />
+						<Image src={CultureIndexFocusImage} style={{ borderRadius: 15 }} />
 					</Flex>
 
 					<Stack spacing={3} textAlign={'center'}>
@@ -144,10 +143,11 @@ export const BlockFour = ({ title }: { title: string }) => {
 							as={ScrollAnimation}
 							anchorPlacement={'center-bottom'}
 							offset={'-100'}
+							style={{ padding: 10 }}
 						>
 							{/* TODO: export svg to images folder*/}
 							{/* <MarketImage /> */}
-							<MarketSvg />
+							<Image src={CultureIndexFocusImage} style={{ borderRadius: 15 }} />
 						</Flex>
 					</GridItem>
 
