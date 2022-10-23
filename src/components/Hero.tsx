@@ -75,81 +75,79 @@ export const Hero = ({ title }: { title: string }) => {
 				paddingY={6}
 				placeSelf={'start'}
 			>
-				<ScrollAnimation animation="fade-up">
-					<Stack>
-						<ScrollAnimation animation="fade-up">
-							<Text fontSize="sm" paddingY={3}>
-								DRIVING CULTURE FORWARD
-							</Text>
-						</ScrollAnimation>
-						<ScrollAnimation animation="fade-up">
-							<Heading
-								fontWeight={'semibold'}
-								fontSize="4xl"
-								lineHeight={'base'}
-								paddingY={3}
-							>
-								<Box>
-									The Future of&nbsp;
-									<Box display={'inline-block'} color={'brand.100'}>
-										Culture
-									</Box>
+				<Stack>
+					<ScrollAnimation animation="fade-up">
+						<Text fontSize="sm" paddingY={3}>
+							DRIVING CULTURE FORWARD
+						</Text>
+					</ScrollAnimation>
+					<ScrollAnimation animation="fade-up">
+						<Heading
+							fontWeight={'semibold'}
+							fontSize="4xl"
+							lineHeight={'base'}
+							paddingY={3}
+						>
+							<Box>
+								The Future of&nbsp;
+								<Box display={'inline-block'} color={'brand.100'}>
+									Culture
 								</Box>
-							</Heading>
-						</ScrollAnimation>
-						<ScrollAnimation animation="fade-up">
-							<Text fontSize="xl" paddingY={3}>
-								Xsauce is a dynamic, decentralized ecosystem which allows you to
-								translate your knowledge of culture into money in your pocket.
-							</Text>
-						</ScrollAnimation>
-						<ScrollAnimation animation="fade-up">
-							<form
-								id="email-form"
-								method="POST"
-								action="https://script.google.com/macros/s/AKfycbxzfszRCRSs2zbE7a4uDmHTUl-oxG_XHjiefFWXv7y-TWgZEOldmD9YcjavzL4ksCYYlw/exec"
-								onSubmit={handleSubmit}
-							>
-								<InputGroup alignSelf="center" border="0px">
-									<FormControl>
-										<Input
-											id="Email"
-											name="Email"
-											type="email"
-											placeholder="email@xyz.com"
-											fontSize={{ xs: 'xs', md: 'sm' }}
-											width={'100%'}
-											bg="colors.white"
-											color="black"
-											border="0.5px"
-											borderColor={'black'}
-											borderRightRadius={'0px'}
-											onChange={(e) => setEmail(e.target.value)}
-											value={email}
-										/>
-									</FormControl>
-									<InputRightAddon
-										width={'50%'}
-										bg="brand.100"
-										color="black"
+							</Box>
+						</Heading>
+					</ScrollAnimation>
+					<ScrollAnimation animation="fade-up">
+						<Text fontSize="xl" paddingY={3}>
+							Xsauce is a dynamic, decentralized ecosystem which allows you to
+							translate your knowledge of culture into money in your pocket.
+						</Text>
+					</ScrollAnimation>
+					<ScrollAnimation animation="fade-up">
+						<form
+							id="email-form"
+							method="POST"
+							action="https://script.google.com/macros/s/AKfycbxzfszRCRSs2zbE7a4uDmHTUl-oxG_XHjiefFWXv7y-TWgZEOldmD9YcjavzL4ksCYYlw/exec"
+							onSubmit={handleSubmit}
+						>
+							<InputGroup alignSelf="center" border="0px">
+								<FormControl>
+									<Input
+										id="Email"
+										name="Email"
+										type="email"
+										placeholder="email@xyz.com"
 										fontSize={{ xs: 'xs', md: 'sm' }}
-										as={Button}
-										whiteSpace={'break-spaces'}
-										type="submit"
-										border="0px"
+										width={'100%'}
+										bg="colors.white"
+										color="black"
+										border="0.5px"
 										borderColor={'black'}
-										borderLeftRadius={'0px'}
-									>
-										<Text whiteSpace={'break-spaces'} paddingX={2}>
-											Join Waitlist
-										</Text>
-										<FiArrowUpRight />
-									</InputRightAddon>
-								</InputGroup>
-							</form>
-						</ScrollAnimation>
-					</Stack>
-				</ScrollAnimation>
+										borderRightRadius={'0px'}
+										onChange={(e) => setEmail(e.target.value)}
+										value={email}
+									/>
+								</FormControl>
+								<InputRightAddon
+									width={'50%'}
+									bg="brand.100"
+									color="black"
+									fontSize={{ xs: 'xs', md: 'sm' }}
+									as={Button}
+									whiteSpace={'break-spaces'}
+									type="submit"
+									border="0px"
+									borderColor={'black'}
+									borderLeftRadius={'0px'}
+								>
+									<Text whiteSpace={'break-spaces'} paddingX={2}>
+										Join Waitlist
+									</Text>
+									<FiArrowUpRight />
+								</InputRightAddon>
+							</InputGroup>
+						</form>
+					</ScrollAnimation>
+				</Stack>
 			</GridItem>
 
 			<GridItem
