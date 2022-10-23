@@ -167,7 +167,7 @@ export const Hero = ({ title }: { title: string }) => {
 					as={ScrollAnimation}
 					anchorPlacement={'top-bottom'}
 					offset={'120'}
-					paddingLeft={'2em'}
+					paddingLeft={{ md: '2em' }}
 				>
 
 					<Image src={FreePlayComputerViewImage}
