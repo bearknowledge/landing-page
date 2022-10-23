@@ -89,7 +89,7 @@ export const BlockThree = ({ title }: { title: string }) => (
 				alignItems={'center'}
 				paddingLeft={{ md: 10 }}
 			>
-				<Image src={LiveMarket4CardImage} />
+				<Image src={LiveMarket4CardImage} style={{ borderRadius: 10 }} />
 
 			</Flex>
 		</GridItem>
