@@ -33,9 +33,9 @@ export const BlockTwo = ({ title }: { title: string }) => (
 						lineHeight={'base'}
 						paddingY={3}
 					>
-						Where's culture headed?
+						Know what moves culture?
 						<Show above="sm">
-							<br /> Predict what's up next
+							<br /> Put your knowledge to work.
 						</Show>
 					</Heading>
 				</ScrollAnimation>
@@ -423,12 +423,12 @@ export const BlockTwo = ({ title }: { title: string }) => (
 						</Flex>
 						<ScrollAnimation animation="fade-up">
 							<Heading fontWeight={'semibold'} paddingY={2} fontSize={24}>
-								Make wagers for cash
+							Invest in culture.
 							</Heading>
 						</ScrollAnimation>
 						<ScrollAnimation animation="fade-up">
 							<Text>
-								Put your money where your mouth is and pick what's hot.
+							Make money on the things you truly understand.
 							</Text>
 						</ScrollAnimation>
 					</Box>
@@ -477,11 +477,11 @@ export const BlockTwo = ({ title }: { title: string }) => (
 						</Flex>
 						<ScrollAnimation animation="fade-up">
 							<Heading fontWeight={'semibold'} paddingY={2} fontSize={24}>
-								Support Fair Prices
+							Diversify your assets.
 							</Heading>
 						</ScrollAnimation>
 						<ScrollAnimation animation="fade-up">
-							<Text>Decide as a community what a sneaker is worth.</Text>
+							<Text>Balance your exposure across your portfolio.</Text>
 						</ScrollAnimation>
 					</Box>
 					<Box height="fit-content" marginTop={12}>
@@ -571,8 +571,7 @@ export const BlockTwo = ({ title }: { title: string }) => (
 						</ScrollAnimation>
 						<ScrollAnimation animation="fade-up">
 							<Text>
-								Claim your spot on the leaderboard. Be known for having an eye
-								for culture.
+								Claim your spot on the leaderboard. Be known for having an eye for culture.
 							</Text>
 						</ScrollAnimation>
 					</Box>

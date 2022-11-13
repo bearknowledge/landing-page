@@ -28,7 +28,7 @@ export const BlockThree = ({ title }: { title: string }) => (
 			<Stack>
 				<ScrollAnimation animation="fade-up">
 					<Text fontSize="sm" paddingY={3}>
-						PUT YOUR KNOWLEDGE TO WORK
+					HOW IT WORKS
 					</Text>
 				</ScrollAnimation>
 				<ScrollAnimation animation="fade-up">
@@ -43,10 +43,9 @@ export const BlockThree = ({ title }: { title: string }) => (
 				</ScrollAnimation>
 				<ScrollAnimation animation="fade-up">
 					<Text fontSize="xl" paddingY={3}>
-						Xsauce allows you to predict the price of the next drop. Put your
-						knowledge of culture to the test and decide whether a sneaker,
-						collab or drop will go up or down in price. Predict right and earn
-						hard cash.
+						Xsauce allows you to invest in indexes which
+						track the price of hyped sneakers, watches and streetwear.
+						Xsauce is the stock market of culture.
 					</Text>
 				</ScrollAnimation>
 				<HStack spacing={4}>
