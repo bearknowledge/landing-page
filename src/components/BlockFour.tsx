@@ -51,7 +51,7 @@ export const BlockFour = ({ title }: { title: string }) => {
 						paddingY={5}
 						justify={'center'}
 					>
-						<Image src={CultureIndexFocusImage} style={{ borderRadius: 15 }} />
+						<Image src={CultureIndexFocusImage} style={{ borderRadius: 15 }} alt="XCI" />
 					</Flex>
 
 					<Stack spacing={3} textAlign={'center'}>
