@@ -53,7 +53,7 @@ export const Header = ({ title }: { title: string }) => {
 						</Button>
 					</a>
 					<a
-						href="https://docs.xsauce.io/applications/prediction-markets-v.0-beta"
+						href="https://docs.xsauce.io/applications/xchange-beta-simulator-v0"
 						target={'_blank'}
 						rel={'noreferrer'}
 					>
