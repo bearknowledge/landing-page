@@ -22,7 +22,7 @@ import { ScrollAnimation } from './ScrollAnimation';
 import { useRouter } from 'next/router';
 import { useState } from 'react';
 import Image from 'next/image';
-import FreePlayComputerViewImage from '../public/FreePlayComputerViewImage.png'
+import ChipsConnected from '../public/ChipsConnected.png'
 
 export const Hero = ({ title }: { title: string }) => {
 	const toast = useToast();
@@ -66,7 +66,7 @@ export const Hero = ({ title }: { title: string }) => {
 	};
 
 	return (
-		<Grid templateColumns="repeat(5, 1fr)" width={'100%'} px="2rem">
+		<Grid templateColumns="repeat(5, 1fr)" width={'100%'} height={'calc(100vh - 64px)'} px="2rem">
 			<GridItem
 				colSpan={{ xs: 12, md: 2 }}
 				h="10"
@@ -83,26 +83,54 @@ export const Hero = ({ title }: { title: string }) => {
 					</ScrollAnimation>
 					<ScrollAnimation animation="fade-up">
 						<Heading
-							fontWeight={'semibold'}
-							fontSize="4xl"
+							fontWeight={'regular'}
+							fontSize="5xl"
 							lineHeight={'base'}
 							paddingY={3}
 						>
-							<Box>
-								The Future of&nbsp;
-								<Box display={'inline-block'} color={'brand.100'}>
-									Culture
+							<Box  color={'white'}>
+								Culture is&nbsp;
+								<Box display={'inline-block'} color={'white'}>
+									your currency
 								</Box>
 							</Box>
 						</Heading>
 					</ScrollAnimation>
 					<ScrollAnimation animation="fade-up">
-						<Text fontSize="xl" paddingY={3}>
+						<Text fontSize="lg" color={'rgba(153, 153, 153, 1)'} paddingY={3}>
 							Xsauce is a dynamic, decentralized ecosystem which allows you to
 							translate your knowledge of culture into money in your pocket.
 						</Text>
 					</ScrollAnimation>
-					<ScrollAnimation animation="fade-up">
+					
+				</Stack>
+			</GridItem>
+
+			<GridItem
+				colStart={{ xs: 1, md: 3 }}
+				colEnd={{ xs: 6, md: 6 }}
+				height={'fit-content'}
+				width={'100%'}
+				placeSelf={'center'}
+			>
+				{/*TODO: Fix scaling on small sc */}
+				<Flex
+					
+					justifyContent={'center'}
+					alignItems={'center'}
+					as={ScrollAnimation}
+					anchorPlacement={'top-bottom'}
+					offset={'120'}
+					maxHeight={'50vh'}
+				
+					paddingLeft={{ md: '2em' }}
+				>
+
+					<Image  src={ChipsConnected}
+					/>
+				</Flex>
+			</GridItem>
+			<ScrollAnimation animation="fade-up">
 						<form
 							id="email-form"
 							method="POST"
@@ -137,7 +165,7 @@ export const Hero = ({ title }: { title: string }) => {
 									type="submit"
 									border="0px"
 									borderColor={'black'}
-									borderLeftRadius={'0px'}
+								
 								>
 									<Text whiteSpace={'break-spaces'} paddingX={2}>
 										Join Waitlist
@@ -147,31 +175,6 @@ export const Hero = ({ title }: { title: string }) => {
 							</InputGroup>
 						</form>
 					</ScrollAnimation>
-				</Stack>
-			</GridItem>
-
-			<GridItem
-				colStart={{ xs: 1, md: 3 }}
-				colEnd={{ xs: 6, md: 6 }}
-				height={'fit-content'}
-				width={'100%'}
-				placeSelf={'center'}
-			>
-				{/*TODO: Fix scaling on small sc */}
-				<Flex
-					overflow={'hidden'}
-					justifyContent={'center'}
-					alignItems={'center'}
-					as={ScrollAnimation}
-					anchorPlacement={'top-bottom'}
-					offset={'120'}
-					paddingLeft={{ md: '2em' }}
-				>
-
-					<Image src={FreePlayComputerViewImage}
-					/>
-				</Flex>
-			</GridItem>
 		</Grid>
 	);
 };

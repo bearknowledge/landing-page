@@ -24,8 +24,8 @@ export const Header = ({ title }: { title: string }) => {
 			justifyContent="right"
 			alignItems="center"
 			height="64px"
-			borderBottom={'1px solid'}
-			borderColor={'brand.200'}
+			bgColor='black'
+			color='white'
 			flexDirection={'row'}
 			width={'100%'}
 			paddingRight={{ sm: 4, md: 10 }}
@@ -45,7 +45,7 @@ export const Header = ({ title }: { title: string }) => {
 						<Button
 							whiteSpace={'nowrap'}
 							variant="link"
-							color={navColor}
+							color='white'
 							fontWeight={'semibold'}
 							fontSize={'sm'}
 						>
@@ -60,7 +60,7 @@ export const Header = ({ title }: { title: string }) => {
 						<Button
 							whiteSpace={'nowrap'}
 							variant="link"
-							color={navColor}
+							color='white'
 							fontWeight={'semibold'}
 							fontSize={'sm'}
 						>
@@ -72,7 +72,7 @@ export const Header = ({ title }: { title: string }) => {
 							<Button
 								whiteSpace={'nowrap'}
 								variant="link"
-								color={navColor}
+								color='white'
 								display={'flex'}
 								flexDirection={'row'}
 								disabled
@@ -102,7 +102,7 @@ export const Header = ({ title }: { title: string }) => {
 						<Button
 							whiteSpace={'nowrap'}
 							variant="link"
-							color={navColor}
+							color='white'
 							fontWeight={'semibold'}
 							fontSize={'sm'}
 						>

@@ -46,7 +46,7 @@ const theme = extendTheme({
 		black: '#16161D',
 		brand: {
 
-			100: '#ACFF00',
+			100: '#2FFD76',
 			200: '#0C1516',
 			300: '#EFF1f3',
 			400: '#fff',

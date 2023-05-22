@@ -32,7 +32,7 @@ import { ScrollAnimation } from '../components/ScrollAnimation';
 const Index = () => {
 	return (
 		<Container minHeight="100vh" height={'fit-content'}>
-			<HeaderAddon />
+			{/* <HeaderAddon /> */}
 			<Header />
 			<Main alignItems={'center'} justifyContent={'start'}>
 				<Hero />
