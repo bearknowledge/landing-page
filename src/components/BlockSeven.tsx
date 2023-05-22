@@ -2,6 +2,7 @@ import { ArrowUpIcon, CheckIcon } from '@chakra-ui/icons';
 import {
 	Box,
 	Button,
+	Divider,
 	Flex,
 	FormControl,
 	Grid,
@@ -23,6 +24,8 @@ import { ScrollAnimation } from './ScrollAnimation';
 import { useRouter } from 'next/router';
 import { useState } from 'react';
 import Image from 'next/image';
+import downloadInStore from '../public/downloadInAppStore.png';
+
 import ChipsConnected from '../public/ChipsConnected.png';
 
 export const BlockSeven = ({ title }: { title: string }) => {
@@ -72,7 +75,8 @@ export const BlockSeven = ({ title }: { title: string }) => {
 			borderColor={'grey'}
 			borderTopWidth={'1px'}
 			borderBottomWidth={'1px'}
-			paddingY={5}
+            paddingY={5}
+            spacing={10}
 		>
 			<HStack width={'100%'}>
 				<VStack width={'fit-content'}>
@@ -135,6 +139,36 @@ export const BlockSeven = ({ title }: { title: string }) => {
 						</HStack>
 					</form>
 				</Box>
+			</HStack>
+			<HStack width={'100%'} spacing={10}>
+				<VStack>
+					<a
+						href="https://docs.xsauce.io/applications/prediction-markets-v.0-beta"
+						target={'_blank'}
+						rel={'noreferrer'}
+					>
+						<Button
+							display="flex"
+							variant={'link'}
+							fontSize={'lg'}
+							color={'white'}
+							fontWeight={'normal'}
+						>
+							<Text>Contact </Text>
+						</Button>
+					</a>
+				</VStack>
+				<Divider
+					borderColor="gray.400"
+					borderWidth="1px"
+					height="20"
+					orientation="vertical"
+				/>
+				<VStack>
+					<Box paddingY={10}>
+						<Image src={downloadInStore} sizes="" />
+					</Box>
+				</VStack>
 			</HStack>
 		</VStack>
 	);

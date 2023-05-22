@@ -24,7 +24,7 @@ import { XSauceIconButton } from './XSauceIconButton';
 
 export const HeaderDrawer = () => {
 	const { isOpen, onOpen, onClose } = useDisclosure();
-	const navColor = useColorModeValue('black', 'white');
+	const navColor = useColorModeValue("#0E0F0D", 'white');
 	const drawerBg = useColorModeValue('brand.900', 'brand.200');
 
 	return (

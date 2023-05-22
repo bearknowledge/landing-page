@@ -11,16 +11,15 @@ import {
 	useColorModeValue,
 } from '@chakra-ui/react';
 import Link from 'next/link';
-import { DarkModeSwitch } from './DarkModeSwitch';
-import { HeaderAddon } from './HeaderAddon';
+
 import { HeaderDrawer } from './HeaderDrawer';
 import { XSauceIconButton } from './XSauceIconButton';
 
 export const Header = ({ title }: { title: string }) => {
-	const navColor = useColorModeValue('black', 'white');
 
 	return (
 		<Flex
+			backgroundColor={"#0E0F0D"}
 			justifyContent="right"
 			alignItems="center"
 			height="64px"
