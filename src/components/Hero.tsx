@@ -77,7 +77,7 @@ export const Hero = ({ title }: { title: string }) => {
 			py="1rem"
 		>
 			<GridItem
-				rowSpan={{ xs: 2, md: 4 }}
+				rowSpan={{ xs: 3, md: 4 }}
 				colSpan={{ xs: 6, md: 2 }}
 				height={'fit-content'}
 				alignSelf={'center'}
@@ -110,7 +110,7 @@ export const Hero = ({ title }: { title: string }) => {
 			</GridItem>
 
 			<GridItem
-				rowSpan={{ xs: 2, md: 4 }}
+				rowSpan={{ xs: 3, md: 4 }}
 				colStart={{ xs: 1, md: 3 }}
 				colEnd={{ xs: 6, md: 6 }}
 				height={'fit-content'}
@@ -132,7 +132,7 @@ export const Hero = ({ title }: { title: string }) => {
 			</GridItem>
 
 			<GridItem
-				rowSpan={{ xs: 2, md: 2 }}
+				rowSpan={{ xs: 1, md: 2 }}
 				colSpan={5}
 				width={'100%'}
 				height={'full'}
@@ -144,7 +144,7 @@ export const Hero = ({ title }: { title: string }) => {
 				borderBottomWidth={'1px'}
 			>
 				<Box paddingY={3}>
-					<Text color={'white'}>
+					<Text color={'white'} fontSize={{ xs: 'xs', md: 'xs' }}>
 						Want early access to our Beta? Join the waitinglist
 					</Text>
 				</Box>
@@ -154,8 +154,12 @@ export const Hero = ({ title }: { title: string }) => {
 					action="https://script.google.com/macros/s/AKfycbxzfszRCRSs2zbE7a4uDmHTUl-oxG_XHjiefFWXv7y-TWgZEOldmD9YcjavzL4ksCYYlw/exec"
 					onSubmit={handleSubmit}
 				>
-					<HStack spacing="10px" align='flex-start'>
-						<InputGroup width={'40%'} alignSelf="center" border="0px">
+					<HStack spacing="10px" align="flex-start">
+						<InputGroup
+							width={{ sx: '10%', md: '15%' }}
+							alignSelf="center"
+							border="0px"
+						>
 							<FormControl>
 								<Input
 									id="Email"
@@ -164,7 +168,6 @@ export const Hero = ({ title }: { title: string }) => {
 									shadow={10}
 									placeholder="Email@xyz.com"
 									fontSize={{ xs: 'xs', md: 'sm' }}
-
 									color="Colors.white"
 									border={'1px'}
 									borderBottomWidth={'0.5px'}
@@ -178,27 +181,24 @@ export const Hero = ({ title }: { title: string }) => {
 							</FormControl>
 						</InputGroup>
 						<Box
-								width={'15%'}
-								bg="brand.100"
-								color="black"
-								fontSize={{ xs: 'xs', md: 'xs' }}
-								as={Button}
-								whiteSpace={'break-spaces'}
-								type="submit"
-								borderRadius={'10px'}
+							width={{ sx: '10%', md: '15%' }}
+							bg="brand.100"
+							color="black"
+							fontSize={{ xs: 'xs', md: 'xs' }}
+							as={Button}
+							whiteSpace={'break-spaces'}
+							type="submit"
+							borderRadius={'10px'}
 							borderColor={'black'}
-
-							>
-								<Text whiteSpace={'break-spaces'} paddingX={1}>
-									Join the waitlist
-								</Text>
-							</Box>
+						>
+							<Text whiteSpace={'break-spaces'} paddingX={1}>
+								Join the waitlist
+							</Text>
+						</Box>
 					</HStack>
 				</form>
 			</GridItem>
-
 		</Grid>
-
 	);
 };
 

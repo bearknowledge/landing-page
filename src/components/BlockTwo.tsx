@@ -14,7 +14,7 @@ import {
 	VStack,
 } from '@chakra-ui/react';
 import { ScrollAnimation } from './ScrollAnimation';
-import mobileAppExample from '../public/mobileAppExample.png'
+import mobileAppExample from '../public/MobileAppExample.png'
 import Image from 'next/image';
 
 
