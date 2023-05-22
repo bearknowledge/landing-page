@@ -51,8 +51,8 @@ export const Header = ({ title }: { title: string }) => {
 						</Button>
 					</a>
 					<a
-						href="https://docs.xsauce.io/applications/xchange-beta-simulator-v0"
-						target={'_blank'}
+								href="https://docs.xsauce.io/applications/how-it-works-the-alpha-simulator"
+								target={'_blank'}
 						rel={'noreferrer'}
 					>
 						<Button

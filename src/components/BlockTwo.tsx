@@ -39,18 +39,18 @@ export const BlockTwo = ({ title }: { title: string }) => (
 				knowledge of culture and earn money
 			</Text>
 		</Box>
-		<Box>
+		<Box paddingY={2}>
 			<a
 				href="https://docs.xsauce.io/getting-started/introduction"
 				target={'_blank'}
 				rel={'noreferrer'}
 			>
-				<Button color={'brand.100'} variant="link" fontSize={'md'}>
+				<Button color={'brand.100'} variant="link" fontSize={{ xs: 'xs',md:'md'}}>
 					<Text>Learn more</Text>
 				</Button>
 			</a>
 		</Box>
-		<Image src={mobileAppExample} style={{ borderRadius: 15 }} />
+		<Image src={mobileAppExample}/>
 
 	</VStack>
 );
