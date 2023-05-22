@@ -38,7 +38,6 @@ export const BlockSeven = ({ title }: { title: string }) => {
 		let data = new FormData(event.target);
 		//alert(`The name you entered was: ${email}`);
 
-		console.log(data);
 		const action = event.target.action;
 		fetch(action, {
 			method: 'POST',
