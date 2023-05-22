@@ -23,11 +23,12 @@ export const Header = ({ title }: { title: string }) => {
 			justifyContent="right"
 			alignItems="center"
 			height="64px"
-			bgColor='black'
 			color='white'
 			flexDirection={'row'}
 			width={'100%'}
-			paddingRight={{ sm: 4, md: 10 }}
+			//paddingRight={{ sm: 4, md: 10 }}
+			px={{ base: '0rem', md: '2rem', lg: '8rem' }} //-2rem since there is already a 2px padding in each block
+
 		>
 			<Hide above="md">
 				<Box>

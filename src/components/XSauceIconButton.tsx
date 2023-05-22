@@ -7,7 +7,7 @@ export const XSauceIconButton = () => {
 		<Link href="/">
 			<IconButton
 				position={'absolute'}
-				left={4}
+				left={{ base: '0rem', md: '4rem', lg: '10rem' }}
 				aria-label="Xsauce Icon Button"
 				colorScheme="brand.100"
 				onClick={null}
