@@ -26,20 +26,20 @@ import Image from 'next/image';
 export const BlockFour = ({ title }: { title: string }) => (
 	<VStack paddingY={10}>
 		<Box width={'60%'}>
-			<Tabs variant="unstyled">
-				<TabList color={'grey'} width={'fit-content'}>
-					<Tab color={'brand.100'} width={'fit-content'}>
+			<Tabs variant="unstyled" >
+
+				<TabList color={'grey'}>
+					<Tab color={'brand.100'} >
 						Easy to use
 					</Tab>
 					<Tab>Instant</Tab>
 					<Tab>Dynamic</Tab>
 					<Tab>Powerful</Tab>
-					<Tab>Hype</Tab>
 				</TabList>
 				<TabIndicator
 					mt="-1.5px"
 					height="2px"
-					bg="blue.500"
+					bg="brand.100"
 					borderRadius="1px"
 				/>
 				<TabPanels>

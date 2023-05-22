@@ -28,6 +28,8 @@ import Aos from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';
 import { ScrollAnimation } from '../components/ScrollAnimation';
+import { BlockSix } from '../components/BlockSix';
+import { BlockSeven } from '../components/BlockSeven';
 
 const Index = () => {
 	return (
@@ -43,9 +45,12 @@ const Index = () => {
 				<BlockFour />
 
 				<BlockFive />
+				<BlockSix />
+				<Box padding={20}></Box>
+				<BlockSeven />
+				<Footer />
 			</Main>
 
-			<Footer />
 		</Container>
 	);
 };
