@@ -143,14 +143,14 @@ export const BlockSeven = ({ title }: { title: string }) => {
 			<HStack width={'100%'} spacing={10}>
 				<VStack>
 					<a
-						href="https://docs.xsauce.io/applications/prediction-markets-v.0-beta"
+						href="https://docs.xsauce.io/connect/socials"
 						target={'_blank'}
 						rel={'noreferrer'}
 					>
 						<Button
 							display="flex"
 							variant={'link'}
-							fontSize={'lg'}
+							fontSize={'md'}
 							color={'white'}
 							fontWeight={'normal'}
 						>

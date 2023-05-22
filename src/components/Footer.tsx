@@ -1,10 +1,6 @@
 import { Search2Icon, SearchIcon } from '@chakra-ui/icons';
 import {
-	background,
-	border,
-	Box,
-	Button,
-	Divider,
+
 	Flex,
 	FlexProps,
 	Grid,
@@ -20,7 +16,7 @@ import {
 } from '@chakra-ui/react';
 import Link from 'next/link';
 import React from 'react';
-import { FaRegHandPeace, FaTwitter, FaGithub } from 'react-icons/fa';
+import { FaRegHandPeace, FaTwitter, FaGithub, FaLinkedin, FaInstagram } from 'react-icons/fa';
 
 export const Footer = (props: FlexProps) => {
 
@@ -31,7 +27,7 @@ export const Footer = (props: FlexProps) => {
 			paddingBottom={"1.5rem"} //match the default spacing of main component
 		>
 			<Text alignSelf={'center'} fontSize={'xs'} color={'brand.300'}>
-				© Xsauce ltd 2023
+				© Xsauce inc 2023
 			</Text>
 			<Spacer />
 			<HStack spacing={0}>
@@ -59,8 +55,9 @@ export const Footer = (props: FlexProps) => {
 						icon={<FaGithub />}
 					/>
 				</a>
+
 				<a
-					href="https://angel.co/company/xsauced-1"
+					href="https://www.instagram.com/xsauce_io/"
 					target={'_blank'}
 					rel={'noreferrer'}
 				>
@@ -68,7 +65,19 @@ export const Footer = (props: FlexProps) => {
 						color={'white'}
 						bg={'none'}
 						aria-label="Hand Peace"
-						icon={<FaRegHandPeace />}
+						icon={<FaInstagram />}
+					/>
+				</a>
+				<a
+					href="https://www.linkedin.com/company/xsauce/"
+					target={'_blank'}
+					rel={'noreferrer'}
+				>
+					<IconButton
+						color={'white'}
+						bg={'none'}
+						aria-label="Hand Peace"
+						icon={<FaLinkedin />}
 					/>
 				</a>
 			</HStack>
