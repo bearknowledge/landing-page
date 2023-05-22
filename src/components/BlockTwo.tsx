@@ -20,7 +20,7 @@ import Image from 'next/image';
 
 export const BlockTwo = ({ title }: { title: string }) => (
 	<VStack padding={10}>
-		<Box width={'50%'}>
+		<Box width={{ xs: '70%', md: '50%' }}>
 			<Heading
 				alignContent={'center'}
 				fontWeight={'regular'}
@@ -33,8 +33,8 @@ export const BlockTwo = ({ title }: { title: string }) => (
 				Predict and cash out
 			</Heading>
 		</Box>
-		<Box width={'50%'}>
-			<Text color={'white'} textAlign={'center'}>
+		<Box width={{ xs: '70%', md: '50%' }}>
+			<Text color={'white'} textAlign={'center'} fontSize={{ xs: 'md', md: 'xl' }}>
 				Xsauce allows you to predict the price of the next drop. Use your
 				knowledge of culture and earn money
 			</Text>

@@ -23,10 +23,9 @@ export const BlockFive= ({ title }: { title: string }) => (
 	<VStack paddingY={10} >
 		<Box paddingY={2}><Image src={CoinsFalling}  sizes=''/></Box>
 
-		<Box width={'50%'}>
+		<Box  width={{ xs: '70%', md: '50%' }}>
 
 			<Heading
-
 				alignContent={'center'}
 				fontWeight={'regular'}
 				fontSize={{ xs: '2xl', md: '6xl' }}
@@ -38,8 +37,8 @@ export const BlockFive= ({ title }: { title: string }) => (
 				Where is culture<Box>headed next?</Box>
 			</Heading>
 		</Box>
-		<Box width={'50%'}>
-			<Text color={'grey'} textAlign={'center'} fontSize={'3xl'}>
+		<Box width={{ xs: '70%', md: '50%' }}>
+			<Text color={'grey'} textAlign={'center'} fontSize={{ xs: 'xl', md: '3xl' }}>
 			Xsauce allows you to predict the price of the next drop. Use your knowledge of culture
 			</Text>
 		</Box>

@@ -20,8 +20,8 @@ import BrickBrake from '../public/BrickBreak.png';
 import Image from 'next/image';
 
 export const BlockSix = ({ title }: { title: string }) => (
-	<HStack paddingY={10} spacing={5} justifyContent={'center'} align='stretch'>
-		<Box padding={5} backgroundColor={"#121613"} borderRadius={10} width={"30%"} >
+	<Stack direction={[ 'row', 'column']} alignItems={'center'} paddingY={10} spacing={5} justifyContent={'center'} align='stretch'>
+		<Box padding={5} backgroundColor={"#121613"} borderRadius={10} width={["30%", "100%"]} >
 			<VStack >
 				<Box paddingY={2} width={"full"}>
 					<Image src={SneakerInCase} sizes="" />
@@ -45,7 +45,7 @@ export const BlockSix = ({ title }: { title: string }) => (
 
 			</VStack>
 		</Box>
-		<Box padding={5} backgroundColor={"#121613"} borderRadius={10} width={"30%"}>
+		<Box padding={5} backgroundColor={"#121613"} borderRadius={10} width={["30%", "100%"]}>
 			<VStack >
 				<Box paddingY={2} width={"full"}>
 					<Image src={BrickBrake} sizes="" />
@@ -68,7 +68,7 @@ export const BlockSix = ({ title }: { title: string }) => (
 
 			</VStack>
 		</Box>
-		<Box padding={5} backgroundColor={"#121613"} borderRadius={10} width={"30%"}>
+		<Box padding={5} backgroundColor={"#121613"} borderRadius={10} width={["30%", "100%"]}>
 			<VStack  align='stretch'>
 				<Box paddingY={2} width={"full"}>
 					<Image src={HypePhone} sizes="" />
@@ -94,7 +94,7 @@ export const BlockSix = ({ title }: { title: string }) => (
 
 			</VStack>
 		</Box>
-	</HStack>
+	</Stack>
 );
 
 BlockSix.defaultProps = {

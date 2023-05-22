@@ -75,9 +75,11 @@ export const BlockSeven = ({ title }: { title: string }) => {
 			borderTopWidth={'1px'}
 			borderBottomWidth={'1px'}
             paddingY={5}
-            spacing={10}
+			spacing={10}
+			px="2rem"
+
 		>
-			<HStack width={'100%'}>
+			<Stack direction={[ 'row', 'column']} width={'100%'}>
 				<VStack width={'fit-content'}>
 					<Text
 						color={'white'}
@@ -99,7 +101,7 @@ export const BlockSeven = ({ title }: { title: string }) => {
 						onSubmit={handleSubmit}
 					>
 						<HStack spacing="10px" width={'full'} justifyContent={'flex-end'}>
-							<InputGroup width={'50%'} alignSelf="center" border="0px">
+							<InputGroup width={{sx: '100%', md:'50%'}} alignSelf="center" border="0px">
 								<FormControl>
 									<Input
 										id="Email"
@@ -121,7 +123,7 @@ export const BlockSeven = ({ title }: { title: string }) => {
 								</FormControl>
 							</InputGroup>
 							<Box
-								width={'25%'}
+								width={{sx: '20%', md:'50%'}}
 								bg="brand.100"
 								color="black"
 								fontSize={{ xs: 'xs', md: 'xs' }}
@@ -138,7 +140,7 @@ export const BlockSeven = ({ title }: { title: string }) => {
 						</HStack>
 					</form>
 				</Box>
-			</HStack>
+			</Stack>
 			<HStack width={'100%'} spacing={10}>
 				<VStack>
 					<a

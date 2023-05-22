@@ -22,7 +22,7 @@ import Image from 'next/image';
 export const BlockThree = ({ title }: { title: string }) => (
 	<VStack paddingY={10} >
 
-		<Box width={'50%'}>
+		<Box width={{ xs: '70%', md: '50%' }}>
 			<Text color={'white'} textAlign={'center'} fontSize={{ xs: 'xl', md: '4xl' }}>
 				Download
 			</Text>
@@ -39,8 +39,8 @@ export const BlockThree = ({ title }: { title: string }) => (
 				Xsauce in<Box>the App Store</Box>
 			</Heading>
 		</Box>
-		<Box width={'50%'}>
-			<Text color={'grey'} textAlign={'center'} fontSize={'3xl'}>
+		<Box width={{ xs: '70%', md: '50%' }}>
+			<Text color={'grey'} textAlign={'center'} fontSize={{ xs: 'xl', md: '3xl' }}>
 			Install Play for iOS and iPad today and start designing today for free!
 			</Text>
 		</Box>

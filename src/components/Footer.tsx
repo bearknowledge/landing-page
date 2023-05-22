@@ -1,6 +1,4 @@
-import { Search2Icon, SearchIcon } from '@chakra-ui/icons';
 import {
-
 	Flex,
 	FlexProps,
 	Grid,
@@ -8,11 +6,7 @@ import {
 	HStack,
 	IconButton,
 	Spacer,
-	Stack,
 	Text,
-	useColorMode,
-	useColorModeValue,
-	VStack,
 } from '@chakra-ui/react';
 import Link from 'next/link';
 import React from 'react';
@@ -24,6 +18,7 @@ export const Footer = (props: FlexProps) => {
 		<Flex
 			as="footer"
 			width={'100%'}
+			px="2rem"
 			paddingBottom={"1.5rem"} //match the default spacing of main component
 		>
 			<Text alignSelf={'center'} fontSize={'xs'} color={'brand.300'}>
