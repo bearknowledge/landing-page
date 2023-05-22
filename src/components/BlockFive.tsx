@@ -6,75 +6,48 @@ import {
 	GridItem,
 	Heading,
 	HStack,
+	Show,
+	SimpleGrid,
 	Spacer,
 	Stack,
 	Text,
-	useColorModeValue,
+	VStack,
 } from '@chakra-ui/react';
 import { ScrollAnimation } from './ScrollAnimation';
+import CoinsFalling from '../public/coinsFalling.png'
+import DownloadInStore from '../public/downloadInAppStore.png'
+import Image from 'next/image';
 
-export const BlockFive = ({ ...props }) => {
-	const buttonColor = useColorModeValue('brand.200', 'white');
-	return (
-		<Grid
-			templateColumns="repeat(5, 1fr)"
-			width={'100%'}
-			// borderTop={'1px solid'}
-			// borderColor={'brand.200'}
-			px="2rem"
-			py="3em"
-			{...props}
-		>
-			<GridItem
-				colSpan={{ xs: 5, md: 3 }}
-				h="10"
-				height={'fit-content'}
-				alignSelf={'center'}
-				paddingBottom={6}
+
+export const BlockFive= ({ title }: { title: string }) => (
+	<VStack paddingY={10} >
+		<Box paddingY={2}><Image src={CoinsFalling}  sizes=''/></Box>
+
+		<Box width={'50%'}>
+
+			<Heading
+
+				alignContent={'center'}
+				fontWeight={'regular'}
+				fontSize={{ xs: '2xl', md: '6xl' }}
+				lineHeight={'base'}
+				color={'white'}
+				paddingBottom={3}
+				textAlign={'center'}
 			>
-				<Stack>
-					<ScrollAnimation animation="fade-up">
-						<Heading fontWeight={'semibold'} fontSize="4xl" paddingY={3}>
-							<Box display="inline-block" color={'brand.100'}>
-								Culture
-							</Box>
-							&nbsp;is up next
-						</Heading>
-					</ScrollAnimation>
-					<ScrollAnimation animation="fade-up">
-						<Text fontSize="xl" paddingY={3}>
-							Interested in learning more?
-						</Text>
-					</ScrollAnimation>
-					<Stack
-						spacing={4}
-						direction={['column', 'row']}
-						//TODO: fix overflow on buttons
-					>
-						<a
-							href="https://docs.xsauce.io/getting-started/introduction"
-							target={'_blank'}
-							rel={'noreferrer'}
-						>
-							<ScrollAnimation animation={'fade-up'}>
-								<Button
-									paddingX={6}
-									fontSize={'sm'}
-									size={'lg'}
-									variant="outline"
-									color={buttonColor}
-									borderColor={buttonColor}
-								>
-									<Text> Read our Docs</Text>
-								</Button>
-							</ScrollAnimation>
-						</a>
-					</Stack>
-				</Stack>
-			</GridItem>
-		</Grid>
-	);
-};
+				Where is culture<Box>headed next?</Box>
+			</Heading>
+		</Box>
+		<Box width={'50%'}>
+			<Text color={'grey'} textAlign={'center'} fontSize={'3xl'}>
+			Xsauce allows you to predict the price of the next drop. Use your knowledge of culture
+			</Text>
+		</Box>
+
+		<Box paddingY={10}><Image src={DownloadInStore}  sizes=''/></Box>
+
+	</VStack>
+);
 
 BlockFive.defaultProps = {
 	title: 'with-chakra-ui-typescript',

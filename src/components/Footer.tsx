@@ -38,7 +38,7 @@ export const Footer = (props: FlexProps) => {
 			borderColor={borderColor}
 		//px={{ md: '8rem' }}
 		>
-			<BlockFive px={{ base: '2rem', md: '4rem', lg: '10rem' }} />
+			{/* <BlockFive px={{ base: '2rem', md: '4rem', lg: '10rem' }} /> */}
 
 			<Grid
 				templateColumns="repeat(5, 1fr)"
@@ -196,7 +196,7 @@ export const Footer = (props: FlexProps) => {
 				px={'2rem'}
 			>
 				<Text alignSelf={'center'} fontSize={'xs'}>
-					© 2022 Xsauce. All rights reserved.
+					© Xsauce ltd 2023
 				</Text>
 				<Spacer />
 				<HStack spacing={0}>
