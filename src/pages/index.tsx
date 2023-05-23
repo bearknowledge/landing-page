@@ -28,28 +28,29 @@ import Aos from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';
 import { ScrollAnimation } from '../components/ScrollAnimation';
+import { BlockSix } from '../components/BlockSix';
+import { BlockSeven } from '../components/BlockSeven';
 
 const Index = () => {
 	return (
 		<Container minHeight="100vh" height={'fit-content'}>
-			<HeaderAddon />
+			{/* <HeaderAddon /> */}
 			<Header />
 			<Main alignItems={'center'} justifyContent={'start'}>
 				<Hero />
-				<Box m={[2, 6]} />
 				<BlockTwo />
 
-				<Box m={[2, 6]} />
-				<BlockThree />
+				{/* <BlockThree /> */}
 
-				<Box m={[2, 6]} h={['1em', '1em']} />
 				<BlockFour />
 
-				<Box m={[2, 6]} h={['1em', '1em']} />
-				{/* <BlockFive /> */}
+				<BlockFive />
+				<BlockSix />
+				<Box padding={20}></Box>
+				<BlockSeven />
+				<Footer />
 			</Main>
 
-			<Footer />
 		</Container>
 	);
 };

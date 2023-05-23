@@ -1,5 +1,6 @@
 import { ArrowUpIcon, CheckIcon } from '@chakra-ui/icons';
 import {
+	AspectRatio,
 	Box,
 	Button,
 	Flex,
@@ -11,18 +12,15 @@ import {
 	HStack,
 	Input,
 	InputGroup,
-	InputRightAddon,
-	Spacer,
 	Stack,
 	Text,
 	useToast,
+	VStack,
 } from '@chakra-ui/react';
-import { FiArrowUpRight } from 'react-icons/fi';
 import { ScrollAnimation } from './ScrollAnimation';
-import { useRouter } from 'next/router';
 import { useState } from 'react';
-import Image from 'next/image';
-import FreePlayComputerViewImage from '../public/FreePlayComputerViewImage.png'
+import { Banner } from './Banner';
+import ChipsConnected from '../public/ChipsConnected.svg';
 
 export const Hero = ({ title }: { title: string }) => {
 	const toast = useToast();
@@ -66,111 +64,131 @@ export const Hero = ({ title }: { title: string }) => {
 	};
 
 	return (
-		<Grid templateColumns="repeat(5, 1fr)" width={'100%'} px="2rem">
+		<Grid
+			templateColumns="repeat(5, 1fr)"
+			templateRows="repeat(6, 1fr)"
+			width={'100%'}
+			gap={2}
+			placeItems={'center'}
+			height={'calc(100vh - 64px)'}
+			px="2rem"
+			py="1rem"
+		>
 			<GridItem
-				colSpan={{ xs: 12, md: 2 }}
-				h="10"
+				rowSpan={{ xs: 3, md: 4 }}
+				colSpan={{ xs: 6, md: 2 }}
 				height={'fit-content'}
 				alignSelf={'center'}
 				paddingY={6}
-				placeSelf={'start'}
+				placeSelf={'center'}
 			>
 				<Stack>
-					<ScrollAnimation animation="fade-up">
-						<Text fontSize="sm" paddingY={3}>
-							DRIVING CULTURE FORWARD
-						</Text>
-					</ScrollAnimation>
-					<ScrollAnimation animation="fade-up">
-						<Heading
-							fontWeight={'semibold'}
-							fontSize="4xl"
-							lineHeight={'base'}
-							paddingY={3}
-						>
-							<Box>
-								The Future of&nbsp;
-								<Box display={'inline-block'} color={'brand.100'}>
-									Culture
-								</Box>
+					<Heading
+						fontWeight={'regular'}
+						fontSize={{ xs: '2xl', md: '5xl', xl:'6xl' }}
+						lineHeight={'base'}
+						paddingY={3}
+					>
+						<Box color={'white'}>
+							Culture is&nbsp;
+							<Box display={'inline-block'} color={'white'}>
+								your currency
 							</Box>
-						</Heading>
-					</ScrollAnimation>
-					<ScrollAnimation animation="fade-up">
-						<Text fontSize="xl" paddingY={3}>
-							Xsauce is a dynamic, decentralized ecosystem which allows you to
-							translate your knowledge of culture into money in your pocket.
-						</Text>
-					</ScrollAnimation>
-					<ScrollAnimation animation="fade-up">
-						<form
-							id="email-form"
-							method="POST"
-							action="https://script.google.com/macros/s/AKfycbxzfszRCRSs2zbE7a4uDmHTUl-oxG_XHjiefFWXv7y-TWgZEOldmD9YcjavzL4ksCYYlw/exec"
-							onSubmit={handleSubmit}
-						>
-							<InputGroup alignSelf="center" border="0px">
-								<FormControl>
-									<Input
-										id="Email"
-										name="Email"
-										type="email"
-										placeholder="email@xyz.com"
-										fontSize={{ xs: 'xs', md: 'sm' }}
-										width={'100%'}
-										bg="colors.white"
-										color="black"
-										border="0.5px"
-										borderColor={'black'}
-										borderRightRadius={'0px'}
-										onChange={(e) => setEmail(e.target.value)}
-										value={email}
-									/>
-								</FormControl>
-								<InputRightAddon
-									width={'50%'}
-									bg="brand.100"
-									color="black"
-									fontSize={{ xs: 'xs', md: 'sm' }}
-									as={Button}
-									whiteSpace={'break-spaces'}
-									type="submit"
-									border="0px"
-									borderColor={'black'}
-									borderLeftRadius={'0px'}
-								>
-									<Text whiteSpace={'break-spaces'} paddingX={2}>
-										Join Waitlist
-									</Text>
-									<FiArrowUpRight />
-								</InputRightAddon>
-							</InputGroup>
-						</form>
-					</ScrollAnimation>
+						</Box>
+					</Heading>
+					<Text
+						fontSize={{ xs: 'md', md: 'lg' }}
+						color={'rgba(153, 153, 153, 1)'}
+						paddingY={3}
+					>
+						Xsauce is a dynamic, decentralized ecosystem which allows you to
+						translate your knowledge of culture into money in your pocket.
+					</Text>
 				</Stack>
 			</GridItem>
 
 			<GridItem
+				rowSpan={{ xs: 3, md: 4 }}
 				colStart={{ xs: 1, md: 3 }}
 				colEnd={{ xs: 6, md: 6 }}
-				height={'fit-content'}
 				width={'100%'}
-				placeSelf={'center'}
-			>
-				{/*TODO: Fix scaling on small sc */}
-				<Flex
-					overflow={'hidden'}
-					justifyContent={'center'}
-					alignItems={'center'}
-					as={ScrollAnimation}
-					anchorPlacement={'top-bottom'}
-					offset={'120'}
-					paddingLeft={{ md: '2em' }}
+				height={'100%'}
+				placeItems="center"
 				>
+				<AspectRatio width={'100%'} height={ '100%'} >
+					<ChipsConnected />
+				</AspectRatio>
+			</GridItem>
 
-					<Image src={FreePlayComputerViewImage}
-					/>
-				</Flex>
+			<GridItem
+				rowSpan={{ xs: 1, md: 2 }}
+				colSpan={5}
+				width={'100%'}
+				height={'full'}
+				border={'0.5.px'}
+				paddingY={8}
+				placeSelf={'center'}
+				borderColor={'grey'}
+
+				borderTopWidth={'1px'}
+				borderBottomWidth={'1px'}
+			>
+				<VStack align={'start'} justify={'center'} height={'100%'}>
+				<Box paddingY={3}>
+					<Text color={'white'} fontSize={{ xs: 'xs', md: 'xs' }}>
+						Want early access to our Beta? Join the waitinglist
+					</Text>
+				</Box>
+				<form
+					id="email-form"
+					method="POST"
+					action="https://script.google.com/macros/s/AKfycbxzfszRCRSs2zbE7a4uDmHTUl-oxG_XHjiefFWXv7y-TWgZEOldmD9YcjavzL4ksCYYlw/exec"
+					onSubmit={handleSubmit}
+				>
+					<HStack spacing="10px" align="flex-start">
+						<InputGroup
+							width={{ sx: '10%', md: '15%' }}
+							alignSelf="center"
+							border="0px"
+						>
+							<FormControl>
+								<Input
+									id="Email"
+									name="Email"
+									type="email"
+									shadow={10}
+									placeholder="Email@xyz.com"
+									fontSize={{ xs: 'xs', md: 'sm' }}
+									color="Colors.white"
+									border={'1px'}
+									borderBottomWidth={'0.5px'}
+									boxShadow="0px 4px 15px rgba(47, 253, 118, 0.3)"
+									borderRadius={15}
+									borderColor={'brand.100'}
+									background={'black'}
+									onChange={(e) => setEmail(e.target.value)}
+									value={email}
+								/>
+							</FormControl>
+						</InputGroup>
+						<Box
+							width={{ sx: '10%', md: '15%' }}
+							bg="brand.100"
+							color="black"
+							fontSize={{ xs: 'xs', md: 'xs' }}
+							as={Button}
+							whiteSpace={'break-spaces'}
+							type="submit"
+							borderRadius={'10px'}
+							borderColor={'black'}
+						>
+							<Text whiteSpace={'break-spaces'} paddingX={1}>
+								Join the waitlist
+							</Text>
+						</Box>
+					</HStack>
+					</form>
+					</VStack>
 			</GridItem>
 		</Grid>
 	);

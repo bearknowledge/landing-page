@@ -5,211 +5,100 @@ import {
 	Grid,
 	GridItem,
 	Heading,
-	Hide,
+	HStack,
 	Show,
 	SimpleGrid,
 	Spacer,
 	Stack,
+	Tab,
+	TabIndicator,
+	TabList,
+	TabPanel,
+	TabPanels,
+	Tabs,
 	Text,
+	VStack,
 } from '@chakra-ui/react';
-import React from 'react';
 import { ScrollAnimation } from './ScrollAnimation';
-import CultureIndexFocusImage from '../public/CultureIndexFocusImage.png'
-import Image from 'next/image';
+import Target from '../public/Target.png';
+import Gauge from '../public/Gauge.png';
+import Instant from '../public/Instant.svg';
+import EasyToUse from '../public/EasyToUse.svg';
+import Accurate from '../public/Accurate.svg';
 
-export const BlockFour = ({ title }: { title: string }) => {
-	return (
-		<React.Fragment>
-			<Hide above="lg">
-				<SimpleGrid column={1} width={'100%'} px="2rem">
-					<Flex flexDirection={'column'} justify={'center'}>
-						<ScrollAnimation animation="fade-up">
-							<Text fontSize="sm" paddingY={3}>
-								WELCOME TO THE NEXT STAGE
-							</Text>
-						</ScrollAnimation>
-						<ScrollAnimation animation="fade-up">
-							<Heading
-								fontWeight={'semibold'}
-								fontSize="4xl"
-								lineHeight={'base'}
-								paddingY={3}
-							>
-								Culture is the only constant.
-								<Box display={'block'}>Xsauce unlocks the</Box>
-								<Box display={'block'}>full potential assets.</Box>
-							</Heading>
-						</ScrollAnimation>
-					</Flex>
-					<Flex
-						as={ScrollAnimation}
-						overflow={'hidden'}
-						// justifyContent={'center'}
-						// alignItems={'center'}
-						anchorPlacement={'center-bottom'}
-						offset={'-200'}
-						paddingY={5}
-						justify={'center'}
-					>
-						<Image src={CultureIndexFocusImage} style={{ borderRadius: 15 }} alt="XCI" />
-					</Flex>
-
-					<Stack spacing={3} textAlign={'center'}>
-						<ScrollAnimation animation="fade-up">
-							<Stack alignItems={'center'}>
-								<Heading fontSize="xl" paddingTop={3} fontWeight={'bold'}>
-									Instant payouts
-								</Heading>
-
-								<Text fontSize="lg" paddingBottom={3}>
-									No need to wait, cash out on your own terms
-								</Text>
-							</Stack>
-						</ScrollAnimation>
-						<ScrollAnimation animation="fade-up">
-							<Stack alignItems={'center'}>
-								<Heading fontSize="xl" paddingTop={3} fontWeight={'bold'}>
-									Dynamic Value
-								</Heading>
-
-								<Text fontSize="lg" paddingBottom={3}>
-									Generate gains in all market conditions
-								</Text>
-							</Stack>
-						</ScrollAnimation>
-						<ScrollAnimation animation="fade-up">
-							<Stack alignItems={'center'}>
-								<Heading fontSize="xl" paddingTop={3} fontWeight={'bold'}>
-									Protect Your Downside
-								</Heading>
-
-								<Text fontSize="lg" paddingBottom={3}>
-									Hedge your risk on sneakers you bought or intend to buy.
-								</Text>
-							</Stack>
-						</ScrollAnimation>
-						<ScrollAnimation animation="fade-up">
-							<Stack alignItems={'center'}>
-								<Heading fontSize="xl" paddingTop={3} fontWeight={'bold'}>
-									Powerful tools
-								</Heading>
-
-								<Text fontSize="lg" paddingBottom={3}>
-									Tools to help you stay ahead of the curve and elevate your
-									game.
-								</Text>
-							</Stack>
-						</ScrollAnimation>
-					</Stack>
-				</SimpleGrid>
-			</Hide>
-			<Show above="lg">
-				<Grid
-					width={'100%'}
-					height={{ md: '800px', lg: '700px' }} //TODO: remove height
-					templateRows={{ md: 'repeat(4, 2fr)' }}
-					templateColumns={{ md: 'repeat(4, 1fr)' }}
-					px="2rem"
+export const BlockFour = ({ title }: { title: string }) => (
+	<VStack paddingY={10}>
+		<Tabs variant="unstyled">
+			<TabList color={'grey'} width={'full'} justifyContent={'center'}>
+				<Tab
+					fontSize={{ xs: 'xs', md: 'xs' }}
+					_selected={{ color: 'brand.100', borderColor: 'brand.100' }}
+					_focus={{ outline: 'none' }}
 				>
-					<GridItem rowSpan={{ md: 2 }} colSpan={{ md: 2 }}>
-						<Flex flexDirection={'column'}>
-							<Text fontSize="sm" paddingY={3}>
-								WELCOME TO THE NEXT STAGE
+					Easy to use
+				</Tab>
+				<Tab
+					fontSize={{ xs: 'xs', md: 'xs' }}
+					_selected={{ color: 'brand.100', borderColor: 'brand.100' }}
+				>
+					Instant
+				</Tab>
+				<Tab
+					fontSize={{ xs: 'xs', md: 'xs' }}
+					_selected={{ color: 'brand.100', borderColor: 'brand.100' }}
+				>
+					Accurate
+				</Tab>
+			</TabList>
+			<TabIndicator
+				mt="-1.5px"
+				height="2px"
+				bg="brand.100"
+				borderRadius="1px"
+			/>
+			<TabPanels width={'50%'}>
+				<TabPanel>
+					<VStack>
+					<Box paddingY={5} width={{xs:"70%", md:'50%'}}>
+							<Text color={'white'} textAlign={'center'} fontWeight={400} fontSize={{ xs: 'xs', md: 'sm' }}>
+								An easy to use interface for investors familar with platforms
+								such as robinhood or coinbase.
 							</Text>
-							<ScrollAnimation animation="fade-up">
-								<Heading
-									fontWeight={'semibold'}
-									fontSize="4xl"
-									lineHeight={'base'}
-									paddingY={0}
-								>
-									Culture is the only
-									<Box display={'block'}>constant. Xsauce </Box>
-									<Box display={'block'}>unlocks the full </Box>
-									<Box display={'block'}>potential of assets.</Box>
-								</Heading>
-							</ScrollAnimation>
-						</Flex>
-					</GridItem>
+						</Box>
+						<EasyToUse />
+					</VStack>
+				</TabPanel>
 
-					<GridItem
-						rowSpan={{ md: 4 }}
-						colSpan={{ md: 2 }}
-						alignSelf={'center'}
-					>
-						<Flex
-							justifyContent={'center'}
-							alignItems={'center'}
-							as={ScrollAnimation}
-							anchorPlacement={'center-bottom'}
-							offset={'-100'}
-							style={{ padding: 10 }}
-						>
-							{/* TODO: export svg to images folder*/}
-							{/* <MarketImage /> */}
-							<Image src={CultureIndexFocusImage} style={{ borderRadius: 15 }} />
-						</Flex>
-					</GridItem>
+				<TabPanel>
+					<VStack>
+						<Box paddingY={5} width={{xs:"70%", md:'50%'}}>
+							<Text color={'white'} textAlign={'center'} fontWeight={400} fontSize={{ xs: 'xs', md: 'sm' }}>
+								The Xchange is real-time allowing you to react to market
+								conditions in a near instance
+							</Text>
+						</Box>
+						<Instant />
+					</VStack>
+				</TabPanel>
+				<TabPanel>
+					<VStack>
+					<Box paddingY={5} width={{xs:"80%", md:'55%'}}>
+							<Text color={'white'} textAlign={'center'} fontWeight={400} fontSize={{ xs: 'xs', md: 'sm' }}>
+								We source our price feeds from a combination of industry leading
+								resale platforms such as StockX, Goat, and Flight Club to name a
+								few.
+							</Text>
+						</Box>
 
-					<GridItem rowSpan={{ md: 1 }} colSpan={{ md: 1 }} paddingRight={5}>
-						<ScrollAnimation animation="fade-up">
-							<Stack>
-								<Heading fontSize="xl" paddingTop={3} fontWeight={'bold'}>
-									Instant payouts
-								</Heading>
+							<Accurate/>
 
-								<Text fontSize="lg" paddingBottom={3}>
-									No need to wait, cash out on your own terms
-								</Text>
-							</Stack>
-						</ScrollAnimation>
-					</GridItem>
-					<GridItem rowSpan={{ md: 1 }} colSpan={{ md: 1 }} paddingRight={5}>
-						<ScrollAnimation animation="fade-up">
-							<Stack>
-								<Heading fontSize="xl" paddingTop={3} fontWeight={'bold'}>
-									Dynamic Value
-								</Heading>
 
-								<Text fontSize="lg" paddingBottom={3}>
-									Generate gains in all market conditions
-								</Text>
-							</Stack>
-						</ScrollAnimation>
-					</GridItem>
-
-					<GridItem rowSpan={{ md: 1 }} colSpan={{ md: 1 }} paddingRight={5}>
-						<ScrollAnimation animation="fade-up">
-							<Stack>
-								<Heading fontSize="xl" paddingTop={3} fontWeight={'bold'}>
-									Protect Your Downside
-								</Heading>
-
-								<Text fontSize="lg" paddingBottom={3}>
-									Hedge your risk on sneakers you bought or intend to buy
-								</Text>
-							</Stack>
-						</ScrollAnimation>
-					</GridItem>
-					<GridItem rowSpan={{ md: 1 }} colSpan={{ md: 1 }} paddingRight={5}>
-						<ScrollAnimation animation="fade-up">
-							<Stack>
-								<Heading fontSize="xl" paddingTop={3} fontWeight={'bold'}>
-									Powerful tools
-								</Heading>
-
-								<Text fontSize="lg" paddingBottom={3}>
-									Tools to help you stay ahead of the curve and elevate your
-									game
-								</Text>
-							</Stack>
-						</ScrollAnimation>
-					</GridItem>
-				</Grid>
-			</Show>
-		</React.Fragment>
-	);
-};
+					</VStack>
+				</TabPanel>
+			</TabPanels>
+		</Tabs>
+	</VStack>
+);
 
 BlockFour.defaultProps = {
 	title: 'with-chakra-ui-typescript',

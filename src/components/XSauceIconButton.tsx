@@ -1,36 +1,77 @@
-import { useColorMode, IconButton } from '@chakra-ui/react';
-import { SunIcon } from '@chakra-ui/icons';
-import Link from 'next/link';
+import { useColorMode, IconButton } from "@chakra-ui/react";
+import { SunIcon } from "@chakra-ui/icons";
+import Link from "next/link";
 
 export const XSauceIconButton = () => {
-	return (
-		<Link href="/">
-			<IconButton
-				position={'absolute'}
-				left={4}
-				aria-label="Xsauce Icon Button"
-				colorScheme="brand.100"
-				onClick={null}
-			>
-				<svg
-					width="33"
-					height="29"
-					viewBox="0 0 33 29"
-					fill="none"
-					xmlns="http://www.w3.org/2000/svg"
-				>
-					<path
-						d="M22.6347 17.7117L31.0665 25.0761C32.8526 26.6404 32.5987 29.0007 30.1236 29.0007H25.4634C24.729 29.0007 24.0218 28.7354 23.505 28.2505L17.0678 22.295C16.7505 22.0022 16.2337 22.0022 15.9164 22.295L9.43388 28.2505C8.91709 28.7262 8.21897 28.9915 7.48459 28.9915H2.75189C0.29488 28.9915 -0.929093 26.2653 0.829802 24.6918L8.6995 17.6385C9.20722 17.1811 9.19815 16.4309 8.68136 15.9918L1.46445 9.8259C-0.366972 8.27984 0.838868 5.48962 3.33215 5.48962H7.61152C8.32777 5.48962 9.01682 5.74578 9.52454 6.20319L15.9073 11.8843L22.6347 17.7117Z"
-						fill="#ACFF00"
-					/>
-					<path
-						fill-rule="evenodd"
-						clip-rule="evenodd"
-						d="M21.1997 4.42065C19.9731 5.73654 18.9951 6.78574 18.9951 9L19.6482 8.99942C19.9026 11.6696 22.1337 13.759 24.8464 13.759C27.7295 13.759 30.0686 11.3988 30.0686 8.48961H29.9794C29.8491 6.47727 28.9223 5.49696 27.7682 4.2761C26.8419 3.29619 25.7691 2.16131 24.8439 0.213421C24.7101 -0.0775251 24.2896 -0.0678269 24.1558 0.223119C23.2469 2.22434 22.1489 3.40235 21.1997 4.42065Z"
-						fill="#ACFF00"
-					/>
-				</svg>
-			</IconButton>
-		</Link>
-	);
+  return (
+    <Link href="/">
+      <IconButton
+        position={"absolute"}
+        left={{ base: "1rem", md: "3rem", lg: "9rem" }}
+        aria-label="Xsauce Icon Button"
+        colorScheme="brand.100"
+        onClick={null}
+      >
+        <svg
+          width="66"
+          height="65"
+          viewBox="0 0 66 65"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g filter="url(#filter0_d_3201_12786)">
+            <path
+              d="M41.0962 34.9027L51.5625 44.4253C53.7795 46.4482 53.4644 49.5001 50.3921 49.5001H44.6074C43.6959 49.5001 42.818 49.1571 42.1766 48.5301L34.1861 40.8292C33.7922 40.4507 33.1508 40.4507 32.7569 40.8292L24.7102 48.5301C24.0687 49.1453 23.2021 49.4883 22.2905 49.4883H16.4159C13.366 49.4883 11.8467 45.9632 14.03 43.9285L23.7986 34.8081C24.4288 34.2166 24.4176 33.2466 23.7761 32.6788L14.8178 24.7058C12.5445 22.7066 14.0413 19.0986 17.1362 19.0986H22.4481C23.3372 19.0986 24.1925 19.4299 24.8227 20.0213L32.7456 27.3674L41.0962 34.9027Z"
+              fill="#2FFD76"
+            />
+            <path
+              d="M51 23C51 26.8646 47.8647 30 44.0001 30C40.1355 30 37.0001 26.8646 37.0001 23"
+              fill="#2FFD76"
+            />
+            <path
+              d="M37 23C37 17.763 40.9166 17.4138 43.5682 11.2975C43.7385 10.9096 44.2737 10.8966 44.444 11.2846C47.205 17.375 51 17.5173 51 23"
+              fill="#2FFD76"
+            />
+          </g>
+          <defs>
+            <filter
+              id="filter0_d_3201_12786"
+              x="0"
+              y="0"
+              width="66"
+              height="64.5"
+              filterUnits="userSpaceOnUse"
+              color-interpolation-filters="sRGB"
+            >
+              <feFlood floodOpacity="0" result="BackgroundImageFix" />
+              <feColorMatrix
+                in="SourceAlpha"
+                type="matrix"
+                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                result="hardAlpha"
+              />
+              <feOffset dy="2" />
+              <feGaussianBlur stdDeviation="6.5" />
+              <feComposite in2="hardAlpha" operator="out" />
+              <feColorMatrix
+                type="matrix"
+                values="0 0 0 0 0.184314 0 0 0 0 0.992157 0 0 0 0 0.462745 0 0 0 0.63 0"
+              />
+              <feBlend
+                mode="normal"
+                in2="BackgroundImageFix"
+                result="effect1_dropShadow_3201_12786"
+              />
+              <feBlend
+                mode="normal"
+                in="SourceGraphic"
+                in2="effect1_dropShadow_3201_12786"
+                result="shape"
+              />
+            </filter>
+          </defs>
+        </svg>
+      </IconButton>
+    </Link>
+  );
 };
