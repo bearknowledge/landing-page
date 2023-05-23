@@ -22,7 +22,7 @@ export const Footer = (props: FlexProps) => {
 			paddingBottom={"1.5rem"} //match the default spacing of main component
 		>
 			<Text alignSelf={'center'} fontSize={'xs'} color={'brand.300'}>
-				© Xsauce inc 2023
+				© Xsauce Inc 2023
 			</Text>
 			<Spacer />
 			<HStack spacing={0}>

@@ -15,8 +15,8 @@ import {
 } from '@chakra-ui/react';
 import { ScrollAnimation } from './ScrollAnimation';
 import CoinsFalling from '../public/coinsFalling.png'
-import DownloadInStore from '../public/downloadInAppStore.png'
 import Image from 'next/image';
+import DownloadAppleStore from '../public/DownloadAppleStore.svg';
 
 
 export const BlockFive= ({ title }: { title: string }) => (
@@ -43,7 +43,7 @@ export const BlockFive= ({ title }: { title: string }) => (
 			</Text>
 		</Box>
 
-		<Box paddingY={10}><Image src={DownloadInStore}  sizes=''/></Box>
+		<Box paddingY={10}><DownloadAppleStore /></Box>
 
 	</VStack>
 );

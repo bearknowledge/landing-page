@@ -14,9 +14,9 @@ import {
 	VStack,
 } from '@chakra-ui/react';
 import { ScrollAnimation } from './ScrollAnimation';
-import HypePhone from '../public/HypePhone.png';
-import SneakerInCase from '../public/SneakerInCase.png';
-import BrickBrake from '../public/BrickBreak.png';
+import HypePhone from '../public/HypePhone.svg';
+import SneakerInCase from '../public/SneakerInCase.svg';
+import BrickBreak from '../public/BrickBreak.svg';
 import Image from 'next/image';
 
 export const BlockSix = ({ title }: { title: string }) => (
@@ -24,7 +24,7 @@ export const BlockSix = ({ title }: { title: string }) => (
 		<Box padding={5} backgroundColor={"#121613"} borderRadius={10} width={["30%", "100%"]} >
 			<VStack  >
 				<Box paddingY={2} width={"full"}>
-					<Image src={SneakerInCase} sizes="" />
+					<SneakerInCase/>
 				</Box>
 				<Heading
 					w={"100%"}
@@ -48,7 +48,7 @@ export const BlockSix = ({ title }: { title: string }) => (
 		<Box padding={5} backgroundColor={"#121613"} borderRadius={10} width={["30%", "100%"]}>
 			<VStack height={"100%"}>
 				<Box paddingY={2} width={"full"}>
-					<Image src={BrickBrake} sizes="" />
+					<BrickBreak/>
 				</Box>
 				<Heading
 					w={"100%"}
@@ -71,7 +71,7 @@ export const BlockSix = ({ title }: { title: string }) => (
 		<Box padding={5} backgroundColor={"#121613"} borderRadius={10} width={["30%", "100%"]}>
 			<VStack  align='stretch'>
 				<Box paddingY={2} width={"full"}>
-					<Image src={HypePhone} sizes="" />
+					<HypePhone/>
 				</Box>
 				<Heading
 					w={"100%"}

@@ -11,15 +11,11 @@ import {
 	HStack,
 	Input,
 	InputGroup,
-	InputLeftAddon,
-	InputRightAddon,
-	Spacer,
 	Stack,
 	Text,
 	useToast,
 } from '@chakra-ui/react';
 import { ScrollAnimation } from './ScrollAnimation';
-import { useRouter } from 'next/router';
 import { useState } from 'react';
 import { Banner } from './Banner';
 import ChipsConnected from "../public/hero.svg";

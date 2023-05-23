@@ -14,8 +14,8 @@ import {
 	VStack,
 } from '@chakra-ui/react';
 import { ScrollAnimation } from './ScrollAnimation';
-import downloadInStore from '../public/downloadInAppStore.png'
-import Image from 'next/image';
+import DownloadAppleStore from '../public/DownloadAppleStore.svg';
+
 
 
 export const BlockThree = ({ title }: { title: string }) => (
@@ -44,7 +44,7 @@ export const BlockThree = ({ title }: { title: string }) => (
 			</Text>
 		</Box>
 
-		<Box paddingY={10}><Image src={downloadInStore}  sizes=''/></Box>
+		<Box paddingY={10}><DownloadAppleStore /></Box>
 
 	</VStack>
 );

@@ -14,9 +14,7 @@ import {
 	VStack,
 } from '@chakra-ui/react';
 import { ScrollAnimation } from './ScrollAnimation';
-import mobileAppExample from '../public/MobileAppExample.png'
-import Image from 'next/image';
-
+import MobileAppExample from '../public/mobile.svg'
 
 export const BlockTwo = ({ title }: { title: string }) => (
 	<VStack padding={10}>
@@ -50,7 +48,7 @@ export const BlockTwo = ({ title }: { title: string }) => (
 				</Button>
 			</a>
 		</Box>
-		<Image src={mobileAppExample}/>
+		<MobileAppExample/>
 
 	</VStack>
 );

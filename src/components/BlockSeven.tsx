@@ -21,12 +21,9 @@ import {
 	VStack,
 } from '@chakra-ui/react';
 import { ScrollAnimation } from './ScrollAnimation';
-import { useRouter } from 'next/router';
 import { useState } from 'react';
-import Image from 'next/image';
-import downloadInStore from '../public/downloadInAppStore.png';
+import DownloadAppleStore from '../public/DownloadAppleStore.svg';
 
-import ChipsConnected from '../public/ChipsConnected.png';
 
 export const BlockSeven = ({ title }: { title: string }) => {
 	const toast = useToast();
@@ -167,7 +164,7 @@ export const BlockSeven = ({ title }: { title: string }) => {
 				/>
 				<VStack>
 					<Box paddingY={10}>
-						<Image src={downloadInStore} sizes="" />
+						<DownloadAppleStore />
 					</Box>
 				</VStack>
 			</HStack>
