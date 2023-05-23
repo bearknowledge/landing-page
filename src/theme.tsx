@@ -62,6 +62,10 @@ const theme = extendTheme({
 	fonts,
 	breakpoints,
 	config,
+	Svg: {
+		// Ensure necessary SVG props are not filtered out
+		shouldForwardProp: (prop: string) => prop !== "focusable",
+	  },
 });
 
 export default theme;

@@ -21,9 +21,8 @@ import {
 import { ScrollAnimation } from './ScrollAnimation';
 import { useRouter } from 'next/router';
 import { useState } from 'react';
-import Image from 'next/image';
-import ChipsConnected from '../public/ChipsConnected.png';
 import { Banner } from './Banner';
+import ChipsConnected from "../public/hero.svg";
 
 export const Hero = ({ title }: { title: string }) => {
 	const toast = useToast();
@@ -127,7 +126,7 @@ export const Hero = ({ title }: { title: string }) => {
 					maxHeight={'50vh'}
 					paddingLeft={{ md: '2em' }}
 				>
-					<Image src={ChipsConnected} />
+					<ChipsConnected/>
 				</Flex>
 			</GridItem>
 
