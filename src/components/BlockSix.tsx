@@ -20,7 +20,7 @@ import BrickBrake from '../public/BrickBreak.png';
 import Image from 'next/image';
 
 export const BlockSix = ({ title }: { title: string }) => (
-	<Stack direction={[ 'row', 'column']} alignItems={'center'} paddingY={10} spacing={5} justifyContent={'center'} align='stretch'>
+	<Stack direction={{ sx:'row', md:'column'}} alignItems={'center'} paddingY={10} spacing={5} justifyContent={'center'} align='stretch'>
 		<Box padding={5} backgroundColor={"#121613"} borderRadius={10} width={["30%", "100%"]} >
 			<VStack >
 				<Box paddingY={2} width={"full"}>
