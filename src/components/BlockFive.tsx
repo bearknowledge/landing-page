@@ -14,7 +14,7 @@ import {
 	VStack,
 } from '@chakra-ui/react';
 import { ScrollAnimation } from './ScrollAnimation';
-import CoinsFalling from '../public/coinsFalling.png'
+import CoinsFalling from '../public/CoinsFalling.svg'
 import Image from 'next/image';
 import DownloadAppleStore from '../public/DownloadAppleStore.svg';
 
