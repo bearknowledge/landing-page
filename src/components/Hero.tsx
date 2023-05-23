@@ -112,18 +112,9 @@ export const Hero = ({ title }: { title: string }) => {
 				width={'100%'}
 				placeSelf={'center'}
 			>
-				{/*TODO: Fix scaling on small sc */}
-				<Flex
-					justifyContent={'center'}
-					alignItems={'center'}
-					as={ScrollAnimation}
-					anchorPlacement={'top-bottom'}
-					offset={'120'}
-					maxHeight={'50vh'}
-					paddingLeft={{ md: '2em' }}
-				>
+
 					<ChipsConnected  />
-				</Flex>
+
 			</GridItem>
 
 			<GridItem

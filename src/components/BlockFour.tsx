@@ -25,9 +25,6 @@ import Gauge from '../public/Gauge.png';
 import Instant from '../public/Instant.svg';
 import EasyToUse from '../public/EasyToUse.svg';
 import Accurate from '../public/Accurate.svg';
-import DeviceMobile from '../public/DeviceMobile.png';
-
-import Image from 'next/image';
 
 export const BlockFour = ({ title }: { title: string }) => (
 	<VStack paddingY={10}>
@@ -62,7 +59,7 @@ export const BlockFour = ({ title }: { title: string }) => (
 			<TabPanels width={'50%'}>
 				<TabPanel>
 					<VStack>
-						<Box paddingY={5} width={'50%'}>
+					<Box paddingY={5} width={{xs:"70%", md:'50%'}}>
 							<Text color={'white'} textAlign={'center'} fontWeight={400}>
 								An easy to use interface for investors familar with platforms
 								such as robinhood or coinbase.
@@ -74,7 +71,7 @@ export const BlockFour = ({ title }: { title: string }) => (
 
 				<TabPanel>
 					<VStack>
-						<Box paddingY={5} width={'50%'}>
+						<Box paddingY={5} width={{xs:"70%", md:'50%'}}>
 							<Text color={'white'} textAlign={'center'} fontWeight={400}>
 								The Xchange is real-time allowing you to react to market
 								conditions in a near instance
@@ -85,7 +82,7 @@ export const BlockFour = ({ title }: { title: string }) => (
 				</TabPanel>
 				<TabPanel>
 					<VStack>
-						<Box paddingY={5} width={'50%'}>
+					<Box paddingY={5} width={{xs:"70%", md:'50%'}}>
 							<Text color={'white'} textAlign={'center'} fontWeight={400}>
 								We source our price feeds from a combination of industry leading
 								resale platforms such as StockX, Goat, and Flight Club to name a
