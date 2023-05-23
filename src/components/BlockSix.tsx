@@ -20,9 +20,9 @@ import BrickBrake from '../public/BrickBreak.png';
 import Image from 'next/image';
 
 export const BlockSix = ({ title }: { title: string }) => (
-	<Stack direction={{ sx:'row', md:'column'}} alignItems={'center'} paddingY={10} spacing={5} justifyContent={'center'} align='stretch'>
+	<Stack direction={{ xs:'column', md:'row'}}  paddingY={10} paddingX={{xs:'10', md:'0'}} spacing={5} justifyContent={'center'} alignItems='stretch'>
 		<Box padding={5} backgroundColor={"#121613"} borderRadius={10} width={["30%", "100%"]} >
-			<VStack >
+			<VStack  >
 				<Box paddingY={2} width={"full"}>
 					<Image src={SneakerInCase} sizes="" />
 				</Box>
@@ -46,7 +46,7 @@ export const BlockSix = ({ title }: { title: string }) => (
 			</VStack>
 		</Box>
 		<Box padding={5} backgroundColor={"#121613"} borderRadius={10} width={["30%", "100%"]}>
-			<VStack >
+			<VStack height={"100%"}>
 				<Box paddingY={2} width={"full"}>
 					<Image src={BrickBrake} sizes="" />
 				</Box>
