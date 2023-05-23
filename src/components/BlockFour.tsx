@@ -22,6 +22,9 @@ import {
 import { ScrollAnimation } from './ScrollAnimation';
 import Target from '../public/Target.png';
 import Gauge from '../public/Gauge.png';
+import Instant from '../public/Instant.svg';
+import EasyToUse from '../public/EasyToUse.svg';
+import Accurate from '../public/Accurate.svg';
 import DeviceMobile from '../public/DeviceMobile.png';
 
 import Image from 'next/image';
@@ -65,7 +68,7 @@ export const BlockFour = ({ title }: { title: string }) => (
 									such as robinhood or coinbase.
 								</Text>
 							</Box>
-							<Image src={DeviceMobile} style={{ borderRadius: 15 }} />
+							<EasyToUse/>
 						</VStack>
 					</TabPanel>
 
@@ -77,19 +80,17 @@ export const BlockFour = ({ title }: { title: string }) => (
 									conditions in a near instance
 								</Text>
 							</Box>
-							<Image src={Gauge} style={{ borderRadius: 15 }} />
+							<Instant/>
 						</VStack>
 					</TabPanel>
 					<TabPanel>
 						<VStack>
 							<Box paddingY={5} width={"50%"}>
 								<Text color={'white'} textAlign={'center'} fontWeight={400}>
-									We source our price feeds from a combination of industry
-									leading resale platforms such as StockX, Goat, and Flight Club
-									to name a few.
+								We source our price feeds from a combination of industry leading resale platforms such as StockX, Goat,  and Flight Club to name a few.
 								</Text>
 							</Box>
-							<Image src={Target} style={{ borderRadius: 15 }} />
+							<Box width={"50%"}><Accurate/></Box>
 						</VStack>
 					</TabPanel>
 				</TabPanels>

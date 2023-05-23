@@ -18,7 +18,7 @@ import {
 import { ScrollAnimation } from './ScrollAnimation';
 import { useState } from 'react';
 import { Banner } from './Banner';
-import ChipsConnected from "../public/hero.svg";
+import ChipsConnected from "../public/ChipsConnected.svg";
 
 export const Hero = ({ title }: { title: string }) => {
 	const toast = useToast();
@@ -122,7 +122,7 @@ export const Hero = ({ title }: { title: string }) => {
 					maxHeight={'50vh'}
 					paddingLeft={{ md: '2em' }}
 				>
-					<ChipsConnected/>
+					<ChipsConnected  />
 				</Flex>
 			</GridItem>
 

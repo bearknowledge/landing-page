@@ -40,7 +40,7 @@ const Index = () => {
 				<Hero />
 				<BlockTwo />
 
-				<BlockThree />
+				{/* <BlockThree /> */}
 
 				<BlockFour />
 
