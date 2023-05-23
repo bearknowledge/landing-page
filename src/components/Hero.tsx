@@ -1,5 +1,6 @@
 import { ArrowUpIcon, CheckIcon } from '@chakra-ui/icons';
 import {
+	AspectRatio,
 	Box,
 	Button,
 	Flex,
@@ -14,11 +15,12 @@ import {
 	Stack,
 	Text,
 	useToast,
+	VStack,
 } from '@chakra-ui/react';
 import { ScrollAnimation } from './ScrollAnimation';
 import { useState } from 'react';
 import { Banner } from './Banner';
-import ChipsConnected from "../public/ChipsConnected.svg";
+import ChipsConnected from '../public/ChipsConnected.svg';
 
 export const Hero = ({ title }: { title: string }) => {
 	const toast = useToast();
@@ -66,6 +68,7 @@ export const Hero = ({ title }: { title: string }) => {
 			templateColumns="repeat(5, 1fr)"
 			templateRows="repeat(6, 1fr)"
 			width={'100%'}
+			gap={2}
 			placeItems={'center'}
 			height={'calc(100vh - 64px)'}
 			px="2rem"
@@ -82,7 +85,7 @@ export const Hero = ({ title }: { title: string }) => {
 				<Stack>
 					<Heading
 						fontWeight={'regular'}
-						fontSize={{ xs: '2xl', md: '6xl' }}
+						fontSize={{ xs: '2xl', md: '5xl', xl:'6xl' }}
 						lineHeight={'base'}
 						paddingY={3}
 					>
@@ -108,13 +111,13 @@ export const Hero = ({ title }: { title: string }) => {
 				rowSpan={{ xs: 3, md: 4 }}
 				colStart={{ xs: 1, md: 3 }}
 				colEnd={{ xs: 6, md: 6 }}
-				height={'fit-content'}
 				width={'100%'}
-				placeSelf={'center'}
-			>
-
-					<ChipsConnected  />
-
+				height={'100%'}
+				placeItems="center"
+				>
+				<AspectRatio width={'100%'} height={ '100%'} >
+					<ChipsConnected />
+				</AspectRatio>
 			</GridItem>
 
 			<GridItem
@@ -126,9 +129,11 @@ export const Hero = ({ title }: { title: string }) => {
 				paddingY={8}
 				placeSelf={'center'}
 				borderColor={'grey'}
+
 				borderTopWidth={'1px'}
 				borderBottomWidth={'1px'}
 			>
+				<VStack align={'start'} justify={'center'} height={'100%'}>
 				<Box paddingY={3}>
 					<Text color={'white'} fontSize={{ xs: 'xs', md: 'xs' }}>
 						Want early access to our Beta? Join the waitinglist
@@ -182,7 +187,8 @@ export const Hero = ({ title }: { title: string }) => {
 							</Text>
 						</Box>
 					</HStack>
-				</form>
+					</form>
+					</VStack>
 			</GridItem>
 		</Grid>
 	);

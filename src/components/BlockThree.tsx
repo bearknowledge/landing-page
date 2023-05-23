@@ -29,7 +29,7 @@ export const BlockThree = ({ title }: { title: string }) => (
 
 				alignContent={'center'}
 				fontWeight={'regular'}
-				fontSize={{ xs: '2xl', md: '6xl' }}
+				fontSize={{ xs: '2xl', md: '5xl', xl:'6xl' }}
 				lineHeight={'base'}
 				color={'white'}
 				paddingBottom={3}

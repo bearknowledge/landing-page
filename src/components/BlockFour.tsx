@@ -60,7 +60,7 @@ export const BlockFour = ({ title }: { title: string }) => (
 				<TabPanel>
 					<VStack>
 					<Box paddingY={5} width={{xs:"70%", md:'50%'}}>
-							<Text color={'white'} textAlign={'center'} fontWeight={400}>
+							<Text color={'white'} textAlign={'center'} fontWeight={400} fontSize={{ xs: 'xs', md: 'sm' }}>
 								An easy to use interface for investors familar with platforms
 								such as robinhood or coinbase.
 							</Text>
@@ -72,7 +72,7 @@ export const BlockFour = ({ title }: { title: string }) => (
 				<TabPanel>
 					<VStack>
 						<Box paddingY={5} width={{xs:"70%", md:'50%'}}>
-							<Text color={'white'} textAlign={'center'} fontWeight={400}>
+							<Text color={'white'} textAlign={'center'} fontWeight={400} fontSize={{ xs: 'xs', md: 'sm' }}>
 								The Xchange is real-time allowing you to react to market
 								conditions in a near instance
 							</Text>
@@ -82,8 +82,8 @@ export const BlockFour = ({ title }: { title: string }) => (
 				</TabPanel>
 				<TabPanel>
 					<VStack>
-					<Box paddingY={5} width={{xs:"70%", md:'50%'}}>
-							<Text color={'white'} textAlign={'center'} fontWeight={400}>
+					<Box paddingY={5} width={{xs:"80%", md:'55%'}}>
+							<Text color={'white'} textAlign={'center'} fontWeight={400} fontSize={{ xs: 'xs', md: 'sm' }}>
 								We source our price feeds from a combination of industry leading
 								resale platforms such as StockX, Goat, and Flight Club to name a
 								few.
