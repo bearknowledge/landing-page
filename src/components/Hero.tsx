@@ -60,7 +60,8 @@ export const Hero = ({ title }: { title: string }) => {
 						py={2}
 						borderWidth={'0.5px'}
 						spacing={'1'}
-						borderColor={'brand.1100'}
+						borderColor={'brand.100'}
+
 						borderRadius={'5'}
 					>
 						<TriangleUpIcon
@@ -195,6 +196,16 @@ export const Hero = ({ title }: { title: string }) => {
 				</GridItem>
 
 				<GridItem
+					rowSpan={{ xs: 2, md: 4 }}
+					colSpan={5}
+					width={'100%'}
+					height={'100%'}
+					placeItems="center"
+				>
+
+				</GridItem>
+
+				<GridItem
 					rowSpan={{ xs: 1 }}
 					colSpan={5}
 					width={'100%'}
@@ -202,7 +213,7 @@ export const Hero = ({ title }: { title: string }) => {
 					border={'0.5.px'}
 					paddingY={8}
 					placeSelf={'center'}
-					borderColor={'grey'}
+					borderColor={'rgba(255, 255, 255, 0.2)'}
 					borderTopWidth={'1px'}
 				>
 					<VStack align={'start'} height={'100%'}>
@@ -266,7 +277,8 @@ export const Hero = ({ title }: { title: string }) => {
 			<Box
 				width={'100%'}
 				height={'71px'}
-				borderColor={'brand.1100'}
+									borderColor={'rgba(255, 255, 255, 0.2)'}
+
 				borderTopWidth={'0.2px'}
 				borderBottomWidth={'0.2px'}
 				overflow="hidden"
