@@ -2,6 +2,8 @@ import {
 	background,
 	Box,
 
+	Button,
+
 	Heading,
 
 	Text,
@@ -46,7 +48,7 @@ export const BlockFive = ({ title }: { title: string }) => (
 			<Button disabled style={{background: 'transparent', border:'none', outline:'none', width: 'fit-content'}}>
 			<DownloadAppleStore />
 			</Button>
-			
+
 		</Box>
 	</VStack>
 	</ScrollAnimation>
