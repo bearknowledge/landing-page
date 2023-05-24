@@ -36,6 +36,6 @@ export const ScrollAnimation = ({
 
 ScrollAnimation.defaultProps = {
 	animation: 'fade-up',
-	anchorPlacement: 'bottom-bottom',
-	offset: '-50',
+	anchorPlacement: 'top-center',
+	offset: '-200px',
 };

@@ -33,7 +33,7 @@ import { BlockSeven } from '../components/BlockSeven';
 
 const Index = () => {
 	return (
-		<Container minHeight="100vh" height={'fit-content'}>
+		<Container minHeight="100vh" height={'fit-content'} background={'black'}>
 			{/* <HeaderAddon /> */}
 			<Header />
 			<Main alignItems={'center'} justifyContent={'start'}>
