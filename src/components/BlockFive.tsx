@@ -23,7 +23,7 @@ export const BlockFive = ({ title }: { title: string }) => (
 	<ScrollAnimation>
 	<VStack paddingY={10}>
 		<Box paddingY={2}>
-			<Image src={CoinsFalling} sizes="" alt="coinsFalling" />
+			<CoinsFalling />
 		</Box>
 
 		<Box width={{ xs: '70%', md: '50%' }}>
