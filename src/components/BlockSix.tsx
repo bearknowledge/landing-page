@@ -62,7 +62,7 @@ export const BlockSix = ({ title }: { title: string }) => (
 					Balance your risk
 				</Heading>
 					<Text color={'grey'} textAlign={'start'} fontSize={'xl'}>
-					Get exposure to sneaker based indices from multiple brand
+					Get exposure to sneaker based indices comprised of multiple brands
 					</Text>
 
 			</VStack>
