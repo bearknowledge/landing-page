@@ -10,6 +10,7 @@ import {
 	ScaleFade,
 	SlideFade,
 	Flex,
+	Stack,
 } from '@chakra-ui/react';
 import { CheckCircleIcon, CheckIcon, LinkIcon } from '@chakra-ui/icons';
 
@@ -26,7 +27,7 @@ import { BlockFour } from '../components/BlockFour';
 import { BlockFive } from '../components/BlockFive';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
-import { useEffect } from 'react';
+import { useEffect, useRef } from 'react';
 import { ScrollAnimation } from '../components/ScrollAnimation';
 import { BlockSix } from '../components/BlockSix';
 import { BlockSeven } from '../components/BlockSeven';
@@ -36,21 +37,24 @@ const Index = () => {
 		<Container minHeight="100vh" height={'fit-content'}>
 			{/* <HeaderAddon /> */}
 			<Header />
+			<Hero />
+
 			<Main alignItems={'center'} justifyContent={'start'}>
-				<Hero />
 				<BlockTwo />
 
 				{/* <BlockThree /> */}
-
 				<BlockFour />
 
 				<BlockFive />
+
 				<BlockSix />
-				<Box padding={20}></Box>
+
+				<Box padding={15}></Box>
+
 				<BlockSeven />
+
 				<Footer />
 			</Main>
-
 		</Container>
 	);
 };

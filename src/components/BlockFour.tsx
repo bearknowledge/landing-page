@@ -1,15 +1,5 @@
 import {
 	Box,
-	Button,
-	Flex,
-	Grid,
-	GridItem,
-	Heading,
-	HStack,
-	Show,
-	SimpleGrid,
-	Spacer,
-	Stack,
 	Tab,
 	TabIndicator,
 	TabList,
@@ -20,8 +10,6 @@ import {
 	VStack,
 } from '@chakra-ui/react';
 import { ScrollAnimation } from './ScrollAnimation';
-import Target from '../public/Target.png';
-import Gauge from '../public/Gauge.png';
 import Instant from '../public/Instant.svg';
 import EasyToUse from '../public/EasyToUse.svg';
 import Accurate from '../public/Accurate.svg';

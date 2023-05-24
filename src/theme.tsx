@@ -56,6 +56,7 @@ const theme = extendTheme({
 			800: '#F9FFE8',
 			900: '#F5F5F5',
 			1000: '#748282',
+			1100: '#999999'
 		},
 	},
 
@@ -65,6 +66,15 @@ const theme = extendTheme({
 	Svg: {
 		// Ensure necessary SVG props are not filtered out
 		shouldForwardProp: (prop: string) => prop !== "focusable",
+	},
+
+	styles: {
+		global: {
+		  "@keyframes marquee": {
+			"0%": { transform: "translateX(0%)" },
+			"100%": { transform: "translateX(-50%)" },
+		  },
+		},
 	  },
 });
 
