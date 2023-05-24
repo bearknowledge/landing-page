@@ -138,7 +138,7 @@ export const BlockSeven = ({ title }: { title: string }) => {
 					</form>
 				</Box>
 			</Stack>
-			<HStack width={'100%'} spacing={10}>
+			<HStack width={'100%'} spacing={10} >
 				<VStack>
 					<a
 						href="https://docs.xsauce.io/connect/socials"
@@ -162,7 +162,7 @@ export const BlockSeven = ({ title }: { title: string }) => {
 					height="20"
 					orientation="vertical"
 				/>
-				<VStack>
+				<VStack >
 					<Box paddingY={10}>
 						<Button disabled style={{background:'transparent', width:'fit-content', border:'none', outline:'none'}}>
 						<DownloadAppleStore />

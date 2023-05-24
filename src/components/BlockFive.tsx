@@ -1,16 +1,11 @@
 import {
 	background,
 	Box,
+
 	Button,
-	Flex,
-	Grid,
-	GridItem,
+
 	Heading,
-	HStack,
-	Show,
-	SimpleGrid,
-	Spacer,
-	Stack,
+
 	Text,
 	VStack,
 } from '@chakra-ui/react';
@@ -53,7 +48,7 @@ export const BlockFive = ({ title }: { title: string }) => (
 			<Button disabled style={{background: 'transparent', border:'none', outline:'none', width: 'fit-content'}}>
 			<DownloadAppleStore />
 			</Button>
-			
+
 		</Box>
 	</VStack>
 	</ScrollAnimation>
