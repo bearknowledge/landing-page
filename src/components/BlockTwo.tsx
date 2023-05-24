@@ -9,12 +9,13 @@ import { ScrollAnimation } from './ScrollAnimation';
 import MobileAppExample from '../public/mobile.svg'
 
 export const BlockTwo = ({ title }: { title: string }) => (
-	<VStack padding={10}>
+	<ScrollAnimation>
+	<VStack >
 		<Box width={{ xs: '70%', md: '50%' }}>
 			<Heading
 				alignContent={'center'}
 				fontWeight={'regular'}
-				fontSize={{ xs: '2xl', md: '5xl', xl:'6xl' }}
+				fontSize={{ xs: '2xl', md: '3xl', xl:'4xl' }}
 				lineHeight={'base'}
 				color={'white'}
 				paddingY={3}
@@ -25,8 +26,7 @@ export const BlockTwo = ({ title }: { title: string }) => (
 		</Box>
 		<Box width={{ xs: '70%', md: '50%' }}>
 			<Text color={'white'} textAlign={'center'} fontSize={{ xs: 'md', md: 'xl' }}>
-				Xsauce allows you to predict the price of the next drop. Use your
-				knowledge of culture and earn money
+			The Xchange allows you to predict how various streetwear items will perform on the resale market. Use your knowledge of culture to earn money.
 			</Text>
 		</Box>
 		<Box paddingY={2}>
@@ -40,9 +40,10 @@ export const BlockTwo = ({ title }: { title: string }) => (
 				</Button>
 			</a>
 		</Box>
-		<MobileAppExample/>
+		<MobileAppExample style={{width:'50%'}}/>
 
 	</VStack>
+	</ScrollAnimation>
 );
 
 BlockTwo.defaultProps = {

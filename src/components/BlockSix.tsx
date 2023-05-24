@@ -36,11 +36,10 @@ export const BlockSix = ({ title }: { title: string }) => (
 					textAlign={'start'}
 
 				>
-					Predict for cash
+					Compete for cash
 				</Heading>
 					<Text color={'grey'} textAlign={'start'} fontSize={'xl'}>
-						Xsauce allows you to predict the price of the next drop. Use your
-						knowledge of culture
+					Compete against your friends with our exclusive competitive mode. Throw a wager on top for those who play for keeps!
 					</Text>
 
 			</VStack>
@@ -63,7 +62,7 @@ export const BlockSix = ({ title }: { title: string }) => (
 					Balance your risk
 				</Heading>
 					<Text color={'grey'} textAlign={'start'} fontSize={'xl'}>
-					Get exposure to sneaker based indices from multiple brand
+					Get exposure to sneaker based indices comprised of multiple brands
 					</Text>
 
 			</VStack>

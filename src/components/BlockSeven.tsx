@@ -164,7 +164,9 @@ export const BlockSeven = ({ title }: { title: string }) => {
 				/>
 				<VStack >
 					<Box paddingY={10}>
+						<Button disabled style={{background:'transparent', width:'fit-content', border:'none', outline:'none'}}>
 						<DownloadAppleStore />
+						</Button>
 					</Box>
 				</VStack>
 			</HStack>

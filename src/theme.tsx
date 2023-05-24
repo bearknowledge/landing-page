@@ -45,7 +45,6 @@ const theme = extendTheme({
 	colors: {
 		black: '#16161D',
 		brand: {
-
 			100: '#2FFD76',
 			200: '#0C1516',
 			300: '#EFF1f3',
@@ -56,26 +55,27 @@ const theme = extendTheme({
 			800: '#F9FFE8',
 			900: '#F5F5F5',
 			1000: '#748282',
-			1100: '#999999'
 		},
 	},
 
+	styles: {
+		global: {
+			'@keyframes marquee': {
+				'0%': { transform: 'translateX(0%)' },
+				'100%': { transform: 'translateX(-50%)' },
+			},
+			body: {
+				bg: '#16161D',
+			},
+		},
+	},
 	fonts,
 	breakpoints,
 	config,
 	Svg: {
 		// Ensure necessary SVG props are not filtered out
-		shouldForwardProp: (prop: string) => prop !== "focusable",
+		shouldForwardProp: (prop: string) => prop !== 'focusable',
 	},
-
-	styles: {
-		global: {
-		  "@keyframes marquee": {
-			"0%": { transform: "translateX(0%)" },
-			"100%": { transform: "translateX(-50%)" },
-		  },
-		},
-	  },
 });
 
 export default theme;
