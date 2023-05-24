@@ -27,7 +27,9 @@ import EasyToUse from '../public/EasyToUse.svg';
 import Accurate from '../public/Accurate.svg';
 
 export const BlockFour = ({ title }: { title: string }) => (
+
 	<VStack paddingY={10}>
+			<ScrollAnimation>
 		<Tabs variant="unstyled">
 			<TabList color={'grey'} width={'full'} justifyContent={'center'}>
 				<Tab
@@ -65,7 +67,7 @@ export const BlockFour = ({ title }: { title: string }) => (
 								such as robinhood or coinbase.
 							</Text>
 						</Box>
-						<EasyToUse />
+						<EasyToUse style={{width: '90%'}} />
 					</VStack>
 				</TabPanel>
 
@@ -77,12 +79,12 @@ export const BlockFour = ({ title }: { title: string }) => (
 								conditions in a near instance
 							</Text>
 						</Box>
-						<Instant />
+						<Instant style={{width: '90%'}}/>
 					</VStack>
 				</TabPanel>
 				<TabPanel>
 					<VStack>
-					<Box paddingY={5} width={{xs:"80%", md:'55%'}}>
+					<Box paddingY={5} width={{xs:"70%", md:'50%'}}>
 							<Text color={'white'} textAlign={'center'} fontWeight={400} fontSize={{ xs: 'xs', md: 'sm' }}>
 								We source our price feeds from a combination of industry leading
 								resale platforms such as StockX, Goat, and Flight Club to name a
@@ -90,14 +92,16 @@ export const BlockFour = ({ title }: { title: string }) => (
 							</Text>
 						</Box>
 
-							<Accurate/>
+							<Accurate style={{width: '50%'}}/>
 
 
 					</VStack>
 				</TabPanel>
 			</TabPanels>
 		</Tabs>
+		</ScrollAnimation>
 	</VStack>
+
 );
 
 BlockFour.defaultProps = {

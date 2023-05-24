@@ -64,6 +64,7 @@ export const Hero = ({ title }: { title: string }) => {
 	};
 
 	return (
+		
 		<Grid
 			templateColumns="repeat(5, 1fr)"
 			templateRows="repeat(6, 1fr)"
@@ -82,6 +83,7 @@ export const Hero = ({ title }: { title: string }) => {
 				paddingY={6}
 				placeSelf={'center'}
 			>
+			
 				<Stack>
 					<Heading
 						fontWeight={'regular'}
@@ -89,21 +91,25 @@ export const Hero = ({ title }: { title: string }) => {
 						lineHeight={'base'}
 						paddingY={3}
 					>
+							<ScrollAnimation>
 						<Box color={'white'}>
 							Culture is&nbsp;
 							<Box display={'inline-block'} color={'white'}>
 								your currency
 							</Box>
 						</Box>
+						</ScrollAnimation>
 					</Heading>
+					<ScrollAnimation>
 					<Text
 						fontSize={{ xs: 'md', md: 'lg' }}
 						color={'rgba(153, 153, 153, 1)'}
 						paddingY={3}
 					>
-						Xsauce is a dynamic, decentralized ecosystem which allows you to
-						translate your knowledge of culture into money in your pocket.
+						Xsauce Inc combines culture with financial technology to create new opportunities for the world to interact with alternative assets. Scroll down to learn more.
 					</Text>
+					</ScrollAnimation>
+					
 				</Stack>
 			</GridItem>
 
@@ -130,14 +136,15 @@ export const Hero = ({ title }: { title: string }) => {
 				placeSelf={'center'}
 				borderColor={'grey'}
 
-				borderTopWidth={'1px'}
-				borderBottomWidth={'1px'}
+				// borderTopWidth={'1px'}
+				// borderBottomWidth={'1px'}
 			>
 				<VStack align={'start'} justify={'center'} height={'100%'}>
 				<Box paddingY={3}>
 					<Text color={'white'} fontSize={{ xs: 'xs', md: 'xs' }}>
 						Want early access to our Beta? Join the waitinglist
 					</Text>
+					
 				</Box>
 				<form
 					id="email-form"

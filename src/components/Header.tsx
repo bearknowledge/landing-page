@@ -144,7 +144,7 @@ export const Header = ({ title }: { title: string }) => {
 					</Flex>
 				</HStack>
 			</Show>
-			<XSauceIconButton />
+			<XSauceIconButton/>
 		</Flex>
 	);
 };
