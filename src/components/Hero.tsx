@@ -52,7 +52,7 @@ export const Hero = ({ title }: { title: string }) => {
 				display="inline-block"
 				marginRight="1rem"
 			>
-				<HStack justifyContent={'center'} height={"100%"} >
+				<HStack justifyContent={'center'} height={'100%'}>
 					<HStack
 						height={'20px'}
 						width={'fit-content'}
@@ -60,7 +60,7 @@ export const Hero = ({ title }: { title: string }) => {
 						py={2}
 						borderWidth={'0.5px'}
 						spacing={'1'}
-						borderColor={'brand.1100'}
+						borderColor={'brand.100'}
 						borderRadius={'5'}
 					>
 						<TriangleUpIcon
@@ -186,13 +186,14 @@ export const Hero = ({ title }: { title: string }) => {
 					colStart={{ xs: 1, md: 3 }}
 					colEnd={{ xs: 6, md: 6 }}
 					width={'100%'}
-					height={'100%'}
+					height={'85%'}
 					placeItems="center"
 				>
 					<AspectRatio width={'100%'} height={'100%'}>
 						<ChipsConnected />
 					</AspectRatio>
 				</GridItem>
+
 
 				<GridItem
 					rowSpan={{ xs: 1 }}
@@ -202,7 +203,7 @@ export const Hero = ({ title }: { title: string }) => {
 					border={'0.5.px'}
 					paddingY={8}
 					placeSelf={'center'}
-					borderColor={'grey'}
+					borderColor={'rgba(255, 255, 255, 0.2)'}
 					borderTopWidth={'1px'}
 				>
 					<VStack align={'start'} height={'100%'}>
@@ -266,17 +267,22 @@ export const Hero = ({ title }: { title: string }) => {
 			<Box
 				width={'100%'}
 				height={'71px'}
-				borderColor={'brand.1100'}
+				borderColor={'rgba(255, 255, 255, 0.2)'}
 				borderTopWidth={'0.2px'}
 				borderBottomWidth={'0.2px'}
 				overflow="hidden"
 			>
-				<Box as={'span'} display={'inline-block'} width={ "fit-content"} paddingY={"10px"}  animation="marquee 30s linear infinite" whiteSpace={"nowrap"}>
+				<Box
+					as={'span'}
+					display={'inline-block'}
+					width={'fit-content'}
+					paddingY={'10px'}
+					animation="marquee 30s linear infinite"
+					whiteSpace={'nowrap'}
+				>
 					{generateListItems()}
 					{generateListItems()}
-
 				</Box>
-
 			</Box>
 		</VStack>
 	);

@@ -68,7 +68,7 @@ export const BlockSeven = ({ title }: { title: string }) => {
 	return (
 		<VStack
 			width={'100%'}
-			borderColor={'grey'}
+			borderColor={'rgba(255, 255, 255, 0.2)'}
 			borderTopWidth={'1px'}
 			borderBottomWidth={'1px'}
             paddingY={5}
@@ -157,8 +157,9 @@ export const BlockSeven = ({ title }: { title: string }) => {
 					</a>
 				</VStack>
 				<Divider
-					borderColor="gray.400"
-					borderWidth="1px"
+					borderColor={'rgba(255, 255, 255, 0.2)'}
+
+					borderWidth="0.5px"
 					height="20"
 					orientation="vertical"
 				/>

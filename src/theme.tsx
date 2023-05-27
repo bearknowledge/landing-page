@@ -42,6 +42,16 @@ const theme = extendTheme({
 			button: '12px',
 		},
 	},
+	fontSizes: {
+		xs: '12px',
+		sm: '14px',
+		md: '16px',
+		lg: '18px',
+		xl: '20px',
+		'2xl': '24px',
+
+		// Add more font sizes as needed
+	  },
 	colors: {
 		black: '#16161D',
 		brand: {
@@ -77,6 +87,13 @@ const theme = extendTheme({
 		// Ensure necessary SVG props are not filtered out
 		shouldForwardProp: (prop: string) => prop !== 'focusable',
 	},
+	components: {
+		Input: {
+		  defaultProps: {
+			placeholderTextColor: 'white',
+		  },
+		},
+	  },
 });
 
 export default theme;
