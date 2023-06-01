@@ -175,8 +175,7 @@ export const Hero = ({ title }: { title: string }) => {
 							color={'rgba(153, 153, 153, 1)'}
 							paddingY={3}
 						>
-							Xsauce is a dynamic, decentralized ecosystem which allows you to
-							translate your knowledge of culture into money in your pocket.
+							Xsauce Inc combines culture with financial technology to create new opportunities for the world to interact with alternative assets. Scroll down to learn more.
 						</Text>
 					</Stack>
 				</GridItem>
