@@ -105,7 +105,7 @@ export const BlockSeven = ({ title }: { title: string }) => {
 										name="Email"
 										type="email"
 										shadow={10}
-										placeholder="Example-email@xyz.com"
+										placeholder="email@xyz.com"
 										fontSize={{ xs: 'xs', md: 'sm' }}
 										color="Colors.white"
 										border={'1px'}
