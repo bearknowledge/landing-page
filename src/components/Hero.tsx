@@ -229,9 +229,9 @@ export const Hero = ({ title }: { title: string }) => {
 											name="Email"
 											type="email"
 											shadow={10}
-											placeholder="Email@xyz.com"
+											placeholder="email@xyz.com"
 											fontSize={{ xs: 'xs', md: 'sm' }}
-											color="Colors.white"
+											color="white"
 											border={'1px'}
 											borderBottomWidth={'0.5px'}
 											boxShadow="0px 4px 15px rgba(47, 253, 118, 0.3)"
