@@ -101,13 +101,14 @@ export const BlockSeven = ({ title }: { title: string }) => {
 							<InputGroup width={{sx: '100%', md:'50%'}} alignSelf="center" border="0px">
 								<FormControl>
 									<Input
+										_focus={{boxShadow: "none"}
 										id="Email"
 										name="Email"
 										type="email"
 										shadow={10}
 										placeholder="email@xyz.com"
 										fontSize={{ xs: 'xs', md: 'sm' }}
-										color="Colors.white"
+										color="white"
 										border={'1px'}
 										borderBottomWidth={'0.5px'}
 										boxShadow="0px 4px 15px rgba(47, 253, 118, 0.3)"
