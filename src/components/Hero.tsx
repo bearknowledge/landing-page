@@ -225,6 +225,7 @@ export const Hero = ({ title }: { title: string }) => {
 								>
 									<FormControl>
 										<Input
+											_focus={{boxShadow:"none"}}
 											id="Email"
 											name="Email"
 											type="email"
