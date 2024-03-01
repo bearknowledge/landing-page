@@ -208,7 +208,7 @@ export const Hero = ({ title }: { title: string }) => {
 					<VStack align={'start'} height={'100%'}>
 						<Box paddingY={3}>
 							<Text color={'white'} fontSize={{ xs: 'xs', md: 'xs' }}>
-								Want early access to our Beta? Join the waitinglist
+								Want early access to our Beta? Join the waitlist
 							</Text>
 						</Box>
 						<form
